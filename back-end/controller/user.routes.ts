@@ -114,4 +114,14 @@ userRouter.get('/:id', async (req: Request, res: Response, next: NextFunction) =
     }
 });
 
+userRouter.get('/username/:username', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const username = req.params.username;
+        const user = await userService.getUserByUsername({ username });
+        res.status(200).json(user);
+    } catch (error) {
+        next(error);
+    }
+});
+
 export { userRouter };
