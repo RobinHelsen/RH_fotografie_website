@@ -4,6 +4,18 @@ import { generateJwtToken } from '../util/jwt';
 import { User } from '../model/user';
 import userDb from '../repository/user.db';
 
+const getAllUsers = async (): Promise<User[]> => {
+    return await userDb.getAllUsers();
+};
+
+const getUserById = async ({ id }: { id: number }): Promise<User> => {
+    const user = await userDb.getUserById({ id });
+    if (!user) {
+        throw new Error(`User with id: ${id} does not exist.`);
+    }
+    return user;
+};
+
 const getUserByUsername = async ({ username }: { username: string }): Promise<User> => {
     const user = await userDb.getUserByUsername({ username });
     if (!user) {
@@ -29,4 +41,4 @@ const authenticate = async ({ username, password }: UserJWTInput): Promise<Authe
     };
 };
 
-export default { getUserByUsername, authenticate };
+export default { getAllUsers, getUserByUsername, authenticate, getUserById };

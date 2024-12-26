@@ -95,4 +95,23 @@ userRouter.post('/login', async (req: Request, res: Response, next: NextFunction
     }
 });
 
+userRouter.get('/', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const users = await userService.getAllUsers();
+        res.status(200).json(users);
+    } catch (error) {
+        next(error);
+    }
+});
+
+userRouter.get('/:id', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const id = parseInt(req.params.id);
+        const user = await userService.getUserById({ id });
+        res.status(200).json(user);
+    } catch (error) {
+        next(error);
+    }
+});
+
 export { userRouter };

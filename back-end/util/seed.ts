@@ -31,8 +31,6 @@ const main = async () => {
             alreadycustomer: true,
         },
     });
-
-
 };
 
 (async () => {
