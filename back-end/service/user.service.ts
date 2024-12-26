@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import { AuthenticationResponse, UserJWTInput } from '../types';
+import { AuthenticationResponse, UserJWTInput, UserInput } from '../types';
 import { generateJwtToken } from '../util/jwt';
 import { User } from '../model/user';
 import userDb from '../repository/user.db';
@@ -24,6 +24,14 @@ const getUserByUsername = async ({ username }: { username: string }): Promise<Us
     return user;
 };
 
+const getUserByEmail = async ({ email }: { email: string }): Promise<User> => {
+    const user = await userDb.getUserByEmail({ email });
+    if (!user) {
+        throw new Error(`User with email: ${email} does not exist.`);
+    }
+    return user;
+}
+
 const authenticate = async ({ username, password }: UserJWTInput): Promise<AuthenticationResponse> => {
     if (!username || !password) {
         throw new Error('Username and password are required.');
@@ -41,4 +49,19 @@ const authenticate = async ({ username, password }: UserJWTInput): Promise<Authe
     };
 };
 
-export default { getAllUsers, getUserByUsername, authenticate, getUserById };
+const createUser = async ({ username, firstname, lastname, password, email, age, role, alreadycustomer }: UserInput): Promise<User> => {
+    
+    const existingUser = await userDb.getUserByEmail({ email });
+    if (existingUser) {
+        throw new Error(`User with username ${email} is already registered.`);
+    }
+
+    const newIncrementedId = await userDb.getNewIncrementedId();
+
+    const hashedPassword = await bcrypt.hash(password, 12);
+    const user = new User({id: newIncrementedId, username, firstname, lastname, password: hashedPassword, email, age, role, alreadycustomer });
+
+    return await userDb.createUser(user);
+};
+
+export default { getAllUsers, getUserByUsername, authenticate, getUserById, createUser, getUserByEmail };

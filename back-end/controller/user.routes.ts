@@ -95,6 +95,16 @@ userRouter.post('/login', async (req: Request, res: Response, next: NextFunction
     }
 });
 
+userRouter.post('/signup', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const userInput = <UserInput>req.body;
+        const user = await userService.createUser(userInput);
+        res.status(201).json(user);
+    } catch (error) {
+        next(error);
+    }
+});
+
 userRouter.get('/', async (req: Request, res: Response, next: NextFunction) => {
     try {
         const users = await userService.getAllUsers();
@@ -118,6 +128,16 @@ userRouter.get('/username/:username', async (req: Request, res: Response, next: 
     try {
         const username = req.params.username;
         const user = await userService.getUserByUsername({ username });
+        res.status(200).json(user);
+    } catch (error) {
+        next(error);
+    }
+});
+
+userRouter.get('/email/:email', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const email = req.params.email;
+        const user = await userService.getUserByEmail({ email });
         res.status(200).json(user);
     } catch (error) {
         next(error);
