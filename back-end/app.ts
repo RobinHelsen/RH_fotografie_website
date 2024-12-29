@@ -6,6 +6,7 @@ import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 import { expressjwt } from 'express-jwt';
 import { userRouter } from './controller/user.routes';
+import { photoRouter} from './controller/photo.router';
 
 const app = express();
 
@@ -32,9 +33,10 @@ app.use(
 );
 
 app.use('/users', userRouter);
+app.use('/photo', photoRouter);
 
 app.get('/status', (req, res) => {
-    res.json({ message: 'Exam API is running...' });
+    res.json({ message: 'Backend API is running...' });
 });
 
 const swaggerOpts = {
@@ -61,6 +63,6 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 });
 
 app.listen(port || 3000, () => {
-    console.log(`Exam API is running on port ${port}.`);
+    console.log(`Backend for fotoservice API is running... On port: ${port}.`);
 });
 

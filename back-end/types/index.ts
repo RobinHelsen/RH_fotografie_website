@@ -1,4 +1,3 @@
-
 export type UserInput = {
     id: number;
     username: string;
@@ -9,6 +8,15 @@ export type UserInput = {
     password: string;
     role: Role;
     alreadycustomer: boolean;
+};
+
+export type PhotoInput = {
+    id: number;
+    photoAlbumId: number;
+    title: string;
+    url: string;
+    explanation: string;
+    credits: string;
 };
 
 export type UserJWTInput = {
@@ -30,7 +38,7 @@ interface User {
     alreadycustomer: boolean;
 }
 
-export interface Photos {
+export interface Photo {
     id: number;
     albumId: number;
     title: string;
@@ -44,7 +52,14 @@ export interface PhotoAlbum {
     photographer: User;
     photographedUser: User;
     albumname: string;
-    photos: Photos[];
+    photos: Photo[];
+}
+export interface PhotoAlbumType {
+    id: number;
+    photographer: User;
+    photographedUser: User;
+    albumname: string;
+    photos: Photo[];
 }
 
 export type AuthenticationResponse = {

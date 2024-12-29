@@ -1,7 +1,7 @@
 import { PhotoAlbum } from '../../../../model/photoalbum';
 import { User } from '../../../../model/user';
 import { Role } from '../../../../types';
-import { Photos } from '../../../../model/photos';
+import { Photo } from '../../../../model/photo';
 
 test('given: valid values for photoalbum, when: creating a photoalbum, then: photoalbum is being created', () => {
     // Given
@@ -28,12 +28,12 @@ test('given: valid values for photoalbum, when: creating a photoalbum, then: pho
         alreadycustomer: false,
     });
 
-    const validPhoto = new Photos({
+    const validPhoto = new Photo({
         id: 1,
-        albumId: 1,
+        photoAlbumId: 1,
         title: "Family",
         url: "www.photo.com",
-        explenation: "Family photo",
+        explanation: "Family photo",
         credits: "Family",
     });    
 

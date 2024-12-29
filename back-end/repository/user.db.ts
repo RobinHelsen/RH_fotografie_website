@@ -1,7 +1,7 @@
-import { create } from 'domain';
 import { User } from '../model/user';
 import database from '../util/database';
-import { get } from 'http';
+//import { get } from 'http';
+//import { create } from 'domain';
 
 const getAllUsers = async (): Promise<User[]> => {
     try {
