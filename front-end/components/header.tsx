@@ -32,16 +32,22 @@ const Header: React.FC = () => {
           {t('header.nav.home')}
         </Link>
 
+        <Link
+          href="/portfolioOverviewPage"
+          className="px-4 text-white text-xl hover:bg-gray-600 rounded-lg">
+          Portfolio
+        </Link>
+
         {!loggedInUser && (
           <Link
-            href="/login"
+            href="/loginPage"
             className="px-4  text-white text-xl hover:bg-gray-600 rounded-lg">
             {t('header.nav.login')}
           </Link>
         )}
         {loggedInUser && (
           <a
-            href="/login"
+            href="/loginPage"
             onClick={handleClick}
             className="px-4  text-white text-xl hover:bg-gray-600 rounded-lg">
             {t('header.nav.logout')}

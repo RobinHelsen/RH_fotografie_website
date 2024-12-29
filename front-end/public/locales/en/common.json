@@ -23,5 +23,11 @@
   "home": {
     "title": "Good luck with the exam!",
     "description": ""
+  },
+
+  "albums": {
+    "title": "my portfolio",
+    "H1": "My Portfolio",
+    "p": "Click on the preview to see more details about the albums."
   }
 }

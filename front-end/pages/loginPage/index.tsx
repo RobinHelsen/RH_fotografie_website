@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 
-const Login: React.FC = () => {
+const LoginPage: React.FC = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -31,4 +31,4 @@ export const getServerSideProps = async (context: { locale: any }) => {
   };
 };
 
-export default Login;
+export default LoginPage;
