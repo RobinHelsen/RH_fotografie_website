@@ -20,15 +20,6 @@ export class PhotoAlbum {
         this.albumname = photoalbum.albumname;
         this.photos = photoalbum.photos || [];
     }
-    /* // DOES THE SAME BUT NOT AS READABLE
-    constructor({ id, photographer, photographedUser, albumname, photos}: { id: number; photographer: User; photographedUser: User; albumname: string; photos: Photos[]; }) {
-        this.validate({id, photographer, photographedUser, albumname, photos});
-        this.id = id;
-        this.photographer = photographer;
-        this.photographedUser = photographedUser;
-        this.albumname = albumname;
-        this.photos = photos;
-    }*/
 
     validate(photoalbum: { id: number; photographer: User; photographedUser: User; albumname: string; photos: Photo[]; }) {
         if (!photoalbum.photographer) {

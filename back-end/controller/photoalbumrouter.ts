@@ -13,5 +13,15 @@ photoAlbumRouter.get('/', async (req: Request, res: Response, next: NextFunction
     }
 });
 
+photoAlbumRouter.post('/', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const photoAlbumInput = <PhotoAlbumInput>req.body;
+        const photoAlbum = await photoAlbumService.createPhotoAlbum(photoAlbumInput);
+        res.status(201).json(photoAlbum);
+    } catch (error) {
+        next(error);
+    }
+});
+
 export { photoAlbumRouter };
 

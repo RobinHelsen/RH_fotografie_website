@@ -1,5 +1,5 @@
 export type UserInput = {
-    id: number;
+    id?: number; // ID optional for input types
     username: string;
     firstname: string;
     lastname: string;
@@ -11,20 +11,20 @@ export type UserInput = {
 };
 
 export type PhotoInput = {
-    id: number;
-    photoAlbumId: number;
+    id?: number; // ID optional for new photos
+    photoAlbumId?: number; // Optional for photos not linked to an album
     title: string;
     url: string;
-    explanation: string;
+    explanation: string; // Fixed spelling
     credits: string;
 };
 
 export type PhotoAlbumInput = {
-    id: number;
-    photographer: User;
-    photographedUser: User;
+    id?: number; // Optional ID for input types
+    photographerId: number; // Use IDs instead of full User object
+    photographedUserId: number; // Use IDs instead of full User object
     albumname: string;
-    photos: Photo[];
+    photos?: PhotoInput[]; // Optional and aligned with `PhotoInput`
 };
 
 export type UserJWTInput = {
@@ -34,7 +34,7 @@ export type UserJWTInput = {
     role?: Role;
 };
 
-interface User {
+export interface User {
     id: number;
     username: string;
     firstname: string;
@@ -48,24 +48,17 @@ interface User {
 
 export interface Photo {
     id: number;
-    albumId: number;
+    albumId?: number; // Matches `PhotoInput` structure
     title: string;
     url: string;
-    explenation: string;
+    explanation: string; // Fixed spelling
     credits: string;
 }
 
 export interface PhotoAlbum {
     id: number;
-    photographer: User;
-    photographedUser: User;
-    albumname: string;
-    photos: Photo[];
-}
-export interface PhotoAlbumType {
-    id: number;
-    photographer: User;
-    photographedUser: User;
+    photographer: User; // Full user object for the domain model
+    photographedUser: User; // Full user object for the domain model
     albumname: string;
     photos: Photo[];
 }
