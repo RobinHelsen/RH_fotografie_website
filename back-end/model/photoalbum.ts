@@ -1,6 +1,7 @@
 import { Photo } from '../model/photo';
 import { User } from '../model/user';
 import { PhotoAlbum as PhotoAlbumPrisma } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 export class PhotoAlbum {
@@ -42,6 +43,35 @@ export class PhotoAlbum {
         if (!Array.isArray(photoalbum.photos)) {
             throw new Error('Photos must be an array.');
         }
+    }
+
+    static async from(photoAlbumPrisma: PhotoAlbumPrisma): Promise<PhotoAlbum> {
+        const { id, photographerId, photographedUserId, albumname } = photoAlbumPrisma;
+    
+        // Fetch related entities
+        const [photographer, photographedUser] = await Promise.all([
+            prisma.user.findUnique({ where: { id: photographerId } }),
+            prisma.user.findUnique({ where: { id: photographedUserId } }),
+        ]);
+    
+        if (!photographer) {
+            throw new Error(`Photographer with ID ${photographerId} not found.`);
+        }
+        if (!photographedUser) {
+            throw new Error(`Photographed User with ID ${photographedUserId} not found.`);
+        }
+    
+        // Fetch photos associated with the album
+        const photos = await prisma.photo.findMany({ where: { photoAlbumId: id } });
+    
+        // Map raw Prisma data to model classes
+        return new PhotoAlbum({
+            id,
+            photographer: User.from(photographer), // Transform raw user data into User instance
+            photographedUser: User.from(photographedUser), // Transform raw user data into User instance
+            albumname,
+            photos: photos.map(photo => Photo.from(photo)), // Transform raw photos into Photo instances
+        });
     }
     
     // GETTERS

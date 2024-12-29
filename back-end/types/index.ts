@@ -19,6 +19,14 @@ export type PhotoInput = {
     credits: string;
 };
 
+export type PhotoAlbumInput = {
+    id: number;
+    photographer: User;
+    photographedUser: User;
+    albumname: string;
+    photos: Photo[];
+};
+
 export type UserJWTInput = {
     id?: number;
     username?: string;

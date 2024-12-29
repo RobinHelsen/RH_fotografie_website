@@ -7,6 +7,7 @@ import swaggerUi from 'swagger-ui-express';
 import { expressjwt } from 'express-jwt';
 import { userRouter } from './controller/user.routes';
 import { photoRouter} from './controller/photo.router';
+import { photoAlbumRouter } from './controller/photoalbumrouter';
 
 const app = express();
 
@@ -34,6 +35,7 @@ app.use(
 
 app.use('/users', userRouter);
 app.use('/photo', photoRouter);
+app.use('/photoalbums', photoAlbumRouter);
 
 app.get('/status', (req, res) => {
     res.json({ message: 'Backend API is running...' });

@@ -2,13 +2,13 @@ import { Photo as Photoprisma } from '@prisma/client';
 
 export class Photo {
     private id: number;
-    private photoAlbumId?: number; // Made optional
+    private photoAlbumId?: number | null; // Made optional
     private title: string;
     private url: string;
     private explanation: string;
     private credits: string;
 
-    constructor(photo: { id: number; photoAlbumId?: number; title: string; url: string; explanation: string; credits: string; }) {
+    constructor(photo: { id: number; photoAlbumId?: number | null; title: string; url: string; explanation: string; credits: string; }) {
         this.validate(photo);
 
         this.id = photo.id;
@@ -19,7 +19,7 @@ export class Photo {
         this.credits = photo.credits;
     }
 
-    validate(photo: { id: number; photoAlbumId?: number; title: string; url: string; explanation: string; credits: string; }) {
+    validate(photo: { id: number; photoAlbumId?: number | null; title: string; url: string; explanation: string; credits: string; }) {
         if (!photo.id) {
             throw new Error('ID is required but was not given.');
         }

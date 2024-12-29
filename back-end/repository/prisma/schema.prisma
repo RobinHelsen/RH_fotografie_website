@@ -24,13 +24,13 @@ model User {
 
 model Photo {
   id            Int        @id @default(autoincrement())
-  photoAlbumId  Int
+  photoAlbumId  Int?       // Optional field
   title         String
   url           String
   explanation   String
   credits       String
   // Relations
-  photoAlbum    PhotoAlbum @relation(fields: [photoAlbumId], references: [id], onDelete: Cascade)
+  photoAlbum    PhotoAlbum? @relation(fields: [photoAlbumId], references: [id], onDelete: Cascade)
 }
 
 model PhotoAlbum {
@@ -43,4 +43,5 @@ model PhotoAlbum {
   photographer       User    @relation("Photographer", fields: [photographerId], references: [id], onDelete: Cascade)
   photographedUser   User    @relation("PhotographedUser", fields: [photographedUserId], references: [id], onDelete: Cascade)
 }
+
 
