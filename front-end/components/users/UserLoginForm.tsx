@@ -57,7 +57,6 @@ const UserLoginForm: React.FC = () => {
         'loggedInUser',
         JSON.stringify({
           token: user.token,
-          fullname: user.fullname,
           username: user.username,
           role: user.role,
         })
