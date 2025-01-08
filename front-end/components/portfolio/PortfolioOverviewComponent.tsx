@@ -6,30 +6,34 @@ import { StatusMessage } from '@types';
 import { useTranslation } from 'next-i18next';
 
 import { FotoAlbum } from '@types';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 type Props = {
   fotoalbums: FotoAlbum[];
 };
 
 const PortfolioOverviewComponent: React.FC<Props> = ({ fotoalbums }) => {
+
+  const { t } = useTranslation();
+
   return (
     <div>
-      <h1>Portfolio Overview</h1>
+      <h1>{t('albums.overview')}</h1>
       {fotoalbums.map((album) => (
         <div key={album.id} style={{ border: '1px solid #ddd', padding: '10px', marginBottom: '10px' }}>
-          <h2>Album: {album.albumname}</h2>
+          <h2>{t('albums.name')}: {album.albumname}</h2>
           <p>
-            <strong>Photographer:</strong> {album.photographer.firstname} {album.photographer.lastname} (
+            <strong>{t('albums.photographer')}</strong> {album.photographer.firstname} {album.photographer.lastname} (
             {album.photographer.email})
           </p>
           <p>
-            <strong>Photographed User:</strong> {album.photographedUser.firstname} {album.photographedUser.lastname} (
+            <strong>{t('albums.photographeduser')}</strong> {album.photographedUser.firstname} {album.photographedUser.lastname} (
             {album.photographedUser.email})
           </p>
 
           {album.photos.length > 0 ? (
             <div>
-              <h3>Photos:</h3>
+              <h3>{t('albums.photos.photos')}</h3>
               <ul>
                 {album.photos.map((photo) => (
                   <li key={photo.id}>
@@ -39,13 +43,13 @@ const PortfolioOverviewComponent: React.FC<Props> = ({ fotoalbums }) => {
                       style={{ maxWidth: '150px', display: 'block', marginBottom: '5px' }}
                     />
                     <p>
-                      <strong>Title:</strong> {photo.title}
+                      <strong>{t('albums.photos.title')}</strong> {photo.title}
                     </p>
                     <p>
-                      <strong>Description:</strong> {photo.explanation}
+                      <strong>{t('albums.photos.description')}</strong> {photo.explanation}
                     </p>
                     <p>
-                      <strong>Credits:</strong> {photo.credits}
+                      <strong>{t('albums.photos.credits')}</strong> {photo.credits}
                     </p>
                   </li>
                 ))}

@@ -6,7 +6,10 @@
     "nav": {
       "home": "Home",
       "login": "Login",
-      "logout": "Logout"
+      "logout": "Logout",
+      "portfolio": "Portfolio",
+      "create": "Create",
+      "language": "Language"
     }
   },
   "login": {
@@ -27,7 +30,16 @@
 
   "albums": {
     "title": "my portfolio",
+    "name": "Name",
     "H1": "My Portfolio",
-    "p": "Click on the preview to see more details about the albums."
+    "overview": "Overview",
+    "photographer": "Photographer",
+    "photographeduser": "Photographed User",
+    "photos": {
+      "photos": "Photos",
+      "title": "Photos",
+      "description": "Description",
+      "credits": "Credits"
+    } 
   }
 }

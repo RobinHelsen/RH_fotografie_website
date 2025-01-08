@@ -8,7 +8,10 @@
       "teams": "Grupos",
       "coaches": "Entrenadores",
       "login": "Conéctese",
-      "logout": "Cerrar sesión"
+      "logout": "Cerrar sesión",
+      "portfolio": "Portafolio",
+      "create": "Crear",
+      "language": "Idioma"
     }
   },
   "login": {
@@ -24,5 +27,20 @@
   "home": {
     "title": "Bienvenido!",
     "description": "Cursos le permite ver como profesor todos los cursos que está impartiendo y como alumno todos los cursos en los que está matriculado. También puede ver cuándo están programados los cursos y los alumnos matriculados en cada curso."
+  },
+
+  "albums": {
+    "title": "mi portafolio",
+    "name": "Nombre",
+    "H1": "Mi Portafolio",
+    "overview": "Resumen",
+    "photographer": "Fotógrafo",
+    "photographeduser": "Usuario Fotografiado",
+    "photos": {
+      "photos": "Fotos",
+      "title": "Fotos",
+      "description": "Descripción",
+      "credits": "Créditos"
+    }
   }
 }

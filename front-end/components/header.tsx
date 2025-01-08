@@ -2,6 +2,7 @@ import { User } from '@types';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Language from '@components/language';
 
 const Header: React.FC = () => {
   const [loggedInUser, setLoggedInUser] = useState<User | null>(null);
@@ -35,7 +36,13 @@ const Header: React.FC = () => {
         <Link
           href="/portfolioOverviewPage"
           className="px-4 text-white text-xl hover:bg-gray-600 rounded-lg">
-          Portfolio
+          {t('header.nav.portfolio')}
+        </Link>
+
+        <Link
+          href="/createPortfolioPage"
+          className="px-4 text-white text-xl hover:bg-gray-600 rounded-lg">
+          {t('header.nav.create')}
         </Link>
 
         {!loggedInUser && (
@@ -58,6 +65,7 @@ const Header: React.FC = () => {
             {t('header.welcome')}, {loggedInUser.username}!
           </div>
         )}
+        <Language />
       </nav>
     </header>
   );
