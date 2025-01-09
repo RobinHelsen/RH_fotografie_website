@@ -1,3 +1,4 @@
+import { get } from 'http';
 import { PhotoAlbum } from '../model/photoalbum';
 import database from '../util/database';
 
@@ -5,6 +6,23 @@ const getAllPhotoAlbums = async (): Promise<PhotoAlbum[]> => {
     try {
         const photoAlbumsPrisma = await database.photoAlbum.findMany();
         return Promise.all(photoAlbumsPrisma.map(async (photoAlbumPrisma) => await PhotoAlbum.from(photoAlbumPrisma)));
+    } catch (error) {
+        console.error(error);
+        throw new Error('Database error. See server log for details.');
+    }
+};
+
+const getPhotoAlbumById = async (id: number): Promise<PhotoAlbum> => {
+    try {
+        const photoAlbumPrisma = await database.photoAlbum.findUnique({
+            where: { id },
+        });
+
+        if (!photoAlbumPrisma) {
+            throw new Error('Photo album not found.');
+        }
+
+        return PhotoAlbum.from(photoAlbumPrisma);
     } catch (error) {
         console.error(error);
         throw new Error('Database error. See server log for details.');
@@ -45,6 +63,7 @@ const createPhotoAlbum = async (photoAlbum: PhotoAlbum): Promise<PhotoAlbum> => 
 export default {
     getAllPhotoAlbums,
     getNewIncrementedId,
-    createPhotoAlbum
+    createPhotoAlbum,
+    getPhotoAlbumById
 };
 

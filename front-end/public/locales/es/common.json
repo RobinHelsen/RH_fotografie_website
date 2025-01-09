@@ -41,6 +41,17 @@
       "title": "Fotos",
       "description": "Descripción",
       "credits": "Créditos"
+    },
+    "details": {
+      "fetchError": "Error al obtener datos",
+      "title": "Detalles",
+      "description": "Descripción",
+      "credits": "Créditos",
+      "loading": "Cargando...",
+      "photographer": "Fotógrafo",
+      "photographeduser": "Usuario Fotografiado",
+      "photos": "Fotos",
+      "noPhotos": "No hay fotos"
     }
   }
 }

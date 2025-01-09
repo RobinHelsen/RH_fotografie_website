@@ -13,6 +13,16 @@ photoAlbumRouter.get('/', async (req: Request, res: Response, next: NextFunction
     }
 });
 
+photoAlbumRouter.get('/:id', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const id = parseInt(req.params.id);
+        const photoAlbum = await photoAlbumService.getPhotoAlbumById(id);
+        res.status(200).json(photoAlbum);
+    } catch (error) {
+        next(error);
+    }
+});
+
 photoAlbumRouter.post('/', async (req: Request, res: Response, next: NextFunction) => {
     try {
         const photoAlbumInput = <PhotoAlbumInput>req.body;
@@ -22,6 +32,8 @@ photoAlbumRouter.post('/', async (req: Request, res: Response, next: NextFunctio
         next(error);
     }
 });
+
+
 
 export { photoAlbumRouter };
 

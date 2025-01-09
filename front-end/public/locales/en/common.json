@@ -40,6 +40,17 @@
       "title": "Photos",
       "description": "Description",
       "credits": "Credits"
+    },
+    "details": {
+      "fetchError": "Error fetching data",
+      "title": "Details",
+      "description": "Description",
+      "credits": "Credits",
+      "loading": "Loading...",
+      "photographer": "Photographer",
+      "photographeduser": "Photographed User",
+      "photos": "Photos",
+      "noPhotos": "No photos"
     } 
   }
 }

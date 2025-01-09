@@ -69,24 +69,24 @@ const main = async () => {
     // Seed photos
     const photos = [
         {
-            photoAlbumId: photoAlbums[0]?.id, // Nature Collection
-            title: 'Sunset in the Mountains',
-            url: 'https://example.com/photos/sunset-mountains.jpg',
-            explanation: 'A beautiful sunset captured in the mountain ranges.',
+            photoAlbumId: photoAlbums[0]?.id,
+            title: 'Allyway in Lisbon',
+            url: 'http://localhost:3000/images/DSC07318.jpg',
+            explanation: 'My friends waling down an alleyway in Lisbon, Portugal.',
             credits: 'John Doe',
         },
         {
-            photoAlbumId: photoAlbums[0]?.id, // Nature Collection
-            title: 'Forest Trail',
-            url: 'https://example.com/photos/forest-trail.jpg',
-            explanation: 'A serene trail through the dense forest.',
+            photoAlbumId: photoAlbums[0]?.id,
+            title: 'Street in lisbon',
+            url: 'http://localhost:3000/images/DSC08761-2.jpg',
+            explanation: 'A cool street in Lisbon, Portugal. with water and mountains in the background.',
             credits: 'Jane Smith',
         },
         {
-            photoAlbumId: photoAlbums[1]?.id, // Urban Landscapes
+            photoAlbumId: photoAlbums[0]?.id,
             title: 'City Lights',
-            url: 'https://example.com/photos/city-lights.jpg',
-            explanation: 'A mesmerizing view of city lights at night.',
+            url: 'http://localhost:3000/images/DSC08849.jpg',
+            explanation: 'A unique angle shot of a building in the city of Lisbon.',
             credits: 'Sam Taylor',
         },
         {

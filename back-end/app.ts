@@ -17,6 +17,9 @@ const port = process.env.APP_PORT || 3000;
 app.use(cors({ origin: 'http://localhost:8080' }));
 app.use(bodyParser.json());
 
+// Serve static files from the "images" directory
+app.use('/images', express.static('images'));
+
 app.use(
     expressjwt({
         secret: process.env.JWT_SECRET || 'default_secret',

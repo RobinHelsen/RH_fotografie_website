@@ -7,6 +7,15 @@ const getAllPhotoAlbums = async (): Promise<PhotoAlbum[]> => {
     return await photoAlbumDb.getAllPhotoAlbums();
 };
 
+const getPhotoAlbumById = async (id: number): Promise<PhotoAlbum> => {
+    const photoAlbum = await photoAlbumDb.getPhotoAlbumById(id);
+
+    if (!photoAlbum) {
+        throw new Error('Photo album not found.');
+    }
+    return photoAlbum;
+}
+
 const createPhotoAlbum = async ({ photographerId, photographedUserId, albumname }: PhotoAlbumInput): Promise<PhotoAlbum> => {
     // Fetch users by ID
     const photographerFromDb = await userDb.getUserById({ id: photographerId }); // Ensure { id: number } format
@@ -35,6 +44,7 @@ const createPhotoAlbum = async ({ photographerId, photographedUserId, albumname 
 
 export default {
     getAllPhotoAlbums,
+    getPhotoAlbumById,
     createPhotoAlbum,
 };
 

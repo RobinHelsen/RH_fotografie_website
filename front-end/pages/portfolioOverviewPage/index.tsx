@@ -17,7 +17,7 @@ const portfolioOverviewPage: React.FC = () => {
 
   const fetchFotoAlbums = async () => {
     setLoading(true);
-    const result = await FotoAlbumService.getAllFotoAlbums();
+    const result = await FotoAlbumService.getAllFotoAlbum();
     if (result.error) {
       setError(result.error);
     } else {
