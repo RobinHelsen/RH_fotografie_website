@@ -1,16 +1,31 @@
 {
-  "app.title": "Examen App 3",
-  "general.error": "error",
+  "app.title": "R.H_photography",
+  "app.error": "Basis foutmelding",
 
   "header": {
     "nav": {
-      "title": "Home",
-      "reviews": "Reviews",
       "portfolio": "Mijn Portfolio",
+      "reviews": "Reviews",
       "aboutme": "Over mij",
-      "contact": "Contact",
-      "language": "Taal"
+      "pricing": "Tarieven",
+      "contact": "Contact"
     }
+  },
+  "portfolio": {
+    "H1":"Niet overtuigd ?",
+    "description1":"hier kan je mijn recente werk terugvinden"
+  },
+  "reviews": {
+    "H1":"Reviews"
+  },
+  "aboutme": {
+    "H1":"Over Mij"
+  },
+  "pricing": {
+    "H1":"tarieven"
+  },
+  "contact": {
+    "H1":"Contact"
   }
 }
 

@@ -1,14 +1,30 @@
 {
-  "app.title": "Examen App 3",
-  "general.error": "error",
+  "app.title": "R.H_photography",
+  "app.error": "General error",
 
-  "home": {
-    "description": "Test",
-    "title": "Testtitile"
-  },
   "header": {
     "nav": {
-      "language": "Taal"
+      "portfolio": "My Portfolio",
+      "reviews": "Reviews",
+      "aboutme": "About Me",
+      "pricing": "Pricing",
+      "contact": "Contact"
     }
+  },
+  "portfolio": {
+    "H1":"Not convinced ?",
+    "description1":"here you can find my recent work"
+  },
+  "reviews": {
+    "H1":"Reviews"
+  },
+  "aboutme": {
+    "H1":"About me"
+  },
+  "pricing": {
+    "H1":"Pricing"
+  },
+  "contact": {
+    "H1":"Contact"
   }
 }

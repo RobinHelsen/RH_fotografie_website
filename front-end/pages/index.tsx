@@ -17,21 +17,30 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
-      <main className="text-center md:mt-24 mx-auto md:w-3/5 lg:w-1/2">
-        <span className="flex flex-row justify-center items-center">
-          <Image
-            src="/images/courses.png"
-            alt="Courses Logo"
-            className={styles.vercelLogo}
-            width={50}
-            height={50}
-          />
-          <h1 className="pl-6 text-4xl text-gray-800">{t('home.title')}</h1>
-        </span>
+      {/* Hero section */}
+      <section className="relative w-full h-[60vh]">
+        <img src="/images/mountains.jpg" alt="background" className="w-full h-full object-cover"/>
 
-        <div className="mt-6">
-          <p>{t('home.description')}</p>
-        </div>
+        <h1 className="
+          absolute
+          left-1/2
+          top-1/4
+          -translate-x-1/2
+          -translate-y-1/2
+          text-4xl md:text-5xl lg:text-6xl
+          font-semibold
+          text-white
+          drop-shadow-lg
+        ">
+          {t('portfolio.H1')}
+        </h1>
+
+
+      </section>
+
+      {/* Content below hero */}
+      <main className="text-center mt-12 mx-auto md:w-3/5 lg:w-1/2">
+        <p>{t('portfolio.description1')}</p>
       </main>
     </>
   );

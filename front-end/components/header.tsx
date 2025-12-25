@@ -15,7 +15,8 @@ export default function Header() {
 
   return (
 
-    <header className="w-full border-b bg-white shadow-sm">
+    <header className="w-full border-b border-black bg-gray-100 shadow-sm">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between py-4">
         
         <span className="flex items-center gap-2 text-2xl font-semibold text-gray-800 mb-2 md:mb-0 cursor-default">
@@ -29,7 +30,7 @@ export default function Header() {
             href="/"
             className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
           >
-            {t('header.nav.title')}
+            {t('header.nav.portfolio')}
           </Link>
           <Link
             href="/reviews"
@@ -38,16 +39,16 @@ export default function Header() {
             {t('header.nav.reviews')}
           </Link>
           <Link
-            href="/portfolio"
-            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
-          >
-            {t('header.nav.portfolio')}
-          </Link>
-          <Link
             href="/aboutme"
             className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
           >
             {t('header.nav.aboutme')}
+          </Link>
+          <Link
+            href="/pricing"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {t('header.nav.pricing')}
           </Link>
           <Link
             href="/contact"
