@@ -1,0 +1,16 @@
+{
+  "app.title": "Examen App 3",
+  "general.error": "error",
+
+  "header": {
+    "nav": {
+      "title": "Home",
+      "reviews": "Reviews",
+      "portfolio": "Mijn Portfolio",
+      "aboutme": "Over mij",
+      "contact": "Contact",
+      "language": "Taal"
+    }
+  }
+}
+

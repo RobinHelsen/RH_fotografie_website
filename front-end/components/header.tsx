@@ -1,74 +1,78 @@
-import { User } from '@types';
-import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import Language from '@components/language';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { CameraIcon } from "@heroicons/react/24/outline";
 
-const Header: React.FC = () => {
-  const [loggedInUser, setLoggedInUser] = useState<User | null>(null);
+export default function Header() {
 
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
+  const router = useRouter();
+  const { locale, pathname, asPath, query } = router;
 
-  useEffect(() => {
-    const loggedInUserString = localStorage.getItem('loggedInUser');
-    if (loggedInUserString !== null) {
-      setLoggedInUser(JSON.parse(loggedInUserString));
-    }
-  }, []);
-
-  const handleClick = () => {
-    localStorage.removeItem('loggedInUser');
-    setLoggedInUser(null);
+  const changeLanguage = (lng: string) => {
+    router.push({ pathname, query }, asPath, { locale: lng });
   };
 
   return (
-    <header className="p-3 mb-3 border-bottom bg-gradient-to-br from-gray-900 to-gray-600 flex flex-col items-center">
-      <a className="flex  mb-2 md:mb-5 text-white-50 text-3xl text-gray-300">
-        {t('app.title')}
-      </a>
-      <nav className="items-center flex md:flex-row flex-col">
-        <Link
-          href="/"
-          className=" px-4 text-xl text-white  hover:bg-gray-600 rounded-lg">
-          {t('header.nav.home')}
-        </Link>
 
-        <Link
-          href="/portfolioOverviewPage"
-          className="px-4 text-white text-xl hover:bg-gray-600 rounded-lg">
-          {t('header.nav.portfolio')}
-        </Link>
+    <header className="w-full border-b bg-white shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between py-4">
+        
+        <span className="flex items-center gap-2 text-2xl font-semibold text-gray-800 mb-2 md:mb-0 cursor-default">
+          <CameraIcon className="w-8 h-8 text-gray-800" />
+          R.H_photography
+        </span>
 
-        <Link
-          href="/createPortfolioPage"
-          className="px-4 text-white text-xl hover:bg-gray-600 rounded-lg">
-          {t('header.nav.create')}
-        </Link>
-
-        {!loggedInUser && (
+        {/* Static Navigation */}
+        <nav className="flex items-center gap-4 relative">
           <Link
-            href="/loginPage"
-            className="px-4  text-white text-xl hover:bg-gray-600 rounded-lg">
-            {t('header.nav.login')}
+            href="/"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {t('header.nav.title')}
           </Link>
-        )}
-        {loggedInUser && (
-          <a
-            href="/loginPage"
-            onClick={handleClick}
-            className="px-4  text-white text-xl hover:bg-gray-600 rounded-lg">
-            {t('header.nav.logout')}
-          </a>
-        )}
-        {loggedInUser && (
-          <div className="text-white ms-5 mt-2 md:mt-0 pt-1 md:pt-0 grow">
-            {t('header.welcome')}, {loggedInUser.username}!
+          <Link
+            href="/reviews"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {t('header.nav.reviews')}
+          </Link>
+          <Link
+            href="/portfolio"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {t('header.nav.portfolio')}
+          </Link>
+          <Link
+            href="/aboutme"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {t('header.nav.aboutme')}
+          </Link>
+          <Link
+            href="/contact"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {t('header.nav.contact')}
+          </Link>
+
+          <div className="flex gap-2 ml-4">
+            <button
+              onClick={() => changeLanguage("nl")}
+              className={locale === "nl" ? "font-bold underline" : ""}
+            >
+              NL
+            </button>
+            <button
+              onClick={() => changeLanguage("en")}
+              className={locale === "en" ? "font-bold underline" : ""}
+            >
+              EN
+            </button>
           </div>
-        )}
-        <Language />
-      </nav>
+          
+        </nav>
+      </div>
     </header>
   );
-};
-
-export default Header;
+}

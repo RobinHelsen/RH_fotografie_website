@@ -1,7 +1,6 @@
 import Header from '@components/header';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import PortfolioOvervieuwComponent from '@components/portfolio/PortfolioOverviewComponent';
 import Head from 'next/head';
 
 import FotoAlbumService from '@services/FotoAlbumService';
@@ -45,21 +44,9 @@ const portfolioOverviewPage: React.FC = () => {
 
         {loading && <p className="text-gray-500 text-center">Loading fotoAlbums...</p>}
         {error && <p className="text-red-500 text-center">{error}</p>}
-
-        {!loading && !error && <PortfolioOvervieuwComponent fotoalbums={album} />}
       </main>
     </>
   );
-};
-
-export const getServerSideProps = async (context: { locale: any }) => {
-  const { locale } = context;
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
-    },
-  };
 };
 
 export default portfolioOverviewPage;

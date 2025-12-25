@@ -1,45 +1,14 @@
 {
-  "app.title": "Exam App",
-  "general.error": "An error has occurred. Please try again later.",
-  "header": {
-    "welcome": "Welcome",
-    "nav": {
-      "home": "Home",
-      "login": "Login",
-      "logout": "Logout",
-      "portfolio": "Portfolio",
-      "create": "Create",
-      "language": "Language"
-    }
-  },
-  "login": {
-    "title": "Login",
-    "button": "Login",
-    "success": "Login succesful. Redirecting to ...",
-    "validate": {
-      "name": "Name is required",
-      "password": "Password is required"
-    },
-    "label": { "username": "Username:", "password": "Password:" }
-  },
+  "app.title": "Examen App 3",
+  "general.error": "error",
 
   "home": {
-    "title": "Good luck with the exam!",
-    "description": ""
+    "description": "Test",
+    "title": "Testtitile"
   },
-
-  "albums": {
-    "title": "my portfolio",
-    "name": "Name",
-    "H1": "My Portfolio",
-    "overview": "Overview",
-    "photographer": "Photographer",
-    "photographeduser": "Photographed User",
-    "photos": {
-      "photos": "Photos",
-      "title": "Photos",
-      "description": "Description",
-      "credits": "Credits"
-    } 
+  "header": {
+    "nav": {
+      "language": "Taal"
+    }
   }
 }
