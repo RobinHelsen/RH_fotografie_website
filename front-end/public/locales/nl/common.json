@@ -12,8 +12,12 @@
     }
   },
   "portfolio": {
-    "H1":"Niet overtuigd ?",
-    "description1":"hier kan je mijn recente werk terugvinden"
+    "H1":"Mijn Portfolio",
+    "description1":"hier kan je mijn recente werk terugvinden",
+    "ibiza": {
+      "title": "Ibiza",
+      "description": "Beschrijving van Ibiza"
+    }
   },
   "reviews": {
     "H1":"Reviews"

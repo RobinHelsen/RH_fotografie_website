@@ -12,8 +12,12 @@
     }
   },
   "portfolio": {
-    "H1":"Not convinced ?",
-    "description1":"here you can find my recent work"
+    "H1":"My Portfolio",
+    "description1":"here you can find my recent work",
+    "ibiza": {
+      "title": "Ibiza",
+      "description": "Description of Ibiza"
+    }
   },
   "reviews": {
     "H1":"Reviews"
