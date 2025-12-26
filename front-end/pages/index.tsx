@@ -1,10 +1,44 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import Header from '@components/header';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const router = useRouter();
+
+  const handleIbizaClick = () => {
+    router.push('/ibiza');
+  };
+
+  const handleBoJasperClick = () => {
+    router.push('/bo-jasper');
+  };
+
+  const handleKruiwagenkoersClick = () => {
+    router.push('/kruiwagenkoers');
+  };
+
+  const handleKvhvshoot1Click = () => {
+    router.push('/kvhvp1');
+  };
+
+  const handleCharlotteClick = () => {
+    router.push('/charlotte');
+  };
+
+  const handleLiesjeClick = () => {
+    router.push('/liesje');
+  };
+
+  const handlePicosClick = () => {
+    router.push('/picos');
+  };
+
+  const handleSpanjeClick = () => {
+    router.push('/spanje');
+  };
 
   return (
     <>
@@ -14,17 +48,13 @@ const Home: React.FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
-
       <main>
         <section className="relative w-full">
           <img src="/images/mountains.jpg" alt="Mountains" className="w-full object-cover" />
-
           <h1 className="absolute top-[15%] left-1/2 -translate-x-1/2 text-4xl md:text-5xl lg:text-6xl font-semibold text-white drop-shadow-lg text-center">
             {t('portfolio.H1')}
           </h1>
-
           <p className="absolute top-[25%] left-1/2 -translate-x-1/2 font-semibold text-white drop-shadow-lg text-center">
             {t('portfolio.description1')}
           </p>
@@ -32,27 +62,189 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/boats.jpg" alt="Boats" className="w-full object-cover" />
-
-          {/* Overlay panel */}
-          <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-[90%] md:w-2/3 lg:w-1/2 bg-black/50 backdrop-blur-sm p-6 md:p-10 text-center rounded-lg">
-            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
-              {t('portfolio.ibiza.title')}
-            </h2>
-
-            <p className="text-white mb-6">
-              {t('portfolio.ibiza.description')}
-            </p>
-
-            <button className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-md hover:bg-gray-200 transition">
-              {t('portfolio.seeMore')}
+          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.ibiza.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.ibiza.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handleIbizaClick}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
             </button>
           </div>
         </section>
 
-        
-      </main>
+        <section className="relative w-full">
+          <img src="/images/bo&jappeshoot.jpg" alt="Boats" className="w-full object-cover" />
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.bo&jasper.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.bo&jasper.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handleBoJasperClick}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+            </button>
+          </div>
+        </section>
 
-      
+        <section className="relative w-full">
+          <img src="/images/kvhvshoot1.jpg" alt="Boats" className="w-full object-cover" />
+          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.kvhvshoot1.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.kvhvshoot1.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handleKvhvshoot1Click}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+            </button>
+          </div>
+        </section>
+
+        <section className="relative w-full">
+          <img src="/images/charlotte.jpg" alt="Boats" className="w-full object-cover" />
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.charlotte.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.charlotte.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handleCharlotteClick}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+            </button>
+          </div>
+        </section>
+
+        <section className="relative w-full">
+          <img src="/images/picos.jpg" alt="Boats" className="w-full object-cover" />
+          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.picos.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.picos.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handlePicosClick}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+            </button>
+          </div>
+        </section>
+
+        <section className="relative w-full">
+          <img src="/images/spanje.jpg" alt="Boats" className="w-full object-cover" />
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.spanje.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.spanje.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handleSpanjeClick}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+            </button>
+          </div>
+        </section>
+
+        <section className="relative w-full">
+          <img src="/images/liesje.jpg" alt="Boats" className="w-full object-cover" />
+          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.liesje.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.liesje.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handleLiesjeClick}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+            </button>
+          </div>
+        </section>
+
+        <section className="relative w-full">
+          <img src="/images/kruiwagenkoers 2025.jpg" alt="Boats" className="w-full object-cover" />
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.kruiwagenkoers.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.kruiwagenkoers.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handleKruiwagenkoersClick}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+            </button>
+          </div>
+        </section>
+
+      </main>
     </>
   );
 };

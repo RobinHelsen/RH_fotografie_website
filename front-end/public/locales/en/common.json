@@ -14,9 +14,38 @@
   "portfolio": {
     "H1":"My Portfolio",
     "description1":"here you can find my recent work",
+    "seeMorePhotos": "See more photos",
     "ibiza": {
       "title": "Ibiza",
-      "description": "Description of Ibiza"
+      "description": "In 2025 I went to Ibiza with a few friends, where I was able to take some beautiful photos. "
+    },
+    "bo&jasper": {
+      "title": "Bo & Jasper",
+      "description": "This was a shoot of a beautiful couple who wanted some unique photos."
+    },
+    "kruiwagenkoers": {
+      "title": "Wheelbarrow Race",
+      "description": "A cool local event where a heavy wheelbarrow is raced through a course."
+    },
+    "kvhvshoot1": {
+      "title": "KVHV Shoot 1",
+      "description": "A photoshoot with some members of the KVHV in Ghent."
+    },
+    "spanje": {
+      "title": "Spain",
+      "description": "During a trip to Spain, I was able to take these photos."
+    },
+    "charlotte": {
+      "title": "Charlotte",
+      "description": "A photoshoot with Charlotte at a beautiful location."
+    },
+    "liesje": {
+      "title": "Liesje",
+      "description": "A photoshoot with Liesje in a natural setting."
+    },
+    "picos": {
+      "title": "Picos de Europa",
+      "description": "During my trip to the Picos de Europa, I captured these breathtaking landscapes."
     }
   },
   "reviews": {

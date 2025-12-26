@@ -14,9 +14,38 @@
   "portfolio": {
     "H1":"Mijn Portfolio",
     "description1":"hier kan je mijn recente werk terugvinden",
+    "seeMorePhotos": "Bekijk meer foto's",
     "ibiza": {
       "title": "Ibiza",
-      "description": "Beschrijving van Ibiza"
+      "description": "In 2025 ben ik met een paar vrienden naar Ibiza geweest, hier heb ik een aantal prachtige foto's kunnen maken. "
+    },
+    "bo&jasper": {
+      "title": "Bo & Jasper",
+      "description": "Dit was een shoot van een prachtig kopel die graag wat unieke foto's wilde hebben."
+    },
+    "kruiwagenkoers": {
+      "title": "Kruiwagenkoers",
+      "description": "Een tof lokaal evenement waarbij er met loodzware kruiwagen een parcours wordt afgelegd."
+    },
+    "kvhvshoot1": {
+      "title": "KVHV Shoot 1",
+      "description": "Een fotoshoot met enkele leden van het KVHV in Gent."
+    },
+    "spanje": {
+      "title": "Spanje",
+      "description": "Tijdens een reis naar Spanje heb ik deze foto's kunnen maken."
+    },
+    "charlotte": {
+      "title": "Charlotte",
+      "description": "Een fotoshoot met Charlotte op een mooie locatie."
+    },
+    "liesje": {
+      "title": "Liesje",
+      "description": "Een fotoshoot met Liesje in een natuurlijke omgeving."
+    },
+    "picos": {
+      "title": "Picos de Europa",
+      "description": "Tijdens mijn reis naar de Picos de Europa heb ik deze adembenemende landschappen vastgelegd."
     }
   },
   "reviews": {
