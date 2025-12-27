@@ -55,7 +55,37 @@
     "H1":"Over Mij"
   },
   "pricing": {
-    "H1":"tarieven"
+    "title": "Tarieven",
+    "description": "Transparante en eerlijke prijzen voor fotografie.",
+    "hour": "uur",
+    "hours": "uur",
+    "base": {
+      "title": "Basisbedrag",
+      "note": "starttarief per boeking"
+    },
+    "hourly": {
+      "title": "Uurtarieven",
+      "duration": "Duur",
+      "price": "Prijs",
+      "extra": "Extra uren"
+    },
+    "extras": {
+      "title": "Extra kosten",
+      "travel": "Vervoerskosten zijn de letterlijke kosten van de verplaatsing bijvoorbeeld benzine of kaartjes voor openbaar vervoer."
+    },
+    "example": {
+      "title": "Voorbeeldberekening",
+      "booking": "Boeking van 2 uur",
+      "base": "Basisbedrag: €20,-",
+      "hours": "2 uur fotografie: €40,-",
+      "travel": "Vervoerskost benzine: €5,-",
+      "total": "Totaal: €65,-"
+    },
+    "notes": {
+      "custom": "Prijzen zijn indicatief en kunnen aangepast worden op maat van de opdracht.",
+      "editing": "Fotobewerking achteraf zit inbegrepen in de prijs.",
+      "refund": "Niet tevreden? GELD TERUG! (min vervoerskosten)."
+    }
   },
   "contact": {
     "H1":"Contact"

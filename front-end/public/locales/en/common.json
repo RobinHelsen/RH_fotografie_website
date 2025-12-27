@@ -55,7 +55,37 @@
     "H1":"About me"
   },
   "pricing": {
-    "H1":"Pricing"
+    "title": "Pricing",
+    "description": "Clear and fair pricing for photography services.",
+    "hour": "hour",
+    "hours": "hours",
+    "base": {
+    "title": "Base fee",
+    "note": "starting fee per booking"
+    },
+    "hourly": {
+    "title": "Hourly rates",
+    "duration": "Duration",
+    "price": "Price",
+    "extra": "Additional hours"
+    },
+    "extras": {
+    "title": "Additional costs",
+    "travel": "Travel expenses"
+    },
+    "example": {
+    "title": "Example calculation",
+    "booking": "Booking of 4 hours",
+    "base": "Base fee: €20,-",
+    "hours": "4 hours photography: €65,-",
+    "travel": "Fuel cost: €5,-",
+    "total": "Total: €90,-"
+    },
+    "notes": {
+    "custom": "Prices are indicative and can be adjusted to the assignment.",
+    "editing": "Photo editing is included in the price.",
+    "refund": "Not satisfied? MONEY BACK! (excluding travel costs)."
+    }
   },
   "contact": {
     "H1":"Contact"
