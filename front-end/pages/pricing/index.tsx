@@ -26,7 +26,7 @@ const Pricing: React.FC = () => {
           alt="Mountains" 
           className="w-full h-full object-cover" 
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/10 to-white/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/10 to-black/50"></div>
       </div>
 
       <main className="min-h-screen py-20 px-6">
@@ -42,7 +42,7 @@ const Pricing: React.FC = () => {
           <div className="space-y-8">
             
             {/* Base Price */}
-            <div className="bg-white/95 p-10 border border-gray-200">
+            <div className="bg-white/95 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
               <div className="flex items-baseline gap-4 mb-3">
                 <span className="text-5xl font-light text-gray-900">€20</span>
                 <span className="text-gray-500">{t('pricing.base.title')}</span>
@@ -53,8 +53,8 @@ const Pricing: React.FC = () => {
             </div>
 
             {/* Hourly Rates */}
-            <div className="bg-white/95 p-10 border border-gray-200">
-              <h2 className="text-2xl font-light text-gray-900 mb-8">
+            <div className="bg-white/95 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+              <h2 className="text-2xl font-light text-gray-900 mb-8 -ml-6">
                 {t('pricing.hourly.title')}
               </h2>
               
@@ -83,8 +83,8 @@ const Pricing: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8">
               
               {/* Extra Costs */}
-              <div className="bg-white/95 p-10 border border-gray-200">
-                <h2 className="text-2xl font-light text-gray-900 mb-6">
+              <div className="bg-white/95 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+                <h2 className="text-2xl font-light text-gray-900 mb-6 -ml-6">
                   {t('pricing.extras.title')}
                 </h2>
                 <p className="text-gray-600">
@@ -93,8 +93,8 @@ const Pricing: React.FC = () => {
               </div>
 
               {/* Example */}
-              <div className="bg-white/95 p-10 border border-gray-200">
-                <h2 className="text-2xl font-light text-gray-900 mb-6">
+              <div className="bg-white/95 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+                <h2 className="text-2xl font-light text-gray-900 mb-6 -ml-6">
                   {t('pricing.example.title')}
                 </h2>
                 <div className="space-y-3 text-sm text-gray-600 mb-6">
@@ -110,7 +110,7 @@ const Pricing: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white/95 p-10 border border-gray-200">
+            <div className="bg-white/95 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
               <div className="space-y-4 text-sm text-gray-600">
                 <p>{t('pricing.notes.custom')}</p>
                 <p>{t('pricing.notes.editing')}</p>
