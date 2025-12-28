@@ -49,10 +49,70 @@
     }
   },
   "reviews": {
-    "H1":"Reviews"
+    "pageTitle": "Reviews",
+    "title": "Reviews",
+    "subtitle": "What clients say about my work",
+    "review1": {
+      "text": "Absolutely fantastic! The photos turned out beautifully and exceeded my expectations. The atmosphere during the shoot was relaxed and professional. Highly recommended!",
+      "type": "Portrait Photography"
+    },
+    "review2": {
+      "text": "Very satisfied with the end result. Good communication beforehand, arrived on time, and the photos are exactly what I was looking for. Definitely recommend for those seeking quality.",
+      "type": "Event Photography"
+    },
+    "stats": {
+      "title": "Statistics",
+      "total": "Happy clients",
+      "rating": "Average rating",
+      "recommend": "Would recommend me"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Get in touch and let's create something beautiful together.",
+      "button": "Book a Shoot"
+    }
   },
-  "aboutme": {
-    "H1":"About me"
+  "about": {
+    "pageTitle": "About Me",
+    "title": "About Me",
+    "subtitle1": "Photographer",
+    "subtitle2": "Software-Developer",
+    "subtitle3": "Abstract music enthusiast (ambassador)",
+    "subtitle4": "Hike/Nature enjoyer",
+
+    "photography": {
+      "title": "Photography",
+      "intro": "Photography is my way of telling stories without words. Every image I capture carries an emotion, a moment, a memory that reaches beyond what the eye can see.",
+      "passion": "My passion lies in capturing authentic moments—whether it's an intimate portrait, a breathtaking landscape, or a candid street shot. I believe in finding beauty in simplicity and creating images that resonate with the soul.",
+      "style": "My style is characterized by natural light, honest compositions, and a focus on what's real. I love working with people who want to show their story as it truly is—without embellishment, but with character and depth.",
+      "quote": "\"A good photograph is one that makes you feel, think, and want to keep looking. It's a moment frozen in time, but alive in emotion.\""
+    },
+    "it": {
+      "title": "IT & Development",
+      "intro": "Beyond photography, I have a strong passion for technology and web development. I love building things from scratch and bringing ideas to life through code—it's another form of creativity.",
+      "website": "This website was entirely coded by me using modern web technologies. I built it as a React application using:",
+      "blend": "Combining my technical skills with my creative background allows me to create unique digital experiences that are both beautiful and functional. Code is art, just like photography."
+    },
+    "music": {
+      "title": "Abstract Music",
+      "intro": "Music is my third form of expression. I'm fascinated by abstract and experimental music—sounds that push boundaries, challenge conventions, and explore new sonic landscapes.",
+      "exploration": "From ambient to glitch, from drone to IDM, from noise to electroacoustic—I find inspiration in music that challenges, that asks for active listening, and that creates space for personal interpretation and discovery.",
+      "connection": "This love for abstract music also influences my photography work in subtle ways. Both art forms are about capturing mood, texture, and emotion in unconventional ways—about making the invisible visible.",
+      "quote": "\"In abstraction, we find space to create our own meaning. What's chaos to one is perfect harmony to another.\""
+    },
+    "hike": {
+      "title": "Hiking & Nature",
+      "intro": "Hiking and being in nature is another passion of mine. It allows me to disconnect from the hustle and bustle of daily life and reconnect with the natural world.",
+      "exploration": "Exploring trails, mountains, and forests not only provides physical exercise but also inspires my creativity. The beauty of nature often finds its way into my photography, influencing my perspective and approach.",
+      "connection": "Spending time outdoors helps me recharge and gain new insights, which I then bring back to my work—whether it's through photography, coding, or music.",
+      "quote": "\"Nature is not a place to visit. It is home.\""
+    },
+    "cta": {
+      "title": "Let's Work Together",
+      "subtitle": "Interested in a photoshoot, a collaborative project, or just a conversation about photography, code, or music? I'd love to hear from you.",
+      "contact": "Get In Touch",
+      "pricing": "View Pricing"
+    }
   },
   "pricing": {
     "title": "Pricing",
@@ -71,23 +131,50 @@
     },
     "extras": {
     "title": "Additional costs",
-    "travel": "Travel expenses"
+    "travel": "Travel costs are the actual expenses of transportation such as fuel or public transport tickets."
     },
     "example": {
     "title": "Example calculation",
-    "booking": "Booking of 4 hours",
+    "booking": "Booking of 2 hours",
     "base": "Base fee: €20,-",
-    "hours": "4 hours photography: €65,-",
+    "hours": "2 hours photography: €40,-",
     "travel": "Fuel cost: €5,-",
-    "total": "Total: €90,-"
+    "total": "Total: €65,-"
     },
     "notes": {
     "custom": "Prices are indicative and can be adjusted to the assignment.",
-    "editing": "Photo editing is included in the price.",
-    "refund": "Not satisfied? MONEY BACK! (excluding travel costs)."
+    "editing": "Photo editing is included in the price."
     }
   },
+
   "contact": {
-    "H1":"Contact"
+    "pageTitle": "Contact",
+    "title": "Contact",
+    "subtitle": "Get in touch for availability and bookings",
+    "email": {
+      "title": "Email"
+    },
+    "phone": {
+      "title": "Phone"
+    },
+    "instagram": {
+      "title": "Instagram"
+    },
+    "location": {
+      "title": "Location",
+      "area": "Putte, Flanders, Belgium",
+      "note": "Available for shoots throughout Belgium and the southern Netherlands"
+    },
+    "availability": {
+      "title": "Availability",
+      "text": "availability is highly variable. Generally, I am more available on weekends. For specific dates, feel free to send me a message.",
+      "appointment": "By appointment",
+      "response": "Response time:",
+      "hours": "as soon as possible !"
+    },
+    "notes": {
+      "preferred": "For the fastest response, feel free to contact me via Instagram DM or a message on my number.",
+      "looking": "I look forward to hearing from you!"
+    }
   }
 }
