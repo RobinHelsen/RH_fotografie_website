@@ -28,31 +28,31 @@ export default function Header() {
         <nav className="flex items-center gap-4 relative">
           <Link
             href="/"
-            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-900 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
           >
             {t('header.nav.portfolio')}
           </Link>
           <Link
             href="/reviews"
-            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-900 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
           >
             {t('header.nav.reviews')}
           </Link>
           <Link
             href="/aboutme"
-            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-900 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
           >
             {t('header.nav.aboutme')}
           </Link>
           <Link
             href="/pricing"
-            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-900 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
           >
             {t('header.nav.pricing')}
           </Link>
           <Link
             href="/contact"
-            className="relative px-3 py-2 text-gray-700 hover:text-blue-700 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full"
+            className="relative px-3 py-2 text-gray-700 hover:text-blue-900 text-sm font-medium font-bold transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
           >
             {t('header.nav.contact')}
           </Link>
