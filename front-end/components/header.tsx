@@ -17,7 +17,7 @@ export default function Header() {
 
     <header className="w-full border-b border-black bg-gray-100 shadow-sm">
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between py-4">
+      <div className="w-full px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between py-4">
         
         <span className="flex items-center gap-2 text-2xl font-semibold text-gray-800 mb-2 md:mb-0 cursor-default">
           <CameraIcon className="w-8 h-8 text-gray-800" />
