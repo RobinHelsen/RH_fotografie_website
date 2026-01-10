@@ -50,7 +50,7 @@ const Reviews: React.FC = () => {
 
           <div className="mb-10">
             <div>
-              <h1 className="text-6xl md:text-7xl font-light text-gray-900 mb-4 tracking-tight">
+              <h1 className="text-6xl md:text-7xl font-serif font-normal text-white mb-4 tracking-tight italic drop-shadow-lg">
                 {t('reviews.title')}
               </h1>
             </div>
@@ -62,19 +62,19 @@ const Reviews: React.FC = () => {
             {reviews.map((review, index) => (
               <div 
                 key={index}
-                className="bg-white/90 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]"
+                className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10"
               >
                 {/* Review Text */}
-                <p className="text-gray-700 leading-relaxed mb-6 italic">
+                <p className="text-white leading-relaxed mb-6 italic">
                   "{t(review.text)}"
                 </p>
 
                 {/* Reviewer Info */}
-                <div className="pt-4 border-t border-gray-200">
-                  <p className="text-gray-900 font-medium mb-1">
+                <div className="pt-4 border-t border-white/20">
+                  <p className="text-white font-medium mb-1">
                     {review.name}
                   </p>
-                  <div className="flex items-center gap-3 text-sm text-gray-500">
+                  <div className="flex items-center gap-3 text-sm text-stone-300">
                     <span>{review.date}</span>
                     <span>•</span>
                     <span>{t(review.type)}</span>
@@ -84,33 +84,35 @@ const Reviews: React.FC = () => {
             ))}
 
             {/* Statistics Card */}
-            <div className="bg-white/90 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-              <h2 className="text-3xl font-light text-gray-900 mb-8 -ml-6">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-8 italic -ml-5">
                 {t('reviews.stats.title')}
               </h2>
               
               <div className="space-y-6">
-                <div className="flex justify-between items-baseline border-b border-gray-100 pb-4">
-                  <span className="text-gray-600">{t('reviews.stats.total')}</span>
-                  <span className="text-3xl font-light text-gray-900">2</span>
+                <div className="flex justify-between items-baseline border-b border-white/20 pb-4">
+                  <span className="text-stone-300">{t('reviews.stats.total')}</span>
+                  <span className="text-3xl font-light text-white">2</span>
                 </div>
               </div>
             </div>
 
             {/* CTA Card */}
-            <div className="bg-white/90 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-              <h3 className="text-2xl font-light text-gray-900 mb-4 -ml-6">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
+              <h3 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('reviews.cta.title')}
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-stone-300 mb-6 leading-relaxed">
                 {t('reviews.cta.subtitle')}
               </p>
-              <a 
-                href="/contact" 
-                className="inline-block px-8 py-3 bg-gray-900 text-white font-light hover:bg-gray-800 transition-colors"
+              <button 
+                className="group self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
               >
-                {t('reviews.cta.button')}
-              </a>
+                <a href="/contact" className="relative z-10">
+                  {t('reviews.cta.button')}
+                </a>
+                <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+              </button>
             </div>
 
           </div>

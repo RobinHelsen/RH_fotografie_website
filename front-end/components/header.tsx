@@ -37,7 +37,7 @@ export default function Header() {
           <img 
             src="/images/logo.png" 
             alt="R.H Photography Logo" 
-            className={`w-auto brightness-0 invert group-hover:opacity-80 transition-all duration-300 ${
+            className={`w-auto group-hover:opacity-80 transition-all duration-300 ${
               isExpanded ? 'h-12' : 'h-7'
             }`}
           />

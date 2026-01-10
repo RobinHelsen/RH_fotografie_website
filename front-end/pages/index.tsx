@@ -52,10 +52,10 @@ const Home: React.FC = () => {
       <main>
         <section className="relative w-full">
           <img src="/images/mountains.jpg" alt="Mountains" className="w-full object-cover" />
-          <h1 className="absolute top-[15%] left-1/2 -translate-x-1/2 text-4xl md:text-5xl lg:text-6xl font-semibold text-white drop-shadow-lg text-center">
+            <h1 className="absolute top-[15%] left-1/2 -translate-x-1/2 text-6xl md:text-7xl font-serif font-normal text-stone-200 mb-6 tracking-tight italic drop-shadow-lg">
             {t('portfolio.H1')}
           </h1>
-          <p className="absolute top-[25%] left-1/2 -translate-x-1/2 font-semibold text-white drop-shadow-lg text-center">
+          <p className="absolute top-[27%] left-1/2 -translate-x-1/2 font-semibold text-stone-200 drop-shadow-lg text-center">
             {t('portfolio.description1')}
           </p>
         </section>

@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
         <div className="max-w-3xl mx-auto">
 
           <div className="mb-10">
-            <h1 className="text-6xl md:text-7xl font-light text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-6xl md:text-7xl font-serif font-normal text-white mb-6 tracking-tight italic drop-shadow-lg">
               {t('contact.title')}
             </h1>
           </div>
@@ -42,13 +42,13 @@ const Contact: React.FC = () => {
           <div className="space-y-8">
             
             {/* Email */}
-            <div className="bg-white/85 px-10 py-6 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-              <h2 className="text-2xl font-light text-gray-900 mb-4 -ml-6">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 px-6 md:px-10 py-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('contact.email.title')}
               </h2>
               <a 
                 href="mailto:robin.helsen.rh@gmail.com" 
-                className="text-gray-600 hover:text-gray-900 transition-colors text-lg"
+                className="text-stone-300 hover:text-white transition-colors text-lg"
               >
                 robin.helsen.rh@gmail.com
               </a>
@@ -58,28 +58,28 @@ const Contact: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8">
               
               {/* Phone */}
-              <div className="bg-white/85 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-                <h2 className="text-2xl font-light text-gray-900 mb-4 -ml-6">
+              <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                   {t('contact.phone.title')}
                 </h2>
                 <a 
                   href="tel:+32123456789" 
-                  className="text-gray-600 hover:text-gray-900 transition-colors text-lg"
+                  className="text-stone-300 hover:text-white transition-colors text-lg"
                 >
                   +32 492 39 37 99
                 </a>
               </div>
 
               {/* Instagram */}
-              <div className="bg-white/85 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-                <h2 className="text-2xl font-light text-gray-900 mb-4 -ml-6">
+              <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                   {t('contact.instagram.title')}
                 </h2>
                 <a 
                   href="https://instagram.com/r.h_phtgrphy" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-900 transition-colors text-lg"
+                  className="text-stone-300 hover:text-white transition-colors text-lg"
                 >
                   @r.h_phtgrphy
                 </a>
@@ -87,44 +87,44 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Location */}
-            <div className="bg-white/85 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-              <h2 className="text-2xl font-light text-gray-900 mb-4 -ml-6">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('contact.location.title')}
               </h2>
-              <p className="text-gray-600 text-lg mb-2">
+              <p className="text-stone-300 text-lg mb-2 leading-relaxed">
                 {t('contact.location.area')}
               </p>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-stone-400">
                 {t('contact.location.note')}
               </p>
             </div>
 
             {/* Availability */}
-            <div className="bg-white/85 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-              <h2 className="text-2xl font-light text-gray-900 mb-6 -ml-6">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-6 italic -ml-5">
                 {t('contact.availability.title')}
               </h2>
               <div className="space-y-3">
-                <div className="flex justify-between items-baseline border-b border-gray-100 pb-3">
-                  <p className="text-sm text-gray-500">
+                <div className="flex justify-between items-baseline border-b border-white/20 pb-3">
+                  <p className="text-sm text-stone-400">
                     {t('contact.availability.text')} 
                   </p>
                 </div>
                 <div className="flex justify-between items-baseline pt-2">
-                  <span className="text-gray-600">{t('contact.availability.response')}</span>
-                  <span className="text-gray-900">{t('contact.availability.hours')}</span>
+                  <span className="text-stone-300">{t('contact.availability.response')}</span>
+                  <span className="text-white">{t('contact.availability.hours')}</span>
                 </div>
               </div>
             </div>
 
             {/* Contact Form Note */}
-            <div className="bg-white/85 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-              <div className="space-y-4 text-gray-600">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+              <div className="space-y-4 text-stone-300 leading-relaxed">
                 <p>
                   {t('contact.notes.preferred')}
                 </p>
-                <div className="pt-4 border-t border-gray-200">
-                  <p className="text-gray-900 font-medium">
+                <div className="pt-4 border-t border-white/20">
+                  <p className="text-white font-medium">
                     {t('contact.notes.looking')}
                   </p>
                 </div>

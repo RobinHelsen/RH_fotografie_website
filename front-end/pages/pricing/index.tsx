@@ -1,4 +1,4 @@
-// pages/index.tsx (refined minimal pricing)
+// pages/pricing.tsx
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from '@components/header';
@@ -33,7 +33,7 @@ const Pricing: React.FC = () => {
         <div className="max-w-3xl mx-auto">
 
           <div className="mb-10">
-            <h1 className="text-6xl md:text-7xl font-light text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-6xl md:text-7xl font-serif font-normal text-white mb-6 tracking-tight italic drop-shadow-lg">
               {t('pricing.title')}
             </h1>
           </div>
@@ -42,19 +42,19 @@ const Pricing: React.FC = () => {
           <div className="space-y-8">
             
             {/* Base Price */}
-            <div className="bg-white/90 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
               <div className="flex items-baseline gap-4 mb-3">
-                <span className="text-5xl font-light text-gray-900">€20</span>
-                <span className="text-gray-500">{t('pricing.base.title')}</span>
+                <span className="text-5xl font-light text-white">€20</span>
+                <span className="text-stone-400">{t('pricing.base.title')}</span>
               </div>
-              <p className="text-gray-600 text-sm">
+              <p className="text-stone-300 text-sm">
                 {t('pricing.base.note')}
               </p>
             </div>
 
             {/* Hourly Rates */}
-            <div className="bg-white/90 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-              <h2 className="text-2xl font-light text-gray-900 mb-8 -ml-6">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-8 italic -ml-5">
                 {t('pricing.hourly.title')}
               </h2>
               
@@ -64,15 +64,15 @@ const Pricing: React.FC = () => {
                   { duration: `2 ${t('pricing.hours')}`, price: '€40' },
                   { duration: `3 ${t('pricing.hours')}`, price: '€55' },
                 ].map((item, i) => (
-                  <div key={i} className="flex justify-between items-baseline border-b border-gray-100 pb-3">
-                    <span className="text-gray-600">{item.duration}</span>
-                    <span className="text-2xl font-light text-gray-900">{item.price}</span>
+                  <div key={i} className="flex justify-between items-baseline border-b border-white/20 pb-3">
+                    <span className="text-stone-300">{item.duration}</span>
+                    <span className="text-2xl font-light text-white">{item.price}</span>
                   </div>
                 ))}
                 
                 <div className="flex justify-between items-baseline pt-4">
-                  <span className="text-gray-900">{t('pricing.hourly.extra')}</span>
-                  <span className="text-2xl font-light text-gray-900">€10 / {t('pricing.hour')}</span>
+                  <span className="text-white">{t('pricing.hourly.extra')}</span>
+                  <span className="text-2xl font-light text-white">€10 / {t('pricing.hour')}</span>
                 </div>
               </div>
             </div>
@@ -81,35 +81,37 @@ const Pricing: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8">
               
               {/* Extra Costs */}
-              <div className="bg-white/90 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-                <h2 className="text-2xl font-light text-gray-900 mb-6 -ml-6">
+              <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-6 italic -ml-5">
                   {t('pricing.extras.title')}
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-stone-300 leading-relaxed">
                   {t('pricing.extras.travel')}
                 </p>
               </div>
 
               {/* Example */}
-              <div className="bg-white/90 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-                <h2 className="text-2xl font-light text-gray-900 mb-6 -ml-6">
+              <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-6 italic -ml-5">
                   {t('pricing.example.title')}
                 </h2>
-                <div className="space-y-3 text-sm text-gray-600 mb-6">
+                <div className="space-y-3 text-sm text-stone-300 mb-6">
                   <p>{t('pricing.example.booking')}</p>
-                  <div className="space-y-1 pl-4 border-l-2 border-gray-200">
+                  <div className="space-y-1 pl-4 border-l-2 border-white/30">
                     <p>{t('pricing.example.base')}</p>
                     <p>{t('pricing.example.hours')}</p>
                     <p>{t('pricing.example.travel')}</p>
                   </div>
                 </div>
-                <p className="text-2xl font-light text-gray-900">
+                <p className="text-2xl font-light text-white">
                   {t('pricing.example.total')}
                 </p>
               </div>
             </div>
-            <div className="bg-white/90 p-10 border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-              <div className="space-y-4 text-sm text-gray-600">
+
+            {/* Notes */}
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+              <div className="space-y-4 text-sm text-stone-300 leading-relaxed">
                 <p>{t('pricing.notes.custom')}</p>
                 <p>{t('pricing.notes.editing')}</p>
               </div>
