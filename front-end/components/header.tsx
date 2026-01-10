@@ -27,13 +27,13 @@ export default function Header() {
     <header className="w-full bg-stone-900/95 backdrop-blur-md sticky top-0 z-50">
       <div className="w-full px-6 lg:px-12 flex items-center justify-between py-5">
         
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <CameraIcon className="w-7 h-7 text-white group-hover:text-stone-300 transition-colors duration-300" />
-          <span className="text-xl font-light tracking-widest text-white uppercase">
-            R.H Photography
-          </span>
-        </Link>
+        <Link href="/" className="flex items-center group">
+        <img 
+          src="/images/logo.png" 
+          alt="R.H Photography Logo" 
+          className="h-full max-h-12 w-auto brightness-0 invert group-hover:opacity-80 transition-opacity duration-300" 
+        />
+      </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-1">
