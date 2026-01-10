@@ -62,7 +62,7 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/boats.jpg" alt="Boats" className="w-full object-cover" />
-          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('portfolio.ibiza.title')}
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/bo&jappeshoot.jpg" alt="Boats" className="w-full object-cover" />
-          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#fbe031] p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('portfolio.bo&jasper.title')}
@@ -108,7 +108,7 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/kvhvshoot1.jpg" alt="Boats" className="w-full object-cover" />
-          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#8C6B2E] p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('portfolio.kvhvshoot1.title')}
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/charlotte.jpg" alt="Boats" className="w-full object-cover" />
-          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#FAECC5] p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('portfolio.charlotte.title')}
@@ -154,7 +154,7 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/picos.jpg" alt="Boats" className="w-full object-cover" />
-          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#767976] p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('portfolio.picos.title')}
@@ -177,7 +177,7 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/spanje.jpg" alt="Boats" className="w-full object-cover" />
-          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#9bccd6] p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('portfolio.spanje.title')}
@@ -200,7 +200,7 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/liesje.jpg" alt="Boats" className="w-full object-cover" />
-          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <div className="absolute top-6 bottom-6 left-6 md:left-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#d8a15f] p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('portfolio.liesje.title')}
@@ -223,7 +223,7 @@ const Home: React.FC = () => {
 
         <section className="relative w-full">
           <img src="/images/kruiwagenkoers 2025.jpg" alt="Boats" className="w-full object-cover" />
-          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-black/50 backdrop-blur-md rounded-2xl p-6 md:p-10 flex flex-col justify-between">
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#748d55] p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('portfolio.kruiwagenkoers.title')}

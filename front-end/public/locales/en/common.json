@@ -53,8 +53,8 @@
     "title": "Reviews",
     "subtitle": "What clients say about my work",
     "review1": {
-      "text": "Absolutely fantastic! The photos turned out beautifully and exceeded my expectations. The atmosphere during the shoot was relaxed and professional. Highly recommended!",
-      "type": "Portrait Photography"
+      "text": "Very good and fast service! Photos were of very professional quality and communication with the photographer was smooth. Definitely recommended for a photoshoot!",
+      "type": "Portrait Photography & Event Photography"
     },
     "review2": {
       "text": "Very satisfied with the end result. Good communication beforehand, arrived on time, and the photos are exactly what I was looking for. Definitely recommend for those seeking quality.",
@@ -76,40 +76,40 @@
     "pageTitle": "About Me",
     "title": "About Me",
     "subtitle1": "Photographer",
-    "subtitle2": "Software-Developer",
-    "subtitle3": "Abstract music enthusiast (ambassador)",
-    "subtitle4": "Hike/Nature enjoyer",
+    "subtitle2": "IT & Software Developer",
+    "subtitle3": "Abstract Music Lover & Ambassador",
+    "subtitle4": "Hiking & Nature Enthusiast",
 
     "photography": {
       "title": "Photography",
-      "intro": "Photography is my way of telling stories without words. Every image I capture carries an emotion, a moment, a memory that reaches beyond what the eye can see.",
-      "passion": "My passion lies in capturing authentic moments—whether it's an intimate portrait, a breathtaking landscape, or a candid street shot. I believe in finding beauty in simplicity and creating images that resonate with the soul.",
-      "style": "My style is characterized by natural light, honest compositions, and a focus on what's real. I love working with people who want to show their story as it truly is—without embellishment, but with character and depth.",
-      "quote": "\"A good photograph is one that makes you feel, think, and want to keep looking. It's a moment frozen in time, but alive in emotion.\""
+      "intro": "Like many others, a passion for photography often starts small. For me, it began with always being the one who loved capturing everything my friends and I did together. During holidays I took tons of photos, and at some point I thought: now it's time for real quality photos.",
+      "passion": "I then invested heavily in a proper camera and started delving into the techniques behind photography with a full-fledged camera. Most of what I've learned is simply by doing... this is also the most fun because you learn what works and what doesn't, without just blindly following instructions.",
+      "style": "My style is characterized by always taking photos in between moments. This way, when a person is working towards a conscious pose, you actually capture the most natural photos in between. You'll often notice there's an unforced quality in the posture.",
+      "quote": "Experimenting often leads to the best results in my experience, so don't hesitate to make suggestions or come up with your own ideas! A combination of ideas from both sides often leads to the best photos."
     },
     "it": {
       "title": "IT & Development",
-      "intro": "Beyond photography, I have a strong passion for technology and web development. I love building things from scratch and bringing ideas to life through code—it's another form of creativity.",
-      "website": "This website was entirely coded by me using modern web technologies. I built it as a React application using:",
-      "blend": "Combining my technical skills with my creative background allows me to create unique digital experiences that are both beautiful and functional. Code is art, just like photography."
+      "intro": "Besides photography, I also have a passion for technology and IT. I enjoy working with new hardware & software technologies.",
+      "website": "For example, this website - I coded it entirely with modern tools. I built it as a React application using:",
+      "blend": "For this reason, I also know quite a lot about the technical specifications of cameras, lenses, and bodies. I've been diving deep into this recently. I also enjoy helping others find the right hardware for their needs."
     },
     "music": {
       "title": "Abstract Music",
-      "intro": "Music is my third form of expression. I'm fascinated by abstract and experimental music—sounds that push boundaries, challenge conventions, and explore new sonic landscapes.",
-      "exploration": "From ambient to glitch, from drone to IDM, from noise to electroacoustic—I find inspiration in music that challenges, that asks for active listening, and that creates space for personal interpretation and discovery.",
-      "connection": "This love for abstract music also influences my photography work in subtle ways. Both art forms are about capturing mood, texture, and emotion in unconventional ways—about making the invisible visible.",
-      "quote": "\"It probably sounds cliché but it truly remains one of the few places where I can say, without exaggeration, that I feel truly blissful.\""
+      "intro": "I personally love listening to abstract and often what many people consider harsh music. For some reason, these abrupt sounds give me a feeling of peace and happiness.",
+      "exploration": "My favorite genres are Drum & Bass & Dubstep: more often the experimental sides and less mainstream known subgenres. To name a few examples: 'neurofunk', 'riddim'.",
+      "connection": "I felt so connected to this music that I became an ambassador for one of the biggest event brands promoting this kind of music: 'Rampage'. Here I've met like-minded people who also find peace in this extreme chaos.",
+      "quote": "\"It probably sounds cliché, but it truly remains one of the few places where I can say without exaggeration that I feel genuinely happy to my core.\""
     },
     "hike": {
       "title": "Hiking & Nature",
-      "intro": "Hiking and being in nature is another passion of mine. It allows me to disconnect from the hustle and bustle of daily life and reconnect with the natural world.",
-      "exploration": "Exploring trails, mountains, and forests not only provides physical exercise but also inspires my creativity. The beauty of nature often finds its way into my photography, influencing my perspective and approach.",
-      "connection": "Spending time outdoors helps me recharge and gain new insights, which I then bring back to my work—whether it's through photography, coding, or music.",
-      "quote": "\"Nature is not a place to visit. It is home.\""
+      "intro": "Strangely enough, people who have a love for abstract music often also share a love for the abstractness in nature. For me, like many others, that's also the case.",
+      "exploration": "I'm someone who loves to test myself. I enjoy going on challenging hikes in nature where I can push myself physically and mentally. This gives me a sense of fulfillment.",
+      "connection": "Through my camera experience, I also love capturing these moments. When you can truly find such a perfect composition in nature, I find that absolutely amazing. You can find some of these photos in my portfolio - go have a look :)",
+      "quote": "\"Being away from civilization for a while really has something special - I'd say give it a try.\""
     },
     "cta": {
       "title": "Let's Work Together",
-      "subtitle": "Interested in a photoshoot, a collaborative project, or just a conversation about photography, code, or music? I'd love to hear from you.",
+      "subtitle": "Interested in a photoshoot, a project? I'd love to hear from you.",
       "contact": "Get In Touch",
       "pricing": "View Pricing"
     }

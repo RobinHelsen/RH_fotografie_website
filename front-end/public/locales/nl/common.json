@@ -53,8 +53,8 @@
     "title": "Reviews",
     "subtitle": "Wat klanten zeggen over mijn werk",
     "review1": {
-      "text": "Absoluut fantastisch! De foto's zijn prachtig geworden en overtreffen mijn verwachtingen. De sfeer tijdens de shoot was relaxed en professioneel. Aanrader!",
-      "type": "Portretfotografie"
+      "text": "Heel goede en snelle service! Foto's waren van zeer professionele kwaliteit en het was vlot communiceren met de fotograaf. Zeker aan te raden voor een fotoshoot!",
+      "type": "Portretfotografie & Evenement fotografie"
     },
     "review2": {
       "text": "Erg tevreden met het eindresultaat. Goede communicatie vooraf, op tijd aanwezig, en de foto's zijn precies wat ik zocht. Zeker aan te raden voor wie kwaliteit zoekt.",
@@ -93,31 +93,31 @@
       "intro": "Zoals bij velen begint een passie voor fotografie vaak klein. Voor mij begon het met dat ik altijd degene was die alles graag vastlegde wat ik en mijn vrienden samen deden. Tijdens vakanties maakte ik ontzettend veel foto’s en op een gegeven moment dacht ik: nu is het tijd voor echt kwalitatieve fotos.",
       "passion": "Ik heb dan sterk geinvesteerd in een degelijke camera en ben mezelf gaan verdiepen in de technieken achter fotografie met een volwaardige camera. Het meeste van wat ik geleerd heb is gewoon door te doen... dit is ook het leukste omdat je leert wat wel werkt en wat niet werkt. zonder gewoon blindelings instructies te volgen.",
       "style": "Mijn stijl kenmerkt zich door gebruik te maken van altijd tussendoor fotos te nemen. hierdoor wanneer een persoon zich naar een bewuste pose werkt maak je eigelijk tussendoor de natuurlijkste fotos. Je merkt dan nog vaak dat er een niet geforceerde zit in de houding.",
-      "quote": "Experimenteren levent vaak tot de beste resultaten in mijn ervaring dus durf suggesties te doen of zelf met ideeen te komen! combinatie van idee"
+      "quote": "Experimenteren levent vaak tot de beste resultaten in mijn ervaring dus durf suggesties te doen of zelf met ideeen te komen! combinatie van ideeen van beide kanten leidt vaak tot de beste fotos."
     },
     "it": {
       "title": "IT & Ontwikkeling",
       "intro": "Naast fotografie heb heb ook een passie voor technologie en IT. Ik ben graag bezig met nieuwe hardware & software technologieën.",
-      "website": "Bijvoorbeeld deze website, die heb ik volledig van 0 gecodeerd met moderne tools. Ik heb het gebouwd als een React-applicatie met behulp van:",
-      "blend": "Om deze reden ken ik ook enorm veel van de specs van camera's, lenzen, bodies ben ik mij recent enorm in gaan verdiepen. Ik help anderen ook graag bij het zoeken van de juiste hardware voor hun noden."
+      "website": "Bijvoorbeeld deze website, die heb ik volledig gecodeerd met moderne tools. Ik heb het gebouwd als een React-applicatie met behulp van:",
+      "blend": "Om deze reden ken ik ook best veel van de technische specificaties van camera's, lenzen en bodies. Hier ben ik mij recent enorm in gaan verdiepen. Ik help anderen ook graag bij het zoeken van de juiste hardware voor hun noden."
     },
     "music": {
       "title": "Abstracte Muziek",
-      "intro": "Ik luister zelf heel graag naar abstracte en vaak brutte muziek. Voor een of andere reden geven deze apbrupte geluiden mij een gevoel van rust en geluk.",
-      "exploration": "Mijn favoriete genres zijn drum & bass & Dubstep: vaker nog de meer experimentele kanten en minder mainstream gekende genres. en zwaardere subgenres om een paar voorbeelden te noemen: 'neurofunk', 'riddim'",
+      "intro": "Ik luister zelf heel graag naar abstracte en vaak voor vele mensen brutte muziek. Voor een of andere reden geven deze apbrupte geluiden mij een gevoel van rust en geluk.",
+      "exploration": "Mijn favoriete genres zijn Drum & Bass & Dubstep: vaker nog de meer experimentele kanten en minder mainstream gekende subgenres. Om een paar voorbeelden te noemen: 'neurofunk', 'riddim'",
       "connection": "Ik voelde mij zelf zo verbonden met deze muziek dat ik ambassadeur van een van het grooste eventmerken die dit soort muziek promoten 'Rampage' Hier heb ik gelijkdenkende mensen leren kennen die in deze extreme choas ook rust vinden. ",
       "quote": "\"Het klinkt waarschijnlijk cliché maar het blijft echt een van de weinige plekken waar ik zonder overdrijven kan zeggen dat ik me echt zielsgelukkig voel.\""
     },
     "hike": {
       "title": "Trektocht & Natuur",
       "intro": "Vreemd genoeg gaat mensen die een liefde hebben voor abstracte muziek vaak samen met een liefde voor de abstactheid in de natuur. Voor mij is dat net zoals velen ook zo.",
-      "exploration": "Het verkennen van paden, bergen en bossen biedt niet alleen fysieke oefening, maar inspireert ook mijn creativiteit. De schoonheid van de natuur vindt vaak zijn weg in mijn fotografie, wat mijn perspectief en aanpak beïnvloedt.",
-      "connection": "Tijd doorbrengen in de buitenlucht helpt me op te laden en nieuwe inzichten te krijgen, die ik vervolgens terugbreng naar mijn werk - of het nu via fotografie, coderen of muziek is.",
-      "quote": "\"Natuur is geen plek om te bezoeken. Het is thuis.\""
+      "exploration": "Ik ben iemand die mijzelf heel graag test, ik ga graag op uitndagende trektochten in de natuur waar ik mezelf fysiek en mentaal kan pushen. Dit geeft mij een gevoel van voldoening.",
+      "connection": "Door mijn camera ervaring leg ik deze momenten ook graag vast. Als je echt zo een perfecte compositie kan vinden in de natuur, dat vind ik echt geweldig. in mijn portfolio kan je een aantal van deze foto's terugvinden. ga maar eens kijken :)",
+      "quote": "\"Het even weg zijn van de beschaving heeft echt iets, geef het eens een kans zou ik zeggen.\""
     },
     "cta": {
       "title": "Laten We Samenwerken",
-      "subtitle": "Geïnteresseerd in een photoshoot, een samenwerkingsproject, of gewoon een gesprek over fotografie, code of muziek? Ik hoor graag van je.",
+      "subtitle": "Geïnteresseerd in een photoshoot, een project? Ik hoor graag van je.",
       "contact": "Neem Contact Op",
       "pricing": "Bekijk Prijzen"
     }

@@ -10,16 +10,14 @@ const Reviews: React.FC = () => {
 
   const reviews = [
     {
-      name: "Sarah De Vries",
-      date: "November 2024",
-      rating: 5,
+      name: "Marnix De Swert",
+      date: "November 2025",
       text: "reviews.review1.text",
       type: "reviews.review1.type"
     },
     {
       name: "Tom Janssens",
       date: "Oktober 2024",
-      rating: 5,
       text: "reviews.review2.text",
       type: "reviews.review2.type"
     }
@@ -94,7 +92,7 @@ const Reviews: React.FC = () => {
               <div className="space-y-6">
                 <div className="flex justify-between items-baseline border-b border-gray-100 pb-4">
                   <span className="text-gray-600">{t('reviews.stats.total')}</span>
-                  <span className="text-3xl font-light text-gray-900">5</span>
+                  <span className="text-3xl font-light text-gray-900">2</span>
                 </div>
               </div>
             </div>
