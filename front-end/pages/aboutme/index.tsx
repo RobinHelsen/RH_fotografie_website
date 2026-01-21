@@ -22,7 +22,7 @@ const About: React.FC = () => {
       {/* Background */}
       <div className="fixed inset-0 -z-10">
         <img 
-          src="/images/lissabon.jpg" 
+          src="/images/about.png" 
           alt="Background" 
           className="w-full h-full object-cover" 
         />
@@ -32,7 +32,7 @@ const About: React.FC = () => {
       <main className="min-h-screen py-20 px-6">
 
         <div className="text-center md:text-left flex-1 mb-10">
-          <h1 className="text-6xl md:text-7xl font-serif font-normal text-[#8b7154] mb-6 tracking-tight italic drop-shadow-lg">
+          <h1 className="text-6xl md:text-7xl font-serif font-normal text-white mb-6 tracking-tight italic drop-shadow-lg">
             {t('about.title')}
           </h1>
         </div>
@@ -72,7 +72,7 @@ const About: React.FC = () => {
           <div className="space-y-8">
             
             {/* Photography Section */}
-            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
               <div className="inline-flex items-center gap-3 mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
@@ -93,7 +93,7 @@ const About: React.FC = () => {
             </div>
 
             {/* IT Section */}
-            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
               <div className="inline-flex items-center gap-3 mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -106,7 +106,7 @@ const About: React.FC = () => {
                 <p>{t('about.it.intro')}</p>
                 <p>{t('about.it.website')}</p>
                 <div className="flex flex-wrap gap-2 py-4">
-                  {['HTML', 'CSS', 'Tailwind', 'JavaScript', 'React', 'Next.js'].map((tech) => (
+                  {['HTML', 'CSS', 'Tailwind', 'TypeScript', 'React', 'Next.js'].map((tech) => (
                     <span 
                       key={tech}
                       className="px-3 py-1 bg-white/10 text-stone-200 border border-white/20 text-sm"
@@ -120,7 +120,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Abstract Music Section */}
-            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
               <div className="inline-flex items-center gap-3 mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
@@ -140,7 +140,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Hike/Nature Enjoyer Section */}
-            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
               <div className="inline-flex items-center gap-3 mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 20l4.5-9 3.5 4 4-6 4 11H4z" />
@@ -163,7 +163,7 @@ const About: React.FC = () => {
           </div>
 
           {/* Bottom CTA */}
-          <div className="mt-12 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10 text-center">
+          <div className="mt-12 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10 text-center">
             <h3 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic">
               {t('about.cta.title')}
             </h3>
@@ -174,12 +174,6 @@ const About: React.FC = () => {
               <button className="group px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
                 <a href="/contact" className="relative z-10">
                   {t('about.cta.contact')}
-                </a>
-                <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-              </button>
-              <button className="group px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-                <a href="/pricing" className="relative z-10">
-                  {t('about.cta.pricing')}
                 </a>
                 <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
               </button>

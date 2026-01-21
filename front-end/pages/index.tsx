@@ -8,6 +8,10 @@ const Home: React.FC = () => {
   const { t } = useTranslation();
   const router = useRouter();
 
+  const handleNenaClick = () => {
+    router.push('/nena');
+  };
+
   const handleIbizaClick = () => {
     router.push('/ibiza');
   };
@@ -55,9 +59,29 @@ const Home: React.FC = () => {
             <h1 className="absolute top-[15%] left-1/2 -translate-x-1/2 text-6xl md:text-7xl font-serif font-normal text-stone-200 mb-6 tracking-tight italic drop-shadow-lg">
             {t('portfolio.H1')}
           </h1>
-          <p className="absolute top-[27%] left-1/2 -translate-x-1/2 font-semibold text-stone-200 drop-shadow-lg text-center">
-            {t('portfolio.description1')}
-          </p>
+        </section>
+
+        <section className="relative w-full">
+          <img src="/images/nena3.jpg" alt="Boats" className="w-full object-cover" />
+          <div className="absolute top-6 bottom-6 right-6 md:right-12 w-[85%] md:w-1/3 bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10 flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
+                {t('portfolio.nena.title')}
+              </h2>
+              <p className="text-white leading-relaxed">
+                {t('portfolio.nena.description')}
+              </p>
+            </div>
+            <button 
+              onClick={handleNenaClick}
+              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            >
+              <span className="relative z-10">
+                {t('portfolio.seeMorePhotos')}
+              </span>
+              <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
+            </button>
+          </div>
         </section>
 
         <section className="relative w-full">

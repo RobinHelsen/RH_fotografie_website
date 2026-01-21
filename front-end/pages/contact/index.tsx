@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
       {/* Background */}
       <div className="fixed inset-0 -z-10">
         <img 
-          src="/images/Blue3.jpg" 
+          src="/images/mountainBP.jpg" 
           alt="Mountains" 
           className="w-full h-full object-cover" 
         />
@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
           <div className="space-y-8">
             
             {/* Email */}
-            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 px-6 md:px-10 py-6">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] px-6 md:px-10 py-6">
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('contact.email.title')}
               </h2>
@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8">
               
               {/* Phone */}
-              <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+              <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
                 <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                   {t('contact.phone.title')}
                 </h2>
@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
               </div>
 
               {/* Instagram */}
-              <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+              <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
                 <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                   {t('contact.instagram.title')}
                 </h2>
@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Location */}
-            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-5">
                 {t('contact.location.title')}
               </h2>
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Availability */}
-            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
               <h2 className="text-3xl md:text-4xl font-serif font-normal text-white mb-6 italic -ml-5">
                 {t('contact.availability.title')}
               </h2>
@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Contact Form Note */}
-            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-slate-600 p-6 md:p-10">
+            <div className="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[ffffff] p-6 md:p-10">
               <div className="space-y-4 text-stone-300 leading-relaxed">
                 <p>
                   {t('contact.notes.preferred')}

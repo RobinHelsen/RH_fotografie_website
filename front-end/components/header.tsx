@@ -19,7 +19,6 @@ export default function Header() {
     { href: "/", label: t('header.nav.portfolio') },
     { href: "/reviews", label: t('header.nav.reviews') },
     { href: "/aboutme", label: t('header.nav.aboutme') },
-    { href: "/pricing", label: t('header.nav.pricing') },
     { href: "/contact", label: t('header.nav.contact') },
   ];
 

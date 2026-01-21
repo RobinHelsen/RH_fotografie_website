@@ -13,39 +13,42 @@
   },
   "portfolio": {
     "H1":"Mijn Portfolio",
-    "description1":"hier kan je mijn recente werk terugvinden",
     "seeMorePhotos": "Bekijk meer foto's",
     "ibiza": {
       "title": "Ibiza",
-      "description": "In 2025 ben ik met een paar vrienden naar Ibiza geweest, hier heb ik een aantal prachtige foto's kunnen maken. "
+      "description": "In 2025 ben ik met een paar vrienden naar Ibiza geweest, hier heb ik een enkele toffe foto's kunnen nemen. Het nachtleven echter niet. Er zijn wel wat leuke straatfotografie foto's uitgekomen waar ik best tevreden mee ben. :))"
     },
     "bo&jasper": {
       "title": "Bo & Jasper",
-      "description": "Dit was een shoot van een prachtig kopel die graag wat unieke foto's wilde hebben."
+      "description": "Dit was een shoot van een prachtig koppel die graag wat unieke foto's wilde hebben van hun 2. In al die jaren die ze samen zijn, hadden ze nog nooit professionele foto's laten nemen. Dus ik heb mijn best gedaan om hun oprechte liefde voor elkaar vast te leggen. We zijn naar de abdij van Averbode gegaan voor een mooie herfstige achtergrond."
     },
     "kruiwagenkoers": {
       "title": "Kruiwagenkoers",
-      "description": "Een tof lokaal evenement waarbij er met loodzware kruiwagen een parcours wordt afgelegd."
+      "description": "De kruiwagenkoers is een zeer gezellig lokaal evenement waar het de bedoeling is om met een zware kruiwagen een parcours af te leggen zo snel mogelijk. onderweg worden er ook verschillende gekke opdrachten uitgevoerd. Nu Simon had mij gevraagd om foto's te nemen van hun team tijdens dit evenement en de jeugdbeweging waar zijn broer bij zat die ook mee deed aan de koers."
     },
     "kvhvshoot1": {
       "title": "KVHV",
-      "description": "Een fotoshoot met enkele leden van het KVHV in Gent."
+      "description": "Ik heb al meerdere shoots gedaan voor de studentenvereniging KVHV in Antwerpen. Waaronder 2x fotoshoot van hun presidium en 1x een fotoshoot tijdens hun cantus. Ik heb een aantal leuke foto's er uit gekozen om hier te tonen."
     },
     "spanje": {
       "title": "Spanje",
-      "description": "Tijdens een reis naar Spanje heb ik deze foto's kunnen maken."
+      "description": "Met een groepsreis van toch wel 13 man, heb ik toch ook wel een aantal leuke foto's kunnen nemen. Dit zijn enkele van mijn favorieten."
     },
     "charlotte": {
       "title": "Charlotte",
-      "description": "Een fotoshoot met Charlotte op een mooie locatie."
+      "description": "Op een vrij random moment besloot ik om mijn camera mee te nemen naar de paardjes van Charlotte. Hier heb ik een aantal leuke foto's kunnen maken van iets dat ik nog niet eerder had gedaan. Namelijk foto's maken van paarden. en zij samen met haar paarden natuurlijk."
     },
     "liesje": {
       "title": "Liesje",
-      "description": "Een fotoshoot met Liesje in een natuurlijke omgeving."
+      "description": "Liesje gaf een feest voor haar vader die 50 jaar werd. Hiervoor wilde ze graag wat foto's laten nemen van de gasten en de sfeer. Dit is een kleine selectie van de foto's die ik toen heb gemaakt."
     },
     "picos": {
       "title": "Picos de Europa",
-      "description": "Tijdens mijn reis naar de Picos de Europa heb ik deze adembenemende landschappen vastgelegd."
+      "description": "Een goed vriend van mij en ik zijn samen op een impulsieve trektocht gegaan met 3 dagen voor vertrek alles te beginnen plannen. Bleek een van de beste impulsieve keuzes ooit te zijn geweest. Tijdens deze trip naar de Picos de Europa heb ik deze prachtige landschappen kunnen vastleggen."
+    },
+    "nena": {
+      "title": "Nena",
+      "description": "Ik wilde altijd al eens een fotoshoot proberen in de sneeuw. We zijn eigelijk naar een hele gewone locatie 'Beerzel berg' gegaan en hebben er het beste van gemaakt. De sneeuw maakte de omgeving oprecht mooi. In samenspraak met de kleding als contrast tegen het wit van de sneeuw zijn er echt, al zeg ik het zelf, geweldige foto's uitgekomen."
     }
   },
   "reviews": {
@@ -57,16 +60,20 @@
       "type": "Portretfotografie & Evenement fotografie"
     },
     "review2": {
-      "text": "Erg tevreden met het eindresultaat. Goede communicatie vooraf, op tijd aanwezig, en de foto's zijn precies wat ik zocht. Zeker aan te raden voor wie kwaliteit zoekt.",
-      "type": "Eventfotografie"
+      "text": "Wat een fijne ervaring. Professioneel, creatief en met oog voor detail. We zijn ontzettend blij met het resultaat en raden hem zeker aan!",
+      "type": "Portretfotografie"
     },
     "review3": {
-      "text": "Ongelooflijk hoe goed de foto's zijn geworden! De aandacht voor detail en het oog voor compositie maken echt het verschil. Ik ben super blij met het resultaat.",
-      "type": "Landschapfotografie"
+      "text": "De fotograaf liep sportief de volledige kruiwagenkoers (4,5 km) mee en legde alle momenten uitstekend vast, zonder dat we hem opmerkten. Als ploeg zijn we enorm blij met de prachtige foto's van ons, het event en de supporters.",
+      "type": "Evenement fotografie"
     },
     "review4": {
-      "text": "Professioneel, creatief en flexibel. De samenwerking verliep vlot en het eindresultaat is geweldig. Alle foto's zijn van hoge kwaliteit. Zeker voor herhaling vatbaar!",
-      "type": "Productfotografie"
+      "text": "Feest Liesje",
+      "type": "Evenement fotografie"
+    },
+    "review5": {
+      "text": "Robin denkt enthousiast mee over de uitstraling van de foto’s en staat tegelijk open voor nieuwe ideeën. Dat, gecombineerd met zijn aangename aanpak, resulteert in prachtige beelden.",
+      "type": "Portretfotografie"
     },
     "stats": {
       "title": "Statistieken",

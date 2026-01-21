@@ -13,39 +13,42 @@
   },
   "portfolio": {
     "H1":"My Portfolio",
-    "description1":"here you can find my recent work",
     "seeMorePhotos": "See more photos",
     "ibiza": {
       "title": "Ibiza",
-      "description": "In 2025 I went to Ibiza with a few friends, where I was able to take some beautiful photos. "
+      "description": "In 2025, I went to Ibiza with a few friends, where I was able to take some cool photos. However, not of the nightlife. Some nice street photography photos came out that I am quite satisfied with. :)"
     },
     "bo&jasper": {
       "title": "Bo & Jasper",
-      "description": "This was a shoot of a beautiful couple who wanted some unique photos."
+      "description": "This was a shoot of a beautiful couple who wanted some unique photos of the two of them. In all the years they have been together, they had never had professional photos taken. So I did my best to capture their genuine love for each other. We went to the Averbode Abbey for a beautiful autumnal background."
     },
     "kruiwagenkoers": {
       "title": "Wheelbarrow Race",
-      "description": "A cool local event where a heavy wheelbarrow is raced through a course."
+      "description": "The wheelbarrow race is a very cozy local event where the goal is to complete a course as quickly as possible with a heavy wheelbarrow. Along the way, various funny tasks are also performed. Simon asked me to take photos of their team during this event and the youth movement where his brother was also participating in the race."
     },
     "kvhvshoot1": {
       "title": "KVHV",
-      "description": "A photoshoot with some members of the KVHV in Ghent."
+      "description": "I have done several shoots for the student association KVHV in Antwerp. Including 2x photoshoot of their presidium and 1x a photoshoot during their cantus. I have selected some nice photos to show here."
     },
     "spanje": {
       "title": "Spain",
-      "description": "During a trip to Spain, I was able to take these photos."
+      "description": "During a group trip of about 13 people, I was able to take some nice photos. These are some of my favorites."
     },
     "charlotte": {
       "title": "Charlotte",
-      "description": "A photoshoot with Charlotte at a beautiful location."
+      "description": "At a rather random moment, I decided to take my camera to Charlotte's horses. Here I was able to take some nice photos of something I had not done before. Namely, taking photos of horses. And of course, her together with her horses."
     },
     "liesje": {
       "title": "Liesje",
-      "description": "A photoshoot with Liesje in a natural setting."
+      "description": "Liesje threw a party for her father who turned 50. She wanted some photos taken of the guests and the atmosphere. This is a small selection of the photos I took then."
     },
     "picos": {
       "title": "Picos de Europa",
-      "description": "During my trip to the Picos de Europa, I captured these breathtaking landscapes."
+      "description": "A good friend of mine and I went on an impulsive trek, planning everything just 3 days before departure. It turned out to be one of the best impulsive choices ever. During this trip to the Picos de Europa, I was able to capture these beautiful landscapes."
+    },
+    "nena": {
+      "title": "Nena",
+      "description": "I always wanted to try a photoshoot in the snow. We actually went to a very ordinary location 'Beerzel berg' and made the best of it. The snow truly made the environment beautiful. In consultation with the clothing as a contrast against the white of the snow, really cool photos came out."
     }
   },
   "reviews": {

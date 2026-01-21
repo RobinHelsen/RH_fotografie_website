@@ -10,16 +10,28 @@ const Reviews: React.FC = () => {
 
   const reviews = [
     {
+      name: "Nena Gommers",
+      date: "Januari 2026",
+      text: "reviews.review5.text",
+      type: "reviews.review5.type"
+    },
+    {
       name: "Marnix De Swert",
       date: "November 2025",
       text: "reviews.review1.text",
       type: "reviews.review1.type"
     },
     {
-      name: "Tom Janssens",
-      date: "Oktober 2024",
+      name: "Bo & Jasper",
+      date: "Oktober 2025",
       text: "reviews.review2.text",
       type: "reviews.review2.type"
+    },
+    {
+      name: "Simon Derdin",
+      date: "Mei 2025",
+      text: "reviews.review3.text",
+      type: "reviews.review3.type"
     }
   ];
 
@@ -92,7 +104,7 @@ const Reviews: React.FC = () => {
               <div className="space-y-6">
                 <div className="flex justify-between items-baseline border-b border-white/20 pb-4">
                   <span className="text-stone-300">{t('reviews.stats.total')}</span>
-                  <span className="text-3xl font-light text-white">2</span>
+                  <span className="text-3xl font-light text-white">4</span>
                 </div>
               </div>
             </div>
