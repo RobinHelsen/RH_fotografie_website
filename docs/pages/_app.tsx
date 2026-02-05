@@ -12,7 +12,8 @@ const App = ({ Component, pageProps }: AppProps) => {
     if (!router.locale) {
       router.replace(router.asPath, router.asPath, { locale: 'nl' });
     }
-  }, [router]);
+    // Only run once on mount with no dependencies
+  }, []);
 
   return <Component {...pageProps} />;
 };
