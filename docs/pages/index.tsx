@@ -1,48 +1,10 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import Header from '@components/header';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
-  const router = useRouter();
-
-  const handleNenaClick = () => {
-    router.push('/nena');
-  };
-
-  const handleIbizaClick = () => {
-    router.push('/ibiza');
-  };
-
-  const handleBoJasperClick = () => {
-    router.push('/bo-jasper');
-  };
-
-  const handleKruiwagenkoersClick = () => {
-    router.push('/kruiwagenkoers');
-  };
-
-  const handleKvhvshoot1Click = () => {
-    router.push('/kvhvp1');
-  };
-
-  const handleCharlotteClick = () => {
-    router.push('/charlotte');
-  };
-
-  const handleLiesjeClick = () => {
-    router.push('/liesje');
-  };
-
-  const handlePicosClick = () => {
-    router.push('/picos');
-  };
-
-  const handleSpanjeClick = () => {
-    router.push('/spanje');
-  };
 
   return (
     <>
@@ -74,15 +36,15 @@ const Home: React.FC = () => {
                 {t('portfolio.nena.description')}
               </p>
             </div>
-            <button 
-              onClick={handleNenaClick}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/nena"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -98,15 +60,15 @@ const Home: React.FC = () => {
                 {t('portfolio.ibiza.description')}
               </p>
             </div>
-            <button 
-              onClick={handleIbizaClick}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/ibiza"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -122,15 +84,15 @@ const Home: React.FC = () => {
                 {t('portfolio.bo&jasper.description')}
               </p>
             </div>
-            <button 
-              onClick={handleBoJasperClick}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/bo-jasper"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -146,15 +108,15 @@ const Home: React.FC = () => {
                 {t('portfolio.kvhvshoot1.description')}
               </p>
             </div>
-            <button 
-              onClick={handleKvhvshoot1Click}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/kvhvp1"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -170,15 +132,15 @@ const Home: React.FC = () => {
                 {t('portfolio.charlotte.description')}
               </p>
             </div>
-            <button 
-              onClick={handleCharlotteClick}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/charlotte"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -194,15 +156,15 @@ const Home: React.FC = () => {
                 {t('portfolio.picos.description')}
               </p>
             </div>
-            <button 
-              onClick={handlePicosClick}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/picos"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -218,15 +180,15 @@ const Home: React.FC = () => {
                 {t('portfolio.spanje.description')}
               </p>
             </div>
-            <button 
-              onClick={handleSpanjeClick}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/spanje"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -242,15 +204,15 @@ const Home: React.FC = () => {
                 {t('portfolio.liesje.description')}
               </p>
             </div>
-            <button 
-              onClick={handleLiesjeClick}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/liesje"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
@@ -266,15 +228,15 @@ const Home: React.FC = () => {
                 {t('portfolio.kruiwagenkoers.description')}
               </p>
             </div>
-            <button 
-              onClick={handleKruiwagenkoersClick}
-              className="group mt-6 self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
+            <a 
+              href="/kruiwagenkoers"
+              className="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer"
             >
               <span className="relative z-10">
                 {t('portfolio.seeMorePhotos')}
               </span>
               <span className="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100" />
-            </button>
+            </a>
           </div>
         </section>
 
