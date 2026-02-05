@@ -65,7 +65,7 @@
   });
 </script>
 <main class="min-h-screen bg-stone-300 p-6 md:p-12">
-  <h1 class="text-5xl md:text-6xl font-light tracking-wide text-stone-800 mb-10">
+  <h1 class="text-5xl md:text-6xl font-light tracking-wide text-stone-800 mb-10 text-center">
     Kruiwagenkoers
   </h1>
   <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
@@ -149,6 +149,71 @@
     </div>
   </div>
 </main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center">
+  <button id="lightbox-close" class="absolute top-4 right-4 text-white text-4xl hover:text-stone-300 transition-colors cursor-pointer">&times;</button>
+  <button id="lightbox-prev" class="absolute left-4 text-white text-4xl hover:text-stone-300 transition-colors cursor-pointer">&#10094;</button>
+  <button id="lightbox-next" class="absolute right-4 text-white text-4xl hover:text-stone-300 transition-colors cursor-pointer">&#10095;</button>
+  <img id="lightbox-img" src="" alt="Enlarged photo" class="max-h-[90vh] max-w-[90vw] object-contain"/>
+</div>
+
+<script>
+  // Lightbox functionality
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+  const lightboxPrev = document.getElementById('lightbox-prev');
+  const lightboxNext = document.getElementById('lightbox-next');
+  let currentIndex = 0;
+
+  document.querySelectorAll('.columns-1 img').forEach((img, index) => {
+    img.addEventListener('click', () => {
+      currentIndex = index;
+      openLightbox(img.src);
+    });
+  });
+
+  function openLightbox(src) {
+    lightboxImg.src = src;
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  function showPrev() {
+    const images = document.querySelectorAll('.columns-1 img');
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  function showNext() {
+    const images = document.querySelectorAll('.columns-1 img');
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', showPrev);
+  lightboxNext.addEventListener('click', showNext);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.classList.contains('hidden')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+</script>
 </div>
 </body>
 </html>
