@@ -1,0 +1,183 @@
+{
+  "app.title": "R.H_photography",
+  "app.error": "General error",
+
+  "header": {
+    "nav": {
+      "portfolio": "My Portfolio",
+      "reviews": "Reviews",
+      "aboutme": "About Me",
+      "pricing": "Pricing",
+      "contact": "Contact"
+    }
+  },
+  "portfolio": {
+    "H1":"My Portfolio",
+    "seeMorePhotos": "See more photos",
+    "ibiza": {
+      "title": "Ibiza",
+      "description": "In 2025, I went to Ibiza with a few friends, where I was able to take some cool photos. However, not of the nightlife. Some nice street photography photos came out that I am quite satisfied with. :)"
+    },
+    "bo&jasper": {
+      "title": "Bo & Jasper",
+      "description": "This was a shoot of a beautiful couple who wanted some unique photos of the two of them. In all the years they have been together, they had never had professional photos taken. So I did my best to capture their genuine love for each other. We went to the Averbode Abbey for a beautiful autumnal background."
+    },
+    "kruiwagenkoers": {
+      "title": "Wheelbarrow Race",
+      "description": "The wheelbarrow race is a very cozy local event where the goal is to complete a course as quickly as possible with a heavy wheelbarrow. Along the way, various funny tasks are also performed. Simon asked me to take photos of their team during this event and the youth movement where his brother was also participating in the race."
+    },
+    "kvhvshoot1": {
+      "title": "KVHV",
+      "description": "I have done several shoots for the student association KVHV in Antwerp. Including 2x photoshoot of their presidium and 1x a photoshoot during their cantus. I have selected some nice photos to show here."
+    },
+    "spanje": {
+      "title": "Spain",
+      "description": "During a group trip of about 13 people, I was able to take some nice photos. These are some of my favorites."
+    },
+    "charlotte": {
+      "title": "Charlotte",
+      "description": "At a rather random moment, I decided to take my camera to Charlotte's horses. Here I was able to take some nice photos of something I had not done before. Namely, taking photos of horses. And of course, her together with her horses."
+    },
+    "liesje": {
+      "title": "Liesje",
+      "description": "Liesje threw a party for her father who turned 50. She wanted some photos taken of the guests and the atmosphere. This is a small selection of the photos I took then."
+    },
+    "picos": {
+      "title": "Picos de Europa",
+      "description": "A good friend of mine and I went on an impulsive trek, planning everything just 3 days before departure. It turned out to be one of the best impulsive choices ever. During this trip to the Picos de Europa, I was able to capture these beautiful landscapes."
+    },
+    "nena": {
+      "title": "Nena",
+      "description": "I always wanted to try a photoshoot in the snow. We actually went to a very ordinary location 'Beerzel berg' and made the best of it. The snow truly made the environment beautiful. In consultation with the clothing as a contrast against the white of the snow, really cool photos came out."
+    }
+  },
+  "reviews": {
+    "pageTitle": "Reviews",
+    "title": "Reviews",
+    "subtitle": "What clients say about my work",
+    "review1": {
+      "text": "Very good and fast service! Photos were of very professional quality and communication with the photographer was smooth. Definitely recommended for a photoshoot!",
+      "type": "Portrait Photography & Event Photography"
+    },
+    "review2": {
+      "text": "Very satisfied with the end result. Good communication beforehand, arrived on time, and the photos are exactly what I was looking for. Definitely recommend for those seeking quality.",
+      "type": "Event Photography"
+    },
+    "stats": {
+      "title": "Statistics",
+      "total": "Happy clients",
+      "rating": "Average rating",
+      "recommend": "Would recommend me"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Get in touch and let's create something beautiful together.",
+      "button": "Book a Shoot"
+    }
+  },
+  "about": {
+    "pageTitle": "About Me",
+    "title": "About Me",
+    "subtitle1": "Photographer",
+    "subtitle2": "IT & Software Developer",
+    "subtitle3": "Abstract Music Lover & Ambassador",
+    "subtitle4": "Hiking & Nature Enthusiast",
+
+    "photography": {
+      "title": "Photography",
+      "intro": "Like many others, a passion for photography often starts small. For me, it began with always being the one who loved capturing everything my friends and I did together. During holidays I took tons of photos, and at some point I thought: now it's time for real quality photos.",
+      "passion": "I then invested heavily in a proper camera and started delving into the techniques behind photography with a full-fledged camera. Most of what I've learned is simply by doing... this is also the most fun because you learn what works and what doesn't, without just blindly following instructions.",
+      "style": "My style is characterized by always taking photos in between moments. This way, when a person is working towards a conscious pose, you actually capture the most natural photos in between. You'll often notice there's an unforced quality in the posture.",
+      "quote": "Experimenting often leads to the best results in my experience, so don't hesitate to make suggestions or come up with your own ideas! A combination of ideas from both sides often leads to the best photos."
+    },
+    "it": {
+      "title": "IT & Development",
+      "intro": "Besides photography, I also have a passion for technology and IT. I enjoy working with new hardware & software technologies.",
+      "website": "For example, this website - I coded it entirely with modern tools. I built it as a React application using:",
+      "blend": "For this reason, I also know quite a lot about the technical specifications of cameras, lenses, and bodies. I've been diving deep into this recently. I also enjoy helping others find the right hardware for their needs."
+    },
+    "music": {
+      "title": "Abstract Music",
+      "intro": "I personally love listening to abstract and often what many people consider harsh music. For some reason, these abrupt sounds give me a feeling of peace and happiness.",
+      "exploration": "My favorite genres are Drum & Bass & Dubstep: more often the experimental sides and less mainstream known subgenres. To name a few examples: 'neurofunk', 'riddim'.",
+      "connection": "I felt so connected to this music that I became an ambassador for one of the biggest event brands promoting this kind of music: 'Rampage'. Here I've met like-minded people who also find peace in this extreme chaos.",
+      "quote": "\"It probably sounds cliché, but it truly remains one of the few places where I can say without exaggeration that I feel genuinely happy to my core.\""
+    },
+    "hike": {
+      "title": "Hiking & Nature",
+      "intro": "Strangely enough, people who have a love for abstract music often also share a love for the abstractness in nature. For me, like many others, that's also the case.",
+      "exploration": "I'm someone who loves to test myself. I enjoy going on challenging hikes in nature where I can push myself physically and mentally. This gives me a sense of fulfillment.",
+      "connection": "Through my camera experience, I also love capturing these moments. When you can truly find such a perfect composition in nature, I find that absolutely amazing. You can find some of these photos in my portfolio - go have a look :)",
+      "quote": "\"Being away from civilization for a while really has something special - I'd say give it a try.\""
+    },
+    "cta": {
+      "title": "Let's Work Together",
+      "subtitle": "Interested in a photoshoot, a project? I'd love to hear from you.",
+      "contact": "Get In Touch",
+      "pricing": "View Pricing"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Clear and fair pricing for photography services.",
+    "hour": "hour",
+    "hours": "hours",
+    "base": {
+    "title": "Base fee",
+    "note": "starting fee per booking"
+    },
+    "hourly": {
+    "title": "Hourly rates",
+    "duration": "Duration",
+    "price": "Price",
+    "extra": "Additional hours"
+    },
+    "extras": {
+    "title": "Additional costs",
+    "travel": "Travel costs are the actual expenses of transportation such as fuel or public transport tickets."
+    },
+    "example": {
+    "title": "Example calculation",
+    "booking": "Booking of 2 hours",
+    "base": "Base fee: €20,-",
+    "hours": "2 hours photography: €40,-",
+    "travel": "Fuel cost: €5,-",
+    "total": "Total: €65,-"
+    },
+    "notes": {
+    "custom": "Prices are indicative and can be adjusted to the assignment.",
+    "editing": "Photo editing is included in the price."
+    }
+  },
+
+  "contact": {
+    "pageTitle": "Contact",
+    "title": "Contact",
+    "subtitle": "Get in touch for availability and bookings",
+    "email": {
+      "title": "Email"
+    },
+    "phone": {
+      "title": "Phone"
+    },
+    "instagram": {
+      "title": "Instagram"
+    },
+    "location": {
+      "title": "Location",
+      "area": "Putte, Flanders, Belgium",
+      "note": "Available for shoots throughout Belgium and the southern Netherlands"
+    },
+    "availability": {
+      "title": "Availability",
+      "text": "availability is highly variable. Generally, I am more available on weekends. For specific dates, feel free to send me a message.",
+      "appointment": "By appointment",
+      "response": "Response time:",
+      "hours": "as soon as possible !"
+    },
+    "notes": {
+      "preferred": "For the fastest response, feel free to contact me via Instagram DM or a message on my number.",
+      "looking": "I look forward to hearing from you!"
+    }
+  }
+}
