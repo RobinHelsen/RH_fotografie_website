@@ -75,7 +75,7 @@ const Charlotte: React.FC<CharlotteProps> = ({ images }) => {
   );
 };
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   // Read images from the public/images/charlotte folder
   const imagesDirectory = path.join(process.cwd(), 'public', 'images', 'charlotte');
   

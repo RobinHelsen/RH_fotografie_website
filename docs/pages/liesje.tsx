@@ -75,7 +75,7 @@ const Liesje: React.FC<LiesjeProps> = ({ images }) => {
   );
 };
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   // Read images from the public/images/feestje liesje folder
   const imagesDirectory = path.join(process.cwd(), 'public', 'images', 'feestje liesje');
   
@@ -98,5 +98,6 @@ export const getServerSideProps = async ({ locale }: { locale: string }) => {
     },
   };
 };
+
 
 export default Liesje;

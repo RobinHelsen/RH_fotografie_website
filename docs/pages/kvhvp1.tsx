@@ -75,7 +75,7 @@ const Kvhv: React.FC<KvhvProps> = ({ images }) => {
   );
 };
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   // Read images from the public/images/kvhv folder
   const imagesDirectory = path.join(process.cwd(), 'public', 'images', 'kvhv');
   
@@ -98,5 +98,6 @@ export const getServerSideProps = async ({ locale }: { locale: string }) => {
     },
   };
 };
+
 
 export default Kvhv;

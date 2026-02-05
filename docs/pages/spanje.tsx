@@ -75,7 +75,7 @@ const Spanje: React.FC<SpanjeProps> = ({ images }) => {
   );
 };
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   // Read images from the public/images/Spanje empuria brava folder
   const imagesDirectory = path.join(process.cwd(), 'public', 'images', 'Spanje empuria brava');
   
@@ -98,5 +98,6 @@ export const getServerSideProps = async ({ locale }: { locale: string }) => {
     },
   };
 };
+
 
 export default Spanje;

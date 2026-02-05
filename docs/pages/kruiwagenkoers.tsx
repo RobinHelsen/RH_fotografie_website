@@ -75,7 +75,7 @@ const Kruiwagenkoers: React.FC<KruiwagenkoersProps> = ({ images }) => {
   );
 };
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   // Read images from the public/images/kruiwagenkoers folder
   const imagesDirectory = path.join(process.cwd(), 'public', 'images', 'kruiwagenkoers');
   
@@ -98,5 +98,6 @@ export const getServerSideProps = async ({ locale }: { locale: string }) => {
     },
   };
 };
+
 
 export default Kruiwagenkoers;

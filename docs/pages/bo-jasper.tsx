@@ -75,7 +75,7 @@ const BoJasper: React.FC<BoJasperProps> = ({ images }) => {
   );
 };
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   // Read images from the public/images/Bo & Japser folder (note the typo in folder name)
   const imagesDirectory = path.join(process.cwd(), 'public', 'images', 'Bo & Japser');
   

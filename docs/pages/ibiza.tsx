@@ -75,7 +75,7 @@ const Ibiza: React.FC<IbizaProps> = ({ images }) => {
   );
 };
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   // Read images from the public/images/Ibiza folder (capital I)
   const imagesDirectory = path.join(process.cwd(), 'public', 'images', 'Ibiza');
   
@@ -98,5 +98,6 @@ export const getServerSideProps = async ({ locale }: { locale: string }) => {
     },
   };
 };
+
 
 export default Ibiza;

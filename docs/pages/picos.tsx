@@ -75,7 +75,7 @@ const Picos: React.FC<PicosProps> = ({ images }) => {
   );
 };
 
-export const getServerSideProps = async ({ locale }: { locale: string }) => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   // Read images from the public/images/picos de europa folder
   const imagesDirectory = path.join(process.cwd(), 'public', 'images', 'picos de europa');
   
@@ -98,5 +98,6 @@ export const getServerSideProps = async ({ locale }: { locale: string }) => {
     },
   };
 };
+
 
 export default Picos;
