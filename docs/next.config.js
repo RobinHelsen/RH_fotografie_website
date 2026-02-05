@@ -1,7 +1,8 @@
+const { i18n } = require("./next-i18next.config");
+
 module.exports = {
-  output: 'export',  // Voor statische export
-  distDir: 'out',  // Output directory
-  images: {
-    unoptimized: true  // GitHub Pages ondersteunt geen Next.js Image Optimization
-  }
+  i18n: {
+    ...i18n,
+    localeDetection: false,
+  },
 };
