@@ -1,207 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="utf-8"/>
-    <title>
-      Reviews
-    </title>
-    <meta name="description" content="Client reviews and testimonials"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" href="/"/>
+    <meta name="description" content="Reviews voor Dorpelstudio en eerdere fotografieprojecten."/>
+    <title>Reviews | Dorpelstudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,850&family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="images/dorpel-nav-logo.png"/>
   </head>
   <body>
-  <div id="__next">
-    <header class="w-full bg-stone-900/95 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 ease-in-out py-2">
-      <div class="w-full px-6 lg:px-12 flex items-center justify-between">
-        <a class="flex items-center group" href="/">
-        <img src="/images/logo.png" alt="R.H Photography Logo" class="w-auto group-hover:opacity-80 transition-all duration-300 h-7"/>
-      </a>
-      <nav class="hidden md:flex items-center gap-1 transition-all duration-300 opacity-70">
-        <a class="relative px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 after:content-[&#x27;&#x27;] after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 text-xs" href="/">
-        Mijn Portfolio
-      </a>
-      <a class="relative px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 after:content-[&#x27;&#x27;] after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 text-xs" href="/reviews">
-      Reviews
-    </a>
-    <a class="relative px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 after:content-[&#x27;&#x27;] after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 text-xs" href="/aboutme">
-    Over mij
-  </a>
-  <a class="relative px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 after:content-[&#x27;&#x27;] after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 text-xs" href="/contact">
-  Contact
-</a>
-</nav>
-<button id="mobile-menu-button" class="md:hidden text-white p-2">
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
-  </path>
-</svg>
-</button>
-</div>
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-stone-900/95 backdrop-blur-md px-6 py-4">
-  <nav class="flex flex-col gap-2">
-    <a class="px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 text-sm" href="/">
-      Mijn Portfolio
-    </a>
-    <a class="px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 text-sm" href="/reviews">
-      Reviews
-    </a>
-    <a class="px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 text-sm" href="/aboutme">
-      Over mij
-    </a>
-    <a class="px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 text-sm" href="/contact">
-      Contact
-    </a>
-  </nav>
-</div>
-</header>
-<script>
-  const mobileMenuButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-  
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
-<div class="fixed inset-0 -z-10">
-  <img src="/images/portugal.jpg" alt="Background" class="w-full h-full object-cover"/>
-  <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-white/30">
-  </div>
-</div>
-<main class="min-h-screen py-20 px-6">
-  <div class="ml-auto max-w-3xl w-full md:w-1/2">
-    <div class="mb-10">
-      <div class="text-center">
-        <h1 class="text-6xl md:text-7xl font-serif font-normal text-white mb-4 tracking-tight italic drop-shadow-lg">
-          Reviews
-        </h1>
+    <header class="sticky top-0 z-50 border-b border-[#064b8e]/10 bg-[#fff8e5]/88 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
+        <a href="index.html" class="flex items-center gap-3" aria-label="Dorpelstudio home">
+          <img src="images/dorpel-nav-logo.png" alt="Dorpelstudio" class="h-10 w-auto object-contain"/>
+          <span class="hidden text-lg font-black tracking-tight text-[#064b8e] sm:inline">Dorpelstudio</span>
+        </a>
+        <nav class="hidden items-center gap-1 md:flex" aria-label="Hoofdnavigatie">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="reviews.html">Reviews</a>
+          <a class="nav-link" href="aboutme.html">Over mij</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <button id="mobile-menu-button" class="rounded-full bg-[#064b8e] p-3 text-white md:hidden" aria-label="Open menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
-    </div>
-    <div class="space-y-8">
-            <div class="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
-        <p class="text-white leading-relaxed mb-6 italic">
-          &quot;Thanks for these amazing shots! We had a lot of fun shooting in this wild location. Really grateful for the work you delivered, the pictures turned out incredible. If you ever need a professional photographer, he’s your guy. 100% recommend!
-        </p>
-        <div class="pt-4 border-t border-white/20">
-          <p class="text-white font-medium mb-1">
-            Erio Volders
-          </p>
-          <div class="flex items-center gap-3 text-sm text-stone-300">
-            <span>
-            Feb 2026
-          </span>
-          <span>
-          •
-        </span>
-        <span>
-        Portretfotografie
-      </span>
+      <div id="mobile-menu" class="hidden border-t border-[#064b8e]/10 bg-[#fff8e5]/96 px-5 py-4 md:hidden">
+        <nav class="grid gap-2" aria-label="Mobiele navigatie">
+          <a class="mobile-link" href="index.html">Home</a>
+          <a class="mobile-link active" href="reviews.html">Reviews</a>
+          <a class="mobile-link" href="aboutme.html">Over mij</a>
+          <a class="mobile-link" href="contact.html">Contact</a>
+        </nav>
       </div>
-      </div>
-      </div>
-      <div class="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
-        <p class="text-white leading-relaxed mb-6 italic">
-          &quot;Robin denkt enthousiast mee over de uitstraling van de foto’s en staat tegelijk open voor nieuwe ideeën. Dat, gecombineerd met zijn aangename aanpak, resulteert in prachtige beelden.&quot;
-        </p>
-        <div class="pt-4 border-t border-white/20">
-          <p class="text-white font-medium mb-1">
-            Nena Gommers
-          </p>
-          <div class="flex items-center gap-3 text-sm text-stone-300">
-            <span>
-            Januari 2026
-          </span>
-          <span>
-          •
-        </span>
-        <span>
-        Portretfotografie
-      </span>
-    </div>
-  </div>
-</div>
-<div class="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
-  <p class="text-white leading-relaxed mb-6 italic">
-    &quot;Heel goede en snelle service! Foto&#x27;s waren van zeer professionele kwaliteit en het was vlot communiceren met de fotograaf. Zeker aan te raden voor een fotoshoot!&quot;
-  </p>
-  <div class="pt-4 border-t border-white/20">
-    <p class="text-white font-medium mb-1">
-      Marnix De Swert
-    </p>
-    <div class="flex items-center gap-3 text-sm text-stone-300">
-      <span>
-      November 2025
-    </span>
-    <span>
-    •
-  </span>
-  <span>
-  Portretfotografie &amp; Evenement fotografie
-</span>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
-  <p class="text-white leading-relaxed mb-6 italic">
-    &quot;Wat een fijne ervaring. Professioneel, creatief en met oog voor detail. We zijn ontzettend blij met het resultaat en raden hem zeker aan!&quot;
-  </p>
-  <div class="pt-4 border-t border-white/20">
-    <p class="text-white font-medium mb-1">
-      Bo &amp; Jasper
-    </p>
-    <div class="flex items-center gap-3 text-sm text-stone-300">
-      <span>
-      Oktober 2025
-    </span>
-    <span>
-    •
-  </span>
-  <span>
-  Portretfotografie
-</span>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
-  <p class="text-white leading-relaxed mb-6 italic">
-    &quot;De fotograaf liep sportief de volledige kruiwagenkoers (4,5 km) mee en legde alle momenten uitstekend vast, zonder dat we hem opmerkten. Als ploeg zijn we enorm blij met de prachtige foto&#x27;s van ons, het event en de supporters.&quot;
-  </p>
-  <div class="pt-4 border-t border-white/20">
-    <p class="text-white font-medium mb-1">
-      Simon Derdin
-    </p>
-    <div class="flex items-center gap-3 text-sm text-stone-300">
-      <span>
-      Mei 2025
-    </span>
-    <span>
-    •
-  </span>
-  <span>
-  Evenement fotografie
-</span>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-br from-stone-900/80 to-stone-800/60 backdrop-blur-sm border-l-4 border-[#ffffff] p-6 md:p-10">
-  <h3 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic -ml-1">
-    Klaar om te beginnen?
-  </h3>
-  <p class="text-stone-300 mb-6 leading-relaxed">
-    Neem contact op en laten we samen iets moois creëren.
-  </p>
-  <button class="group self-start px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-  <a href="/contact" class="relative z-10">
-  Boek een Shoot
-</a>
-<span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</button>
-</div>
-</div>
-</div>
-</main>
-</div>
-</body>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-5 py-14 lg:px-8 lg:py-20">
+      <section class="mb-10 grid gap-6 lg:grid-cols-[1fr_0.55fr] lg:items-end">
+        <div>
+          <p class="section-label">Reviews</p>
+          <h1 class="display-font mt-3 text-5xl font-black leading-none text-[#064b8e] sm:text-7xl">Ervaringen van mensen voor wie ik al maakte.</h1>
+        </div>
+        <div class="brand-card p-6">
+          <p class="text-lg font-bold leading-8 text-[#08243d]/78">De woorden blijven hetzelfde, de verpakking kreeg Dorpelstudio-kleur.</p>
+        </div>
+      </section>
+
+      <section class="grid gap-5">
+        <article class="quote-card p-6 sm:p-8">
+          <p class="text-xl font-medium leading-8 text-[#08243d]">"Thanks for these amazing shots! We had a lot of fun shooting in this wild location. Really grateful for the work you delivered, the pictures turned out incredible. If you ever need a professional photographer, he's your guy. 100% recommend!"</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Erio Volders</span><span>Feb 2026</span><span>Portretfotografie</span></div>
+        </article>
+        <article class="quote-card p-6 sm:p-8">
+          <p class="text-xl font-medium leading-8 text-[#08243d]">"Robin denkt enthousiast mee over de uitstraling van de foto's en staat tegelijk open voor nieuwe ideeën. Dat, gecombineerd met zijn aangename aanpak, resulteert in prachtige beelden."</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Nena Gommers</span><span>Januari 2026</span><span>Portretfotografie</span></div>
+        </article>
+        <article class="quote-card p-6 sm:p-8">
+          <p class="text-xl font-medium leading-8 text-[#08243d]">"Heel goede en snelle service! Foto's waren van zeer professionele kwaliteit en het was vlot communiceren met de fotograaf. Zeker aan te raden voor een fotoshoot!"</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Marnix De Swert</span><span>November 2025</span><span>Portretfotografie &amp; evenement fotografie</span></div>
+        </article>
+        <article class="quote-card p-6 sm:p-8">
+          <p class="text-xl font-medium leading-8 text-[#08243d]">"Wat een fijne ervaring. Professioneel, creatief en met oog voor detail. We zijn ontzettend blij met het resultaat en raden hem zeker aan!"</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Bo &amp; Jasper</span><span>Oktober 2025</span><span>Portretfotografie</span></div>
+        </article>
+        <article class="quote-card p-6 sm:p-8">
+          <p class="text-xl font-medium leading-8 text-[#08243d]">"De fotograaf liep sportief de volledige kruiwagenkoers (4,5 km) mee en legde alle momenten uitstekend vast, zonder dat we hem opmerkten. Als ploeg zijn we enorm blij met de prachtige foto's van ons, het event en de supporters."</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Simon Derdin</span><span>Mei 2025</span><span>Evenement fotografie</span></div>
+        </article>
+      </section>
+
+      <section class="mt-10 blue-card p-8 text-center sm:p-10">
+        <p class="section-label text-[#ffe895]">Volgende review?</p>
+        <h2 class="display-font mx-auto mt-3 max-w-3xl text-4xl font-black text-white sm:text-5xl">Laten we iets maken waar je graag op terugkijkt.</h2>
+        <a class="button-secondary mt-7 bg-white text-[#064b8e]" href="contact.html">Start een gesprek</a>
+      </section>
+    </main>
+
+    <footer class="border-t border-[#064b8e]/10 px-5 py-8 text-center text-sm font-bold text-[#064b8e]/70">Dorpelstudio - Reviews</footer>
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuButton.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('hidden') === false;
+        mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
+      });
+    </script>
+  </body>
 </html>

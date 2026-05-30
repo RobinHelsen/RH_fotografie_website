@@ -1,317 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="utf-8"/>
-    <title>
-      R.H_photography
-    </title>
-    <meta name="description" content="Bekijk mijn portfolio hier!"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" href="/images/logohead.png"/>
+    <meta name="description" content="Dorpelstudio maakt fotografie en videografie met een heldere, speelse stijl."/>
+    <title>Dorpelstudio | Fotografie en videografie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,850&family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="images/dorpel-nav-logo.png"/>
   </head>
   <body>
-  <div id="__next">
-    <header class="w-full bg-stone-900/95 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 ease-in-out py-2">
-      <div class="w-full px-6 lg:px-12 flex items-center justify-between">
-        <a class="flex items-center group" href="/">
-        <img src="/images/logo.png" alt="R.H Photography Logo" class="w-auto group-hover:opacity-80 transition-all duration-300 h-7"/>
-      </a>
-      <nav class="hidden md:flex items-center gap-1 transition-all duration-300 opacity-70">
-        <a class="relative px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 after:content-[&#x27;&#x27;] after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 text-xs" href="/">
-        Mijn Portfolio
-      </a>
-      <a class="relative px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 after:content-[&#x27;&#x27;] after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 text-xs" href="/reviews">
-      Reviews
-    </a>
-    <a class="relative px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 after:content-[&#x27;&#x27;] after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 text-xs" href="/aboutme">
-    Over mij
-  </a>
-  <a class="relative px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 after:content-[&#x27;&#x27;] after:absolute after:bottom-1 after:left-4 after:right-4 after:h-px after:bg-white after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 text-xs" href="/contact">
-  Contact
-</a>
-</nav>
-<button id="mobile-menu-button" class="md:hidden text-white p-2">
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
-  </path>
-</svg>
-</button>
-</div>
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-stone-900/95 backdrop-blur-md px-6 py-4">
-  <nav class="flex flex-col gap-2">
-    <a class="px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 text-sm" href="/">
-      Mijn Portfolio
-    </a>
-    <a class="px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 text-sm" href="/reviews">
-      Reviews
-    </a>
-    <a class="px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 text-sm" href="/aboutme">
-      Over mij
-    </a>
-    <a class="px-4 py-2 text-stone-300 hover:text-white tracking-wide transition-all duration-300 text-sm" href="/contact">
-      Contact
-    </a>
-  </nav>
-</div>
-</header>
-<script>
-  const mobileMenuButton = document.getElementById('mobile-menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-  
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
-<main>
-  <section class="relative w-full h-[50vh] md:h-auto">
-    <img src="/images/mountains.jpg" alt="Mountains" class="w-full h-full md:h-auto object-cover"/>
-    <h1 class="absolute top-[15%] left-1/2 -translate-x-1/2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-normal text-stone-200 mb-6 tracking-tight italic drop-shadow-lg text-center px-4">
-      Mijn Portfolio
-    </h1>
-  </section>
-  <section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/erio.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:left-6 md:left-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#63C9CB] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        Erio
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Erio is een opkomende DnB-producer en wilde graag artist pictures. Voor deze shoot zochten we dan ook een plek die de grofheid en industriële geluiden van DnB perfect kon weergeven. In contrast met de knalwitte kleren in de toch wel vuile omgeving maakten we enkele van mijn favoriete foto's tot nu toe. Ik ben erg blij met het resultaat.     
-      </p>
-    </div>
-    <a href="/erio" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-  <section class="relative w-full min-h-[500px] md:min-h-[600px]">
-    <img src="/images/nena3.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-    <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:right-6 md:right-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#ffffff] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-          Nena
-        </h2>
-        <p class="text-white leading-relaxed text-sm md:text-base">
-          Ik wilde altijd al eens een fotoshoot proberen in de sneeuw. We zijn eigenlijk naar een hele gewone locatie gegaan: 'Beerzelberg', en hebben er het beste van gemaakt. De sneeuw maakte de omgeving oprecht mooi. In samenspraak met de kleding als contrast tegen het wit van de sneeuw zijn er echt, al zeg ik het zelf, geweldige foto's uitgekomen.
-        </p>
+    <header class="sticky top-0 z-50 border-b border-[#064b8e]/10 bg-[#fff8e5]/88 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
+        <a href="index.html" class="flex items-center gap-3" aria-label="Dorpelstudio home">
+          <img src="images/dorpel-nav-logo.png" alt="Dorpelstudio" class="h-10 w-auto object-contain"/>
+          <span class="hidden text-lg font-black tracking-tight text-[#064b8e] sm:inline">Dorpelstudio</span>
+        </a>
+        <nav class="hidden items-center gap-1 md:flex" aria-label="Hoofdnavigatie">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="reviews.html">Reviews</a>
+          <a class="nav-link" href="aboutme.html">Over mij</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+        <button id="mobile-menu-button" class="rounded-full bg-[#064b8e] p-3 text-white md:hidden" aria-label="Open menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
-      <a href="/nena" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-      <span class="relative z-10">
-      Bekijk meer foto's
-    </span>
-    <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-  </span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/boats.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:left-6 md:left-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-slate-600 p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        Ibiza
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        In 2025 ben ik met een paar vrienden naar Ibiza geweest. Hier heb ik een aantal toffe foto's kunnen nemen. Van het nachtleven echter niet. Er zijn wel wat leuke straatfotografie-foto's uitgekomen waar ik best tevreden mee ben :)
-      </p>
-    </div>
-    <a href="/ibiza" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/bo&amp;jappeshoot.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:right-6 md:right-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#fbe031] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        Bo &amp; Jasper
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Dit was een shoot van een prachtig koppel die graag wat unieke foto's wilden hebben van hun tweeën. In al die jaren die ze samen zijn, hadden ze nog nooit professionele foto's laten nemen. Dus ik heb mijn best gedaan om hun oprechte liefde voor elkaar vast te leggen. We zijn naar de abdij van Averbode gegaan voor een mooie herfstige achtergrond.
-      </p>
-    </div>
-    <a href="/bo-jasper" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/kvhvshoot1.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:left-6 md:left-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#8C6B2E] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        KVHV
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Ik heb al meerdere shoots gedaan voor de studentenvereniging KVHV in Antwerpen, waaronder twee keer een fotoshoot van hun praesidium en één keer een fotoshoot tijdens hun cantus. Ik heb een aantal leuke foto's eruit gekozen om hier te tonen.
-      </p>
-    </div>
-    <a href="/kvhvp1" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/charlotte.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:right-6 md:right-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#FAECC5] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        Charlotte
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Toen ik mijn camera mee nam naar de paardjes van Charlotte, heb ik een aantal leuke foto's kunnen maken van iets dat ik nog niet eerder had gedaan, namelijk dieren fotograferen. Ik heb een aantal van mijn favoriete foto's van die dag hier geselecteerd. 
-      </p>
-    </div>
-    <a href="/charlotte" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/picos.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:left-6 md:left-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#767976] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        Picos de Europa
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Een goede vriend van mij en ik zijn samen op een impulsieve trektocht gegaan, met drie dagen voor vertrek alles te beginnen plannen. Het bleek een van de beste impulsieve keuzes ooit te zijn geweest. Tijdens deze trip naar de Picos de Europa heb ik deze prachtige landschappen kunnen vastleggen.
-      </p>
-    </div>
-    <a href="/picos" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/spanje.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:right-6 md:right-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#9bccd6] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        Spanje
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Tijdens een groepsreis van toch wel 13 man heb ik ook wel een aantal leuke foto's kunnen nemen. Dit zijn enkele van mijn favorieten.
-      </p>
-    </div>
-    <a href="/spanje" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/liesje.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:left-6 md:left-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#d8a15f] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        Liesje
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Liesje gaf een feest voor haar vader, die 50 jaar werd. Hiervoor wilde ze graag wat foto's laten nemen van de gasten en de sfeer. Dit is een kleine selectie van de foto's die ik toen heb gemaakt.
-      </p>
-    </div>
-    <a href="/liesje" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/kruiwagenkoers 2025.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:right-6 md:right-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#748d55] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic">
-        Kruiwagenkoers
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        De kruiwagenkoers is een zeer gezellig lokaal evenement waar het de bedoeling is om met een zware kruiwagen een parcours zo snel mogelijk af te leggen. Onderweg worden er ook verschillende gekke opdrachten uitgevoerd. Simon had mij gevraagd om foto's te nemen van hun team tijdens dit evenement en van de jeugdbeweging waar zijn broer bij zat, die ook meedeed aan de koers.
-      </p>
-    </div>
-    <a href="/kruiwagenkoers" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/land.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:left-6 md:left-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#d8a15f] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic md:-ml-1">
-        Normandië
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Mijn eerste trektocht ooit was in Normandië. Hier heb ik het prachtige landschap kunnen vastleggen. Op het eerste zicht lijkt het misschien niet zo'n spectaculair landschap, maar met de juiste framing en lichtinval heb ik toch een aantal foto's waar ik heel tevreden mee ben.
-      </p>
-    </div>
-    <a href="/normandie" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-<section class="relative w-full min-h-[500px] md:min-h-[600px]">
-  <img src="/images/sunset.jpg" alt="Boats" class="w-full h-full object-cover absolute inset-0"/>
-  <div class="absolute inset-0 md:inset-auto md:top-6 md:bottom-6 md:right-6 md:right-12 w-full md:w-1/3 bg-gradient-to-br from-stone-900/60 to-stone-800/50 md:from-stone-900/90 md:to-stone-800/80 md:backdrop-blur-sm border-l-0 md:border-l-4 border-[#CC5500] p-6 md:p-10 flex flex-col justify-end md:justify-between">
-    <div>
-      <h2 class="text-3xl md:text-4xl font-serif font-normal text-white mb-4 italic">
-        Portugal - Lissabon
-      </h2>
-      <p class="text-white leading-relaxed text-sm md:text-base">
-        Tijdens een groepsreis naar Lissabon heb ik een aantal toffe foto's kunnen nemen van de stad zelf, de mensen en de omgeving. Hier is een kleine selectie van mijn favoriete foto's van die trip.
-      </p>
-    </div>
-    <a href="/lissabon" class="group mt-6 self-start inline-block px-6 py-3 text-white font-semibold border border-white/40 rounded-md relative overflow-hidden hover:bg-white/10 transition cursor-pointer">
-    <span class="relative z-10">
-    Bekijk meer foto's²
-  </span>
-  <span class="absolute left-6 right-6 bottom-2 h-px bg-white scale-x-0 origin-left transition-transform group-hover:scale-x-100">
-</span>
-</a>
-</div>
-</section>
-</main>
-</div>
-</body>
+      <div id="mobile-menu" class="hidden border-t border-[#064b8e]/10 bg-[#fff8e5]/96 px-5 py-4 md:hidden">
+        <nav class="grid gap-2" aria-label="Mobiele navigatie">
+          <a class="mobile-link active" href="index.html">Home</a>
+          <a class="mobile-link" href="reviews.html">Reviews</a>
+          <a class="mobile-link" href="aboutme.html">Over mij</a>
+          <a class="mobile-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 pt-12 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:pb-24 lg:pt-20">
+        <div>
+          <span class="pill">Portfolio op Instagram</span>
+          <h1 class="display-font mt-6 max-w-4xl text-5xl font-black leading-[0.95] tracking-tight text-[#064b8e] sm:text-7xl lg:text-8xl">
+            Bekijk het werk op Instagram. Start hier je project.
+          </h1>
+          <p class="mt-7 max-w-2xl text-lg font-medium leading-8 text-[#08243d]/82 sm:text-xl">
+            Deze website is de voordeur van Dorpelstudio. Mijn actuele foto's, shoots en visuele experimenten vind je op Instagram. Hier lees je wat ik maak en hoe je mij kan bereiken.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a class="button-primary" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk portfolio op Instagram <span aria-hidden="true">-&gt;</span></a>
+            <a class="button-secondary" href="contact.html">Start een project</a>
+          </div>
+        </div>
+        <div class="blue-card relative overflow-hidden p-6 sm:p-8">
+          <div class="absolute -right-12 -top-12 h-36 w-36 rounded-full bg-[#ffc928]"></div>
+          <div class="absolute bottom-10 right-10 h-20 w-20 rounded-full bg-[#8bcf4f]"></div>
+          <div class="relative z-10 rounded-[1.4rem] bg-white/10 p-6 backdrop-blur sm:p-8">
+            <p class="text-sm font-black uppercase tracking-[0.22em] text-[#ffe895]">Dorpelstudio</p>
+            <p class="mt-3 text-3xl font-black leading-tight sm:text-4xl">Een studio die niet in een hokje hoeft te passen.</p>
+            <p class="mt-5 leading-8 text-white/78">Instagram is mijn levende portfolio: sneller, actueler en dichter bij hoe projecten ontstaan. Deze site houdt het overzichtelijk.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+        <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div>
+            <p class="section-label">Wat vind je waar?</p>
+            <h2 class="display-font mt-2 text-4xl font-black text-[#064b8e] sm:text-5xl">Het portfolio leeft op Instagram. De uitleg staat hier.</h2>
+          </div>
+          <div class="doodle-line w-40"></div>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2">
+          <article class="threshold-card p-6">
+            <div class="mb-5 h-12 w-12 rounded-2xl bg-[#39a7f5]"></div>
+            <h3 class="text-2xl font-black text-[#064b8e]">Fotografie</h3>
+            <p class="mt-3 leading-7 text-[#08243d]/76">Portretten, events en sfeerbeelden met een natuurlijke aanpak. De meest recente voorbeelden staan op Instagram.</p>
+            <a class="mt-5 inline-flex font-black text-[#064b8e]" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Naar @dorpelstudio</a>
+          </article>
+          <article class="threshold-card p-6">
+            <div class="mb-5 h-12 w-12 rounded-2xl bg-[#8bcf4f]"></div>
+            <h3 class="text-2xl font-black text-[#064b8e]">Videografie</h3>
+            <p class="mt-3 leading-7 text-[#08243d]/76">Korte video's, reels en sfeerclips voor events, artiesten of projecten die meer beweging nodig hebben dan een foto.</p>
+            <a class="mt-5 inline-flex font-black text-[#064b8e]" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk video op Instagram</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-5 py-14 lg:px-8">
+        <div class="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+          <div class="blue-card p-8">
+            <p class="section-label text-[#ffe895]">Werkwijze</p>
+            <h2 class="display-font mt-3 text-4xl font-black leading-tight text-white sm:text-5xl">Van vaag idee naar beeld dat blijft hangen.</h2>
+            <p class="mt-5 leading-8 text-white/78">We houden het praktisch: eerst scherp krijgen wat je nodig hebt, daarna maken, bijsturen en opleveren.</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="brand-card p-6"><span class="pill">Stap 1</span><h3 class="mt-4 text-xl font-black text-[#064b8e]">Richting kiezen</h3><p class="mt-2 text-[#08243d]/72">Wat moet het uitstralen, voor wie is het, en waar moet het landen?</p></div>
+            <div class="brand-card p-6"><span class="pill">Stap 2</span><h3 class="mt-4 text-xl font-black text-[#064b8e]">Maken</h3><p class="mt-2 text-[#08243d]/72">Foto's of video worden uitgewerkt met ruimte om bij te sturen.</p></div>
+            <div class="brand-card p-6"><span class="pill">Stap 3</span><h3 class="mt-4 text-xl font-black text-[#064b8e]">Afwerken</h3><p class="mt-2 text-[#08243d]/72">Kleur, copy, ritme en techniek worden netjes rechtgetrokken.</p></div>
+            <div class="brand-card p-6"><span class="pill">Stap 4</span><h3 class="mt-4 text-xl font-black text-[#064b8e]">Publiceren</h3><p class="mt-2 text-[#08243d]/72">Klaar voor Instagram, socials, drukwerk of je volgende stap.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-5xl px-5 py-16 text-center lg:px-8">
+        <div class="brand-card p-8 sm:p-12">
+          <p class="section-label">Klaar om over de drempel te stappen?</p>
+          <h2 class="display-font mx-auto mt-3 max-w-3xl text-4xl font-black text-[#064b8e] sm:text-6xl">Vertel wat je wil maken. Ik denk mee.</h2>
+          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#08243d]/76">Bekijk eerst fotografie en videografie op Instagram of stuur meteen je idee door. Beide zijn goed.</p>
+          <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a class="button-primary" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
+            <a class="button-secondary" href="contact.html">Neem contact op</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-[#064b8e]/10 px-5 py-8 text-center text-sm font-bold text-[#064b8e]/70">
+      Dorpelstudio - Putte, Vlaanderen - Static website on GitHub Pages
+    </footer>
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuButton.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('hidden') === false;
+        mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
+      });
+    </script>
+  </body>
 </html>
