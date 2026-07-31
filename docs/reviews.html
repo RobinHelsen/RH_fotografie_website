@@ -13,6 +13,7 @@
     <link rel="icon" href="images/dorpel-nav-logo.png"/>
   </head>
   <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <header class="sticky top-0 z-50 border-b border-[#064b8e]/10 bg-[#fff8e5]/88 backdrop-blur-xl">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
         <a href="index.html" class="flex items-center gap-3" aria-label="Dorpelstudio home">
@@ -40,40 +41,49 @@
     </header>
 
     <main class="mx-auto max-w-6xl px-5 py-14 lg:px-8 lg:py-20">
-      <section class="mb-10 grid gap-6 lg:grid-cols-[1fr_0.55fr] lg:items-end">
-        <div>
-          <p class="section-label">Reviews</p>
-          <h1 class="display-font mt-3 text-5xl font-black leading-none text-[#064b8e] sm:text-7xl">Ervaringen van mensen voor wie ik al maakte.</h1>
+      <section class="relative mb-10 grid gap-6 overflow-hidden lg:grid-cols-[1fr_0.55fr] lg:items-end">
+        <div class="hero-glow glow-yellow" data-parallax="0.16" style="top:-6rem;left:-6rem;height:22rem;width:22rem;"></div>
+        <div class="reveal relative z-10">
+          <h1 class="display-font mt-3 text-5xl font-black leading-none text-[#064b8e] sm:text-7xl">Reviews.</h1>
         </div>
-        <div class="brand-card p-6">
-          <p class="text-lg font-bold leading-8 text-[#08243d]/78">De woorden blijven hetzelfde, de verpakking kreeg Dorpelstudio-kleur.</p>
-        </div>
+        <div></div>
+          <p class="text-lg font-bold leading-8 text-[#08243d]/78">Reacties van mensen en teams met wie ik samenwerkte.</p>
       </section>
 
-      <section class="grid gap-5">
-        <article class="quote-card p-6 sm:p-8">
+      <section class="reveal-group grid gap-5">
+        <article class="quote-card spotlight p-6 sm:p-8">
+          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
+          <p class="text-xl font-medium leading-8 text-[#08243d]">"Superfijne ervaring! Door de spontane en ontspannen aanpak voelden we ons meteen op ons gemak, met prachtige, natuurlijke foto's als resultaat. Supersnelle service en zeker een aanrader!"</p>
+          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Britt Verbreaken</span><span>Juli 2026</span><span>Evenement fotografie</span></div>
+        </article>
+        <article class="quote-card spotlight p-6 sm:p-8">
+          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
           <p class="text-xl font-medium leading-8 text-[#08243d]">"Thanks for these amazing shots! We had a lot of fun shooting in this wild location. Really grateful for the work you delivered, the pictures turned out incredible. If you ever need a professional photographer, he's your guy. 100% recommend!"</p>
           <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Erio Volders</span><span>Feb 2026</span><span>Portretfotografie</span></div>
         </article>
-        <article class="quote-card p-6 sm:p-8">
+        <article class="quote-card spotlight p-6 sm:p-8">
+          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
           <p class="text-xl font-medium leading-8 text-[#08243d]">"Robin denkt enthousiast mee over de uitstraling van de foto's en staat tegelijk open voor nieuwe ideeën. Dat, gecombineerd met zijn aangename aanpak, resulteert in prachtige beelden."</p>
           <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Nena Gommers</span><span>Januari 2026</span><span>Portretfotografie</span></div>
         </article>
-        <article class="quote-card p-6 sm:p-8">
+        <article class="quote-card spotlight p-6 sm:p-8">
+          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
           <p class="text-xl font-medium leading-8 text-[#08243d]">"Heel goede en snelle service! Foto's waren van zeer professionele kwaliteit en het was vlot communiceren met de fotograaf. Zeker aan te raden voor een fotoshoot!"</p>
           <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Marnix De Swert</span><span>November 2025</span><span>Portretfotografie &amp; evenement fotografie</span></div>
         </article>
-        <article class="quote-card p-6 sm:p-8">
+        <article class="quote-card spotlight p-6 sm:p-8">
+          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
           <p class="text-xl font-medium leading-8 text-[#08243d]">"Wat een fijne ervaring. Professioneel, creatief en met oog voor detail. We zijn ontzettend blij met het resultaat en raden hem zeker aan!"</p>
           <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Bo &amp; Jasper</span><span>Oktober 2025</span><span>Portretfotografie</span></div>
         </article>
-        <article class="quote-card p-6 sm:p-8">
+        <article class="quote-card spotlight p-6 sm:p-8">
+          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
           <p class="text-xl font-medium leading-8 text-[#08243d]">"De fotograaf liep sportief de volledige kruiwagenkoers (4,5 km) mee en legde alle momenten uitstekend vast, zonder dat we hem opmerkten. Als ploeg zijn we enorm blij met de prachtige foto's van ons, het event en de supporters."</p>
           <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Simon Derdin</span><span>Mei 2025</span><span>Evenement fotografie</span></div>
         </article>
       </section>
 
-      <section class="mt-10 blue-card p-8 text-center sm:p-10">
+      <section class="reveal spotlight mt-10 blue-card p-8 text-center sm:p-10">
         <p class="section-label text-[#ffe895]">Volgende review?</p>
         <h2 class="display-font mx-auto mt-3 max-w-3xl text-4xl font-black text-white sm:text-5xl">Laten we iets maken waar je graag op terugkijkt.</h2>
         <a class="button-secondary mt-7 bg-white text-[#064b8e]" href="contact.html">Start een gesprek</a>
@@ -81,13 +91,6 @@
     </main>
 
     <footer class="border-t border-[#064b8e]/10 px-5 py-8 text-center text-sm font-bold text-[#064b8e]/70">Dorpelstudio - Reviews</footer>
-    <script>
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      mobileMenuButton.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('hidden') === false;
-        mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

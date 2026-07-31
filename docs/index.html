@@ -4,8 +4,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Dorpelstudio maakt fotografie en videografie met een heldere, speelse stijl."/>
-    <title>Dorpelstudio | Fotografie en videografie</title>
+    <meta name="description" content="Dorpelstudio is een allround fotograaf uit Putte: events, nightlife, portret, koppels, auto's, vastgoed en meer. Bekijk het werk op Instagram."/>
+    <title>Dorpelstudio | Allround fotograaf</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,850&family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet"/>
@@ -13,6 +13,7 @@
     <link rel="icon" href="images/dorpel-nav-logo.png"/>
   </head>
   <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <header class="sticky top-0 z-50 border-b border-[#064b8e]/10 bg-[#fff8e5]/88 backdrop-blur-xl">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
         <a href="index.html" class="flex items-center gap-3" aria-label="Dorpelstudio home">
@@ -40,76 +41,103 @@
     </header>
 
     <main>
-      <section class="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 pt-12 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:pb-24 lg:pt-20">
-        <div>
-          <span class="pill">Portfolio op Instagram</span>
-          <h1 class="display-font mt-6 max-w-4xl text-5xl font-black leading-[0.95] tracking-tight text-[#064b8e] sm:text-7xl lg:text-8xl">
-            Bekijk het werk op Instagram. Start hier je project.
+      <section class="relative mx-auto grid max-w-7xl items-center gap-10 overflow-hidden px-5 pb-16 pt-12 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:pb-24 lg:pt-20">
+        <div class="hero-glow glow-yellow" data-parallax="0.22" style="top:-6rem;left:-8rem;height:28rem;width:28rem;"></div>
+        <div class="hero-glow glow-cyan" data-parallax="0.12" style="bottom:-10rem;right:-6rem;height:24rem;width:24rem;"></div>
+        <div class="relative z-10">
+          <span class="pill">Allround fotograaf · Putte, Vlaanderen</span>
+          <h1 class="display-font mt-6 max-w-4xl text-5xl font-black leading-[0.98] tracking-tight text-[#064b8e] sm:text-7xl lg:text-[5.5rem]">
+            Fotografie voor elk moment, <span class="marker">elke sfeer</span>.
           </h1>
           <p class="mt-7 max-w-2xl text-lg font-medium leading-8 text-[#08243d]/82 sm:text-xl">
-            Deze website is de voordeur van Dorpelstudio. Mijn actuele foto's, shoots en visuele experimenten vind je op Instagram. Hier lees je wat ik maak en hoe je mij kan bereiken.
+            Ik sta open voor elk project. Stuur me gerust een bericht en we bekijken het idee. Mijn volledige actuele werk zie je op Instagram.
           </p>
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
             <a class="button-primary" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk portfolio op Instagram <span aria-hidden="true">-&gt;</span></a>
             <a class="button-secondary" href="contact.html">Start een project</a>
           </div>
         </div>
-        <div class="blue-card relative overflow-hidden p-6 sm:p-8">
-          <div class="absolute -right-12 -top-12 h-36 w-36 rounded-full bg-[#ffc928]"></div>
-          <div class="absolute bottom-10 right-10 h-20 w-20 rounded-full bg-[#8bcf4f]"></div>
-          <div class="relative z-10 rounded-[1.4rem] bg-white/10 p-6 backdrop-blur sm:p-8">
-            <p class="text-sm font-black uppercase tracking-[0.22em] text-[#ffe895]">Dorpelstudio</p>
-            <p class="mt-3 text-3xl font-black leading-tight sm:text-4xl">Een studio die niet in een hokje hoeft te passen.</p>
-            <p class="mt-5 leading-8 text-white/78">Instagram is mijn levende portfolio: sneller, actueler en dichter bij hoe projecten ontstaan. Deze site houdt het overzichtelijk.</p>
+        <div class="blue-card spotlight relative z-10 overflow-hidden p-7 sm:p-9">
+          <div class="relative z-10">
+            <p class="text-sm font-black uppercase tracking-[0.22em] text-[#ffe895]">Portfolio</p>
+            <p class="mt-3 text-3xl font-black leading-tight sm:text-4xl">Mijn werk leeft op Instagram.</p>
+            <p class="mt-5 leading-8 text-white/78">Daar post ik mijn meest recente shoots. Volg mee of stuur gerust een DM.</p>
+            <a class="mt-6 inline-flex font-black text-[#ffe895]" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">@dorpelstudio <span aria-hidden="true">-&gt;</span></a>
           </div>
         </div>
       </section>
 
       <section class="mx-auto max-w-7xl px-5 py-14 lg:px-8">
-        <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <div class="reveal mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
           <div>
-            <p class="section-label">Wat vind je waar?</p>
-            <h2 class="display-font mt-2 text-4xl font-black text-[#064b8e] sm:text-5xl">Het portfolio leeft op Instagram. De uitleg staat hier.</h2>
+            <p class="section-label">Wat ik fotografeer</p>
+            <h2 class="display-font mt-2 max-w-2xl text-4xl font-black text-[#064b8e] sm:text-5xl">Allround. Van feest tot portret, en alles daartussen.</h2>
           </div>
-          <div class="doodle-line w-40"></div>
+          <div class="doodle-line accent-yellow w-40"></div>
         </div>
-        <div class="grid gap-5 md:grid-cols-2">
-          <article class="threshold-card p-6">
-            <div class="mb-5 h-12 w-12 rounded-2xl bg-[#39a7f5]"></div>
-            <h3 class="text-2xl font-black text-[#064b8e]">Fotografie</h3>
-            <p class="mt-3 leading-7 text-[#08243d]/76">Portretten, events en sfeerbeelden met een natuurlijke aanpak. De meest recente voorbeelden staan op Instagram.</p>
-            <a class="mt-5 inline-flex font-black text-[#064b8e]" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Naar @dorpelstudio</a>
+        <p class="reveal mb-8 max-w-3xl text-lg leading-8 text-[#08243d]/78">
+          Een greep uit wat ik vaker vastleg.
+        </p>
+        <div class="reveal-group grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="threshold-card spotlight p-6">
+            <div class="mb-4 h-2.5 w-10 rounded-full bg-[#39a7f5]"></div>
+            <h3 class="text-xl font-black text-[#064b8e]">Events &amp; feesten</h3>
+            <p class="mt-2 leading-7 text-[#08243d]/76">Van een verjaardagen tot bedrijfsfeesten. Alle soorten evenementen!</p>
           </article>
-          <article class="threshold-card p-6">
-            <div class="mb-5 h-12 w-12 rounded-2xl bg-[#8bcf4f]"></div>
-            <h3 class="text-2xl font-black text-[#064b8e]">Videografie</h3>
-            <p class="mt-3 leading-7 text-[#08243d]/76">Korte video's, reels en sfeerclips voor events, artiesten of projecten die meer beweging nodig hebben dan een foto.</p>
-            <a class="mt-5 inline-flex font-black text-[#064b8e]" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk video op Instagram</a>
+          <article class="threshold-card spotlight p-6">
+            <div class="mb-4 h-2.5 w-10 rounded-full bg-[#064b8e]"></div>
+            <h3 class="text-xl font-black text-[#064b8e]">Nightlife &amp; rave</h3>
+            <p class="mt-2 leading-7 text-[#08243d]/76">Sfeer, energie en cultuur van feestjes, clubs en raves, vastgelegd in beeld.</p>
+          </article>
+          <article class="threshold-card spotlight p-6">
+            <div class="mb-4 h-2.5 w-10 rounded-full bg-[#8bcf4f]"></div>
+            <h3 class="text-xl font-black text-[#064b8e]">Portret &amp; artiesten</h3>
+            <p class="mt-2 leading-7 text-[#08243d]/76">Portretten voor artiesten en mensen die een sterk, persoonlijk beeld nodig hebben.</p>
+          </article>
+          <article class="threshold-card spotlight p-6">
+            <div class="mb-4 h-2.5 w-10 rounded-full bg-[#ffc928]"></div>
+            <h3 class="text-xl font-black text-[#064b8e]">Koppels &amp; mensen</h3>
+            <p class="mt-2 leading-7 text-[#08243d]/76">Natuurlijke shoots voor koppels, vrienden of individueel, zo confortabel mogelijk :))</p>
+          </article>
+          <article class="threshold-card spotlight p-6">
+            <div class="mb-4 h-2.5 w-10 rounded-full bg-[#ef7d38]"></div>
+            <h3 class="text-xl font-black text-[#064b8e]">Auto's</h3>
+            <p class="mt-2 leading-7 text-[#08243d]/76">Automotive shoots; rolling shots or stills. Het karakter van de auto in beeld brengen.</p>
+          </article>
+          <article class="threshold-card spotlight p-6">
+            <div class="mb-4 h-2.5 w-10 rounded-full bg-[#12b3a6]"></div>
+            <h3 class="text-xl font-black text-[#064b8e]">Vastgoed &amp; interieur</h3>
+            <p class="mt-2 leading-7 text-[#08243d]/76">Heldere beelden van woningen en ruimtes, klaar voor verkoop, verhuur of promotie.</p>
           </article>
         </div>
+        <p class="mt-6 text-base font-bold text-[#064b8e]">
+          En veel meer — heb je iets anders in gedachten? <a class="underline" href="contact.html">Vraag het gerust.</a>
+        </p>
       </section>
 
-      <section class="mx-auto max-w-7xl px-5 py-14 lg:px-8">
-        <div class="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-          <div class="blue-card p-8">
+      <section class="relative mx-auto max-w-7xl overflow-hidden px-5 py-14 lg:px-8">
+        <div class="hero-glow glow-yellow" data-parallax="0.14" style="top:2rem;right:-4rem;height:22rem;width:22rem;"></div>
+        <div class="relative z-10 grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+          <div class="reveal blue-card spotlight p-8">
             <p class="section-label text-[#ffe895]">Werkwijze</p>
-            <h2 class="display-font mt-3 text-4xl font-black leading-tight text-white sm:text-5xl">Van vaag idee naar beeld dat blijft hangen.</h2>
-            <p class="mt-5 leading-8 text-white/78">We houden het praktisch: eerst scherp krijgen wat je nodig hebt, daarna maken, bijsturen en opleveren.</p>
+            <h2 class="display-font mt-3 text-4xl font-black leading-tight text-white sm:text-5xl">Een duidelijke aanpak, van eerste contact tot oplevering.</h2>
+            <p class="mt-5 leading-8 text-white/78">We houden het praktisch: eerst helder kijken wat je nodig hebt, dan fotograferen, bijsturen mag altijd :)) Netjes & ASAP opleveren.</p>
           </div>
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div class="brand-card p-6"><span class="pill">Stap 1</span><h3 class="mt-4 text-xl font-black text-[#064b8e]">Richting kiezen</h3><p class="mt-2 text-[#08243d]/72">Wat moet het uitstralen, voor wie is het, en waar moet het landen?</p></div>
-            <div class="brand-card p-6"><span class="pill">Stap 2</span><h3 class="mt-4 text-xl font-black text-[#064b8e]">Maken</h3><p class="mt-2 text-[#08243d]/72">Foto's of video worden uitgewerkt met ruimte om bij te sturen.</p></div>
-            <div class="brand-card p-6"><span class="pill">Stap 3</span><h3 class="mt-4 text-xl font-black text-[#064b8e]">Afwerken</h3><p class="mt-2 text-[#08243d]/72">Kleur, copy, ritme en techniek worden netjes rechtgetrokken.</p></div>
-            <div class="brand-card p-6"><span class="pill">Stap 4</span><h3 class="mt-4 text-xl font-black text-[#064b8e]">Publiceren</h3><p class="mt-2 text-[#08243d]/72">Klaar voor Instagram, socials, drukwerk of je volgende stap.</p></div>
+          <div class="reveal-group grid gap-4 sm:grid-cols-2">
+            <div class="step-card brand-card spotlight p-6"><span class="step-num">01</span><h3 class="mt-3 text-xl font-black text-[#064b8e]">Afstemmen</h3><p class="mt-2 text-[#08243d]/72">Wat wil je vastleggen, voor wie is het en welke sfeer past erbij? We bespreken het Idee.</p></div>
+            <div class="step-card brand-card spotlight p-6"><span class="step-num">02</span><h3 class="mt-3 text-xl font-black text-[#064b8e]">Fotograferen</h3><p class="mt-2 text-[#08243d]/72">Ik ga aan de slag met alle ruimte om bij te sturen. Klant is koning ;)</p></div>
+            <div class="step-card brand-card spotlight p-6"><span class="step-num">03</span><h3 class="mt-3 text-xl font-black text-[#064b8e]">Nabewerking</h3><p class="mt-2 text-[#08243d]/72">Selectie, kleur en afwerking worden zorgvuldig uitgewerkt. Ik werk niet met een prijs per foto, alle gemaakte en bewerkte foto's worden doorgestuurd !</p></div>
+            <div class="step-card brand-card spotlight p-6"><span class="step-num">04</span><h3 class="mt-3 text-xl font-black text-[#064b8e]">Opleveren</h3><p class="mt-2 text-[#08243d]/72">Je ontvangt de beelden klaar zoals jij ze wil, Wij zijn pas tevreden als de klant tevreden is!</p></div>
           </div>
         </div>
       </section>
 
-      <section class="mx-auto max-w-5xl px-5 py-16 text-center lg:px-8">
-        <div class="brand-card p-8 sm:p-12">
-          <p class="section-label">Klaar om over de drempel te stappen?</p>
-          <h2 class="display-font mx-auto mt-3 max-w-3xl text-4xl font-black text-[#064b8e] sm:text-6xl">Vertel wat je wil maken. Ik denk mee.</h2>
-          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#08243d]/76">Bekijk eerst fotografie en videografie op Instagram of stuur meteen je idee door. Beide zijn goed.</p>
+      <section class="relative mx-auto max-w-5xl overflow-hidden px-5 py-16 text-center lg:px-8">
+        <div class="hero-glow glow-yellow" data-parallax="0.16" style="top:1rem;left:50%;margin-left:-11rem;height:22rem;width:22rem;"></div>
+        <div class="reveal brand-card spotlight relative z-10 p-8 sm:p-12">
+          <p class="section-label">Zin om samen te werken?</p>
+          <h2 class="display-font mx-auto mt-3 max-w-3xl text-4xl font-black text-[#064b8e] sm:text-6xl">Vertel wat je wil <span class="marker">laten fotograferen</span>.</h2>
+          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#08243d]/76">Bekijk mijn werk op Instagram of stuur meteen je idee door. Ik denk graag met je mee.</p>
           <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <a class="button-primary" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
             <a class="button-secondary" href="contact.html">Neem contact op</a>
@@ -119,15 +147,8 @@
     </main>
 
     <footer class="border-t border-[#064b8e]/10 px-5 py-8 text-center text-sm font-bold text-[#064b8e]/70">
-      Dorpelstudio - Putte, Vlaanderen - Static website on GitHub Pages
+      Dorpelstudio - Allround fotograaf - Putte, Vlaanderen
     </footer>
-    <script>
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      mobileMenuButton.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('hidden') === false;
-        mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -13,6 +13,7 @@
     <link rel="icon" href="images/dorpel-nav-logo.png"/>
   </head>
   <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
     <header class="sticky top-0 z-50 border-b border-[#064b8e]/10 bg-[#fff8e5]/88 backdrop-blur-xl">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
         <a href="index.html" class="flex items-center gap-3" aria-label="Dorpelstudio home">
@@ -40,66 +41,46 @@
     </header>
 
     <main class="mx-auto max-w-6xl px-5 py-14 lg:px-8 lg:py-20">
-      <section class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-        <div>
-          <p class="section-label">Contact</p>
-          <h1 class="display-font mt-3 text-5xl font-black leading-none text-[#064b8e] sm:text-7xl">Zet je idee op mijn drempel.</h1>
-          <p class="mt-6 max-w-xl text-lg leading-8 text-[#08243d]/78">Voor de snelste reactie mag je mij sturen via Instagram DM, mail of bericht. Vertel kort wat je wil maken, wanneer het ongeveer klaar moet zijn en waar je al aan denkt.</p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a class="button-primary" href="mailto:robin.helsen.rh@gmail.com">Mail Dorpelstudio</a>
-            <a class="button-secondary" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">DM op Instagram</a>
-          </div>
-        </div>
-        <div class="blue-card p-7 sm:p-9">
-          <p class="section-label text-[#ffe895]">Snelle briefing</p>
-          <div class="mt-5 grid gap-4">
-            <div class="field-like p-4 text-[#08243d]"><strong>1. Wat wil je maken?</strong><br/>Shoot, website, content, of iets anders.</div>
-            <div class="field-like p-4 text-[#08243d]"><strong>2. Wanneer heb je het nodig?</strong><br/>Een datum of ruwe timing is genoeg.</div>
-            <div class="field-like p-4 text-[#08243d]"><strong>3. Welke sfeer past?</strong><br/>Rustig, speels, strak, opvallend, persoonlijk.</div>
-          </div>
-        </div>
+      <section class="relative overflow-hidden">
+        <div class="hero-glow glow-yellow" data-parallax="0.18" style="top:-7rem;left:-7rem;height:24rem;width:24rem;"></div>
+        <div class="reveal relative z-10">
+          <h1 class="display-font mt-6 text-5xl font-black leading-none text-[#064b8e] sm:text-7xl">Laten we <span class="marker">samenwerken</span>.</h1>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-[#08243d]/78">Voor de snelste reactie stuur mij gerust op meerdere platformen.</p>
+            <span class="pill status-pill mt-4 inline-block"><span class="status-dot"></span> Nu beschikbaar voor nieuwe shoots</span>
       </section>
 
-      <section class="mt-10 grid gap-5 md:grid-cols-2">
-        <article class="form-card p-6 sm:p-8">
+      <section class="reveal-group mt-10 grid gap-5 md:grid-cols-2">
+        <article class="form-card spotlight p-6 sm:p-8">
           <h2 class="text-2xl font-black text-[#064b8e]">Email</h2>
-          <a href="mailto:robin.helsen.rh@gmail.com" class="mt-3 inline-block text-lg font-bold text-[#08243d]/78 hover:text-[#064b8e]">robin.helsen.rh@gmail.com</a>
+          <p class="mt-3 select-all text-lg font-bold text-[#064b8e]">dorpelstudio@gmail.com</p>
         </article>
-        <article class="form-card p-6 sm:p-8">
+        <article class="form-card spotlight p-6 sm:p-8">
           <h2 class="text-2xl font-black text-[#064b8e]">Telefoon</h2>
           <a href="tel:+32492393799" class="mt-3 inline-block text-lg font-bold text-[#08243d]/78 hover:text-[#064b8e]">+32 492 39 37 99</a>
         </article>
-        <article class="form-card p-6 sm:p-8">
+        <article class="form-card spotlight p-6 sm:p-8">
           <h2 class="text-2xl font-black text-[#064b8e]">Instagram</h2>
           <a href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block text-lg font-bold text-[#08243d]/78 hover:text-[#064b8e]">@dorpelstudio</a>
         </article>
-        <article class="form-card p-6 sm:p-8">
+        <article class="form-card spotlight p-6 sm:p-8">
           <h2 class="text-2xl font-black text-[#064b8e]">Locatie</h2>
           <p class="mt-3 text-lg font-bold text-[#08243d]/78">Putte, Vlaanderen, Belgie</p>
-          <p class="mt-2 text-sm font-bold text-[#064b8e]/64">Beschikbaar voor projecten in Belgie en Zuid-Nederland.</p>
         </article>
       </section>
 
-      <section class="mt-10 brand-card p-8 sm:p-10">
+      <section class="reveal spotlight mt-10 brand-card p-8 sm:p-10">
         <div class="grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
           <div>
             <p class="section-label">Beschikbaarheid</p>
             <h2 class="display-font mt-3 text-4xl font-black text-[#064b8e] sm:text-5xl">Weekends werken meestal het best.</h2>
             <p class="mt-4 leading-8 text-[#08243d]/76">Beschikbaarheid is variabel. Stuur gerust een datum door, dan kijk ik wat mogelijk is. Reactietijd: zo snel mogelijk.</p>
           </div>
-          <a class="button-primary" href="mailto:robin.helsen.rh@gmail.com?subject=Project%20voor%20Dorpelstudio">Vraag beschikbaarheid</a>
+          <a class="button-primary" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">DM op Instagram</a>
         </div>
       </section>
     </main>
 
     <footer class="border-t border-[#064b8e]/10 px-5 py-8 text-center text-sm font-bold text-[#064b8e]/70">Dorpelstudio - Contact</footer>
-    <script>
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      mobileMenuButton.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('hidden') === false;
-        mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
