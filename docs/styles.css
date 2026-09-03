@@ -648,6 +648,12 @@ h4 {
   background: var(--paper);
 }
 
+/* With an odd number of items the last row has an empty cell, which would show
+   the container's line colour as a grey slab. Let that item span instead. */
+.grid-hair--2 > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .grid-hair--2,
 .grid-hair--3 {
   grid-template-columns: 1fr;
@@ -829,6 +835,7 @@ h4 {
 
 .review__quote {
   flex: 1;
+  max-width: 60ch;
   font-family: "Instrument Serif", Georgia, serif;
   font-size: clamp(1.2rem, 1.9vw, 1.45rem);
   line-height: 1.48;
@@ -1088,6 +1095,14 @@ h4 {
 
 [data-reveal-group].is-visible > *:nth-child(6) {
   animation-delay: 400ms;
+}
+
+[data-reveal-group].is-visible > *:nth-child(7) {
+  animation-delay: 480ms;
+}
+
+[data-reveal-group].is-visible > *:nth-child(8) {
+  animation-delay: 560ms;
 }
 
 @keyframes rise {
