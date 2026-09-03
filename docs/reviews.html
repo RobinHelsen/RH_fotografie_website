@@ -1,96 +1,210 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Reviews voor Dorpelstudio en eerdere fotografieprojecten."/>
     <title>Reviews | Dorpelstudio</title>
+    <meta name="description" content="Reviews voor Dorpelstudio en eerdere fotografieprojecten."/>
+    <link rel="canonical" href="https://dorpelstudio.be/reviews.html"/>
+    <meta name="theme-color" content="#fbfaf8"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="nl_BE"/>
+    <meta property="og:site_name" content="Dorpelstudio"/>
+    <meta property="og:title" content="Reviews | Dorpelstudio"/>
+    <meta property="og:description" content="Reacties van mensen en teams met wie ik samenwerkte."/>
+    <meta property="og:url" content="https://dorpelstudio.be/reviews.html"/>
+    <link rel="icon" href="images/dorpel-nav-logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,850&family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="icon" href="images/dorpel-nav-logo.png"/>
+    <noscript><style>[data-reveal],[data-reveal-group]>*{opacity:1;transform:none}</style></noscript>
   </head>
   <body>
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
-    <header class="sticky top-0 z-50 border-b border-[#064b8e]/10 bg-[#fff8e5]/88 backdrop-blur-xl">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
-        <a href="index.html" class="flex items-center gap-3" aria-label="Dorpelstudio home">
-          <img src="images/dorpel-nav-logo.png" alt="Dorpelstudio" class="h-10 w-auto object-contain"/>
-          <span class="hidden text-lg font-black tracking-tight text-[#064b8e] sm:inline">Dorpelstudio</span>
+
+    <svg class="svg-sprite" aria-hidden="true" focusable="false">
+      <symbol id="star" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 17.27 5.82 21l1.64-7.03L2 9.24l7.19-.62L12 2l2.81 6.62 7.19.62-5.46 4.73L18.18 21z"/>
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Dorpelstudio, naar de homepagina">
+          <span>Dorpelstudio</span>
         </a>
-        <nav class="hidden items-center gap-1 md:flex" aria-label="Hoofdnavigatie">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link active" href="reviews.html">Reviews</a>
-          <a class="nav-link" href="aboutme.html">Over mij</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+        <nav class="nav" aria-label="Hoofdnavigatie">
+          <a href="index.html">Home</a>
+          <a class="is-active" href="reviews.html" aria-current="page">Reviews</a>
+          <a href="aboutme.html">Over mij</a>
+          <a href="contact.html">Contact</a>
         </nav>
-        <button id="mobile-menu-button" class="rounded-full bg-[#064b8e] p-3 text-white md:hidden" aria-label="Open menu" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
         </button>
       </div>
-      <div id="mobile-menu" class="hidden border-t border-[#064b8e]/10 bg-[#fff8e5]/96 px-5 py-4 md:hidden">
-        <nav class="grid gap-2" aria-label="Mobiele navigatie">
-          <a class="mobile-link" href="index.html">Home</a>
-          <a class="mobile-link active" href="reviews.html">Reviews</a>
-          <a class="mobile-link" href="aboutme.html">Over mij</a>
-          <a class="mobile-link" href="contact.html">Contact</a>
-        </nav>
-      </div>
+      <nav class="container mobile-nav" id="mobile-nav" aria-label="Mobiele navigatie" hidden>
+        <a href="index.html">Home</a>
+        <a class="is-active" href="reviews.html" aria-current="page">Reviews</a>
+        <a href="aboutme.html">Over mij</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
-    <main class="mx-auto max-w-6xl px-5 py-14 lg:px-8 lg:py-20">
-      <section class="relative mb-10 grid gap-6 overflow-hidden lg:grid-cols-[1fr_0.55fr] lg:items-end">
-        <div class="hero-glow glow-yellow" data-parallax="0.16" style="top:-6rem;left:-6rem;height:22rem;width:22rem;"></div>
-        <div class="reveal relative z-10">
-          <h1 class="display-font mt-3 text-5xl font-black leading-none text-[#064b8e] sm:text-7xl">Reviews.</h1>
+    <main>
+      <section class="section section--lead">
+        <div class="container split">
+          <div data-reveal>
+            <p class="eyebrow">Referenties</p>
+            <h1 class="serif display mt-sm">Reviews.</h1>
+            <p class="lede mt-md">Reacties van mensen en teams met wie ik samenwerkte.</p>
+          </div>
+
+          <div class="panel" data-reveal>
+            <p class="eyebrow">Gemiddelde beoordeling</p>
+            <div class="rating mt-sm">
+              <span class="rating__score">5,0</span>
+              <span class="stars" role="img" aria-label="5 van 5 sterren">
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+              </span>
+            </div>
+            <p class="note mt-sm">Op basis van 6 reviews, van portret tot evenement.</p>
+          </div>
         </div>
-        <div></div>
-          <p class="text-lg font-bold leading-8 text-[#08243d]/78">Reacties van mensen en teams met wie ik samenwerkte.</p>
       </section>
 
-      <section class="reveal-group grid gap-5">
-        <article class="quote-card spotlight p-6 sm:p-8">
-          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
-          <p class="text-xl font-medium leading-8 text-[#08243d]">"Superfijne ervaring! Door de spontane en ontspannen aanpak voelden we ons meteen op ons gemak, met prachtige, natuurlijke foto's als resultaat. Supersnelle service en zeker een aanrader!"</p>
-          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Britt Verbreaken</span><span>Juli 2026</span><span>Evenement fotografie</span></div>
-        </article>
-        <article class="quote-card spotlight p-6 sm:p-8">
-          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
-          <p class="text-xl font-medium leading-8 text-[#08243d]">"Thanks for these amazing shots! We had a lot of fun shooting in this wild location. Really grateful for the work you delivered, the pictures turned out incredible. If you ever need a professional photographer, he's your guy. 100% recommend!"</p>
-          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Erio Volders</span><span>Feb 2026</span><span>Portretfotografie</span></div>
-        </article>
-        <article class="quote-card spotlight p-6 sm:p-8">
-          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
-          <p class="text-xl font-medium leading-8 text-[#08243d]">"Robin denkt enthousiast mee over de uitstraling van de foto's en staat tegelijk open voor nieuwe ideeën. Dat, gecombineerd met zijn aangename aanpak, resulteert in prachtige beelden."</p>
-          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Nena Gommers</span><span>Januari 2026</span><span>Portretfotografie</span></div>
-        </article>
-        <article class="quote-card spotlight p-6 sm:p-8">
-          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
-          <p class="text-xl font-medium leading-8 text-[#08243d]">"Heel goede en snelle service! Foto's waren van zeer professionele kwaliteit en het was vlot communiceren met de fotograaf. Zeker aan te raden voor een fotoshoot!"</p>
-          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Marnix De Swert</span><span>November 2025</span><span>Portretfotografie &amp; evenement fotografie</span></div>
-        </article>
-        <article class="quote-card spotlight p-6 sm:p-8">
-          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
-          <p class="text-xl font-medium leading-8 text-[#08243d]">"Wat een fijne ervaring. Professioneel, creatief en met oog voor detail. We zijn ontzettend blij met het resultaat en raden hem zeker aan!"</p>
-          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Bo &amp; Jasper</span><span>Oktober 2025</span><span>Portretfotografie</span></div>
-        </article>
-        <article class="quote-card spotlight p-6 sm:p-8">
-          <div class="stars" aria-label="5 van 5 sterren">★★★★★</div>
-          <p class="text-xl font-medium leading-8 text-[#08243d]">"De fotograaf liep sportief de volledige kruiwagenkoers (4,5 km) mee en legde alle momenten uitstekend vast, zonder dat we hem opmerkten. Als ploeg zijn we enorm blij met de prachtige foto's van ons, het event en de supporters."</p>
-          <div class="mt-6 flex flex-wrap items-center gap-3 border-t border-[#064b8e]/12 pt-4 text-sm font-bold text-[#064b8e]/72"><span class="text-[#064b8e]">Simon Derdin</span><span>Mei 2025</span><span>Evenement fotografie</span></div>
-        </article>
+      <section class="section section--no-top">
+        <div class="container">
+          <div class="grid-hair grid-hair--2" data-reveal data-reveal-group>
+            <article class="review">
+              <span class="stars" role="img" aria-label="5 van 5 sterren">
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+              </span>
+              <blockquote class="review__quote">“Superfijne ervaring! Door de spontane en ontspannen aanpak voelden we ons meteen op ons gemak, met prachtige, natuurlijke foto's als resultaat. Supersnelle service en zeker een aanrader!”</blockquote>
+              <p class="review__meta"><strong>Britt Verbreaken</strong><span>Juli 2026</span><span>Evenement fotografie</span></p>
+            </article>
+
+            <article class="review">
+              <span class="stars" role="img" aria-label="5 van 5 sterren">
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+              </span>
+              <blockquote class="review__quote">“Thanks for these amazing shots! We had a lot of fun shooting in this wild location. Really grateful for the work you delivered, the pictures turned out incredible. If you ever need a professional photographer, he's your guy. 100% recommend!”</blockquote>
+              <p class="review__meta"><strong>Erio Volders</strong><span>Feb 2026</span><span>Portretfotografie</span></p>
+            </article>
+
+            <article class="review">
+              <span class="stars" role="img" aria-label="5 van 5 sterren">
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+              </span>
+              <blockquote class="review__quote">“Robin denkt enthousiast mee over de uitstraling van de foto's en staat tegelijk open voor nieuwe ideeën. Dat, gecombineerd met zijn aangename aanpak, resulteert in prachtige beelden.”</blockquote>
+              <p class="review__meta"><strong>Nena Gommers</strong><span>Januari 2026</span><span>Portretfotografie</span></p>
+            </article>
+
+            <article class="review">
+              <span class="stars" role="img" aria-label="5 van 5 sterren">
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+              </span>
+              <blockquote class="review__quote">“Heel goede en snelle service! Foto's waren van zeer professionele kwaliteit en het was vlot communiceren met de fotograaf. Zeker aan te raden voor een fotoshoot!”</blockquote>
+              <p class="review__meta"><strong>Marnix De Swert</strong><span>November 2025</span><span>Portretfotografie &amp; evenement fotografie</span></p>
+            </article>
+
+            <article class="review">
+              <span class="stars" role="img" aria-label="5 van 5 sterren">
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+              </span>
+              <blockquote class="review__quote">“Wat een fijne ervaring. Professioneel, creatief en met oog voor detail. We zijn ontzettend blij met het resultaat en raden hem zeker aan!”</blockquote>
+              <p class="review__meta"><strong>Bo &amp; Jasper</strong><span>Oktober 2025</span><span>Portretfotografie</span></p>
+            </article>
+
+            <article class="review">
+              <span class="stars" role="img" aria-label="5 van 5 sterren">
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+                <svg aria-hidden="true"><use href="#star"/></svg>
+              </span>
+              <blockquote class="review__quote">“De fotograaf liep sportief de volledige kruiwagenkoers (4,5 km) mee en legde alle momenten uitstekend vast, zonder dat we hem opmerkten. Als ploeg zijn we enorm blij met de prachtige foto's van ons, het event en de supporters.”</blockquote>
+              <p class="review__meta"><strong>Simon Derdin</strong><span>Mei 2025</span><span>Evenement fotografie</span></p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section class="reveal spotlight mt-10 blue-card p-8 text-center sm:p-10">
-        <p class="section-label text-[#ffe895]">Volgende review?</p>
-        <h2 class="display-font mx-auto mt-3 max-w-3xl text-4xl font-black text-white sm:text-5xl">Laten we iets maken waar je graag op terugkijkt.</h2>
-        <a class="button-secondary mt-7 bg-white text-[#064b8e]" href="contact.html">Start een gesprek</a>
+      <section class="section band--dark">
+        <div class="container center-block" data-reveal>
+          <p class="eyebrow">Volgende review?</p>
+          <h2 class="serif h2 mt-sm">Laten we iets maken waar je graag op <span class="underline-accent">terugkijkt</span>.</h2>
+          <div class="btn-row mt-lg">
+            <a class="btn btn--light" href="contact.html">Start een gesprek</a>
+            <a class="btn btn--outline-light" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="border-t border-[#064b8e]/10 px-5 py-8 text-center text-sm font-bold text-[#064b8e]/70">Dorpelstudio - Reviews</footer>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span>Dorpelstudio</span>
+          </a>
+          <p class="footer-about">
+            Allround fotograaf uit Putte, Vlaanderen. Events, nightlife, portret,
+            koppels, auto's, vastgoed en meer.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">Navigatie</p>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="aboutme.html">Over mij</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-title">Contact</p>
+          <ul class="footer-list">
+            <li><a href="mailto:dorpelstudio@gmail.com">dorpelstudio@gmail.com</a></li>
+            <li><a href="tel:+32492393799">+32 492 39 37 99</a></li>
+            <li><a href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">@dorpelstudio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Dorpelstudio</span>
+          <span>Putte, Vlaanderen, België</span>
+        </div>
+      </div>
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>

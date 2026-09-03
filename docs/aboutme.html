@@ -1,94 +1,157 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Over Dorpelstudio: fotografie, IT, muziek en natuur in een korte bio."/>
     <title>Over mij | Dorpelstudio</title>
+    <meta name="description" content="Over Dorpelstudio: fotografie, IT, muziek en natuur in een korte bio."/>
+    <link rel="canonical" href="https://dorpelstudio.be/aboutme.html"/>
+    <meta name="theme-color" content="#fbfaf8"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="nl_BE"/>
+    <meta property="og:site_name" content="Dorpelstudio"/>
+    <meta property="og:title" content="Over mij | Dorpelstudio"/>
+    <meta property="og:description" content="De fotograaf achter Dorpelstudio: fotografie, technologie, muziek en natuur."/>
+    <meta property="og:url" content="https://dorpelstudio.be/aboutme.html"/>
+    <link rel="icon" href="images/dorpel-nav-logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,850&family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="icon" href="images/dorpel-nav-logo.png"/>
+    <noscript><style>[data-reveal],[data-reveal-group]>*{opacity:1;transform:none}</style></noscript>
   </head>
   <body>
     <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
-    <header class="sticky top-0 z-50 border-b border-[#064b8e]/10 bg-[#fff8e5]/88 backdrop-blur-xl">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
-        <a href="index.html" class="flex items-center gap-3" aria-label="Dorpelstudio home">
-          <img src="images/dorpel-nav-logo.png" alt="Dorpelstudio" class="h-10 w-auto object-contain"/>
-          <span class="hidden text-lg font-black tracking-tight text-[#064b8e] sm:inline">Dorpelstudio</span>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Dorpelstudio, naar de homepagina">
+          <span>Dorpelstudio</span>
         </a>
-        <nav class="hidden items-center gap-1 md:flex" aria-label="Hoofdnavigatie">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="reviews.html">Reviews</a>
-          <a class="nav-link active" href="aboutme.html">Over mij</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+        <nav class="nav" aria-label="Hoofdnavigatie">
+          <a href="index.html">Home</a>
+          <a href="reviews.html">Reviews</a>
+          <a class="is-active" href="aboutme.html" aria-current="page">Over mij</a>
+          <a href="contact.html">Contact</a>
         </nav>
-        <button id="mobile-menu-button" class="rounded-full bg-[#064b8e] p-3 text-white md:hidden" aria-label="Open menu" aria-expanded="false">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-5 w-5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
         </button>
       </div>
-      <div id="mobile-menu" class="hidden border-t border-[#064b8e]/10 bg-[#fff8e5]/96 px-5 py-4 md:hidden">
-        <nav class="grid gap-2" aria-label="Mobiele navigatie">
-          <a class="mobile-link" href="index.html">Home</a>
-          <a class="mobile-link" href="reviews.html">Reviews</a>
-          <a class="mobile-link active" href="aboutme.html">Over mij</a>
-          <a class="mobile-link" href="contact.html">Contact</a>
-        </nav>
-      </div>
+      <nav class="container mobile-nav" id="mobile-nav" aria-label="Mobiele navigatie" hidden>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a class="is-active" href="aboutme.html" aria-current="page">Over mij</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
-    <main class="mx-auto max-w-6xl px-5 py-14 lg:px-8 lg:py-20">
-      <section class="relative grid gap-8 overflow-hidden lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-        <div class="reveal brand-card spotlight relative z-10 p-7 sm:p-10">
-          <p class="section-label">Over mij</p>
-          <h1 class="display-font mt-3 text-5xl font-black leading-none text-[#064b8e] sm:text-7xl">De <span class="underline-draw">fotograaf</span> achter Dorpel</h1>
-          <p class="mt-6 text-lg leading-8 text-[#08243d]/78">Fotografie begon als een manier om leuke momenten vast te leggen en is uitgegroeid tot waar ik heel graag mijn tijd in steek.</p>
-          <p class="mt-4 text-lg leading-8 text-[#08243d]/78">Ik werk graag natuurlijk en persoonlijk. Geen geforceerde ontmoetingen, wel beelden die passen bij de persoon of het moment.</p>
+    <main>
+      <section class="section section--lead">
+        <div class="container split split--top">
+          <div data-reveal>
+            <p class="eyebrow">Over mij</p>
+            <h1 class="serif display mt-sm">De <span class="underline-accent">fotograaf</span> achter Dorpel</h1>
+            <p class="lede mt-md">
+              Fotografie begon als een manier om leuke momenten vast te leggen en is uitgegroeid
+              tot waar ik heel graag mijn tijd in steek.
+            </p>
+            <p class="body-text mt-sm measure">
+              Ik werk graag natuurlijk en persoonlijk. Geen geforceerde ontmoetingen, wel beelden
+              die passen bij de persoon of het moment.
+            </p>
+          </div>
+
+          <aside class="panel panel--dark" data-reveal>
+            <p class="eyebrow">Mijn aanpak</p>
+            <h2 class="serif h3 mt-sm">Oog voor beeld, sfeer en detail.</h2>
+            <p class="body-text mt-sm">
+              Ik werk graag persoonlijk en rustgevend, om iedereen op hun gemak te stellen.
+              Klein genoeg om persoonlijk te blijven, breed genoeg om in heel wat situaties
+              mee te draaien.
+            </p>
+          </aside>
         </div>
-        <div class="hero-glow glow-yellow" data-parallax="0.16" style="bottom:-8rem;right:-6rem;height:24rem;width:24rem;"></div>
-        <div class="reveal blue-card spotlight relative z-10 p-7 sm:p-9">
-          <p class="section-label text-[#ffe895]">Mijn aanpak</p>
-          <h2 class="display-font mt-3 text-4xl font-black leading-tight text-white sm:text-5xl">Oog voor beeld, <span class="marker">sfeer</span> en detail.</h2>
-          <p class="mt-5 leading-8 text-white/78">Ik werk graag persoonlijk en rustgevend, om iedereen op hun gemak te stellen. Klein genoeg om persoonlijk te blijven, breed genoeg om in heel wat situaties mee te draaien :))</p>
-        </div>
-        
       </section>
 
-      <section class="reveal-group mt-10 grid gap-5 md:grid-cols-2">
-        <article class="threshold-card spotlight p-6 sm:p-8">
-          <div class="mb-4 h-2.5 w-10 rounded-full bg-[#ffc928]"></div>
-          <h2 class="text-2xl font-black text-[#064b8e]">Fotografie</h2>
-          <p class="mt-3 leading-7 text-[#08243d]/76">Ik leg graag echte momenten vast. Mijn favoriete beelden ontstaan vaak net tussen poses door, wanneer iemand weer zichzelf wordt.</p>
-        </article>
-        <article class="threshold-card spotlight p-6 sm:p-8">
-          <div class="mb-4 h-2.5 w-10 rounded-full bg-[#39a7f5]"></div>
-          <h2 class="text-2xl font-black text-[#064b8e]">Technologie</h2>
-          <p class="mt-3 leading-7 text-[#08243d]/76">Naast de camera ben ik gefascineerd door technologie: hardware, software. Daarom is het begrijpen van specs achter de camera extra interessant.</p>
-        </article>
-        <article class="threshold-card spotlight p-6 sm:p-8">
-          <div class="mb-4 h-2.5 w-10 rounded-full bg-[#ef7d38]"></div>
-          <h2 class="text-2xl font-black text-[#064b8e]">Muziek</h2>
-          <p class="mt-3 leading-7 text-[#08243d]/76">Abstracte en zware EDM geeft mij energie. Die liefde voor abstractie zie je ook terug in hoe ik graag maak.</p>
-        </article>
-        <article class="threshold-card spotlight p-6 sm:p-8">
-          <div class="mb-4 h-2.5 w-10 rounded-full bg-[#8bcf4f]"></div>
-          <h2 class="text-2xl font-black text-[#064b8e]">Natuur &amp; trektochten</h2>
-          <p class="mt-3 leading-7 text-[#08243d]/76">Ik hou van trektochten, mezelf testen fysiek en onderweg composities zien en vastleggen. Die blik neem ik mee naar shoots en creatieve projecten.</p>
-        </article>
+      <section class="section" id="achtergrond">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="eyebrow">Achtergrond</p>
+            <h2 class="serif h2">Waar mijn blik vandaan komt.</h2>
+          </div>
+
+          <div class="grid-hair grid-hair--2" data-reveal data-reveal-group>
+            <article class="tile tile--lead" style="--accent: var(--a-yellow)">
+              <h3 class="tile__title">Fotografie</h3>
+              <p class="tile__text">Ik leg graag echte momenten vast. Mijn favoriete beelden ontstaan vaak net tussen poses door, wanneer iemand weer zichzelf wordt.</p>
+            </article>
+            <article class="tile tile--lead" style="--accent: var(--a-cyan)">
+              <h3 class="tile__title">Technologie</h3>
+              <p class="tile__text">Naast de camera ben ik gefascineerd door technologie: hardware, software. Daarom is het begrijpen van specs achter de camera extra interessant.</p>
+            </article>
+            <article class="tile tile--lead" style="--accent: var(--a-orange)">
+              <h3 class="tile__title">Muziek</h3>
+              <p class="tile__text">Abstracte en zware EDM geeft mij energie. Die liefde voor abstractie zie je ook terug in hoe ik graag maak.</p>
+            </article>
+            <article class="tile tile--lead" style="--accent: var(--a-green)">
+              <h3 class="tile__title">Natuur &amp; trektochten</h3>
+              <p class="tile__text">Ik hou van trektochten, mezelf testen fysiek en onderweg composities zien en vastleggen. Die blik neem ik mee naar shoots en creatieve projecten.</p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section class="reveal spotlight mt-10 brand-card p-8 text-center sm:p-10">
-        <p class="section-label">Samenwerken</p>
-        <h2 class="display-font mx-auto mt-3 max-w-3xl text-4xl font-black text-[#064b8e] sm:text-5xl">Iets voor de camera in gedachten?</h2>
-        <p class="mx-auto mt-4 max-w-2xl leading-8 text-[#08243d]/76">Stuur het door. Ik denk graag mee over beeld, sfeer en aanpak.</p>
-        <a class="button-primary mt-7" href="contact.html">Neem contact op</a>
+      <section class="section band--dark">
+        <div class="container center-block" data-reveal>
+          <p class="eyebrow">Samenwerken</p>
+          <h2 class="serif h2 mt-sm">Iets voor de camera in <span class="underline-accent">gedachten</span>?</h2>
+          <p class="lede mt-md">Stuur het door. Ik denk graag mee over beeld, sfeer en aanpak.</p>
+          <div class="btn-row mt-lg">
+            <a class="btn btn--light" href="contact.html">Neem contact op</a>
+            <a class="btn btn--outline-light" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="border-t border-[#064b8e]/10 px-5 py-8 text-center text-sm font-bold text-[#064b8e]/70">Dorpelstudio - Putte, Vlaanderen</footer>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span>Dorpelstudio</span>
+          </a>
+          <p class="footer-about">
+            Allround fotograaf uit Putte, Vlaanderen. Events, nightlife, portret,
+            koppels, auto's, vastgoed en meer.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">Navigatie</p>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="aboutme.html">Over mij</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-title">Contact</p>
+          <ul class="footer-list">
+            <li><a href="mailto:dorpelstudio@gmail.com">dorpelstudio@gmail.com</a></li>
+            <li><a href="tel:+32492393799">+32 492 39 37 99</a></li>
+            <li><a href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">@dorpelstudio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Dorpelstudio</span>
+          <span>Putte, Vlaanderen, België</span>
+        </div>
+      </div>
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
