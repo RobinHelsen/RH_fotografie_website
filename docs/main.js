@@ -237,6 +237,7 @@
       var when = composer.querySelector('input[type="date"]');
       var send = composer.querySelector('[data-send]');
       var form = composer.querySelector('form');
+      var gmail = composer.querySelector('[data-gmail]');
 
       var update = function () {
         var subject = 'Shootaanvraag: ' + what.value;
@@ -247,6 +248,8 @@
         }
         line += '.\n\nOver het idee:\n\n';
         send.href = 'mailto:dorpelstudio@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(line);
+        // the same mail, written in Gmail in the browser, for visitors without a mail app
+        if (gmail) gmail.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=dorpelstudio@gmail.com&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(line);
       };
 
       what.addEventListener('change', update);

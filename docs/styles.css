@@ -367,6 +367,7 @@ p { text-wrap: pretty; }
   .composer__send:hover span:last-child { transform: translateX(4px); }
 }
 .composer__note { margin-top: 0.75rem; font-size: var(--step-small); font-weight: 500; }
+.composer__note .link { font-weight: 600; text-decoration-color: currentColor; }
 
 /* ---------- Footer: name across the last photograph ---------- */
 .site-footer { position: relative; overflow: hidden; color: var(--on-navy); background: var(--navy); min-height: 88svh; display: flex; flex-direction: column; justify-content: space-between; }
@@ -462,11 +463,6 @@ p { text-wrap: pretty; }
   transition: color var(--t-ui) ease, text-decoration-color 400ms ease;
 }
 .home .index-row.is-on h3 { text-decoration-color: var(--accent); }
-/* the moments on the slip */
-.home .slip__group > h3 {
-  text-decoration: underline; text-decoration-color: var(--accent);
-  text-decoration-thickness: 0.18em; text-underline-offset: 0.3em; text-decoration-skip-ink: auto;
-}
 
 /* =========================================================================
    Desktop: the split
