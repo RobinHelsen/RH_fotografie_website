@@ -3,248 +3,241 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Dorpelstudio | Allround fotograaf</title>
-    <meta name="description" content="Dorpelstudio is een allround fotograaf uit Putte: events, nightlife, portret, koppels, auto's, vastgoed en meer. Bekijk het werk op Instagram."/>
+    <title>Dorpelstudio | Allround fotograaf uit Putte</title>
+    <meta name="description" content="Dorpelstudio is een allround fotograaf uit Putte: events, nightlife, portret, koppels en meer. Bekijk het werk op Instagram."/>
     <link rel="canonical" href="https://dorpelstudio.be/"/>
-    <meta name="theme-color" content="#fbfaf8"/>
+    <meta name="theme-color" content="#052247"/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="nl_BE"/>
     <meta property="og:site_name" content="Dorpelstudio"/>
-    <meta property="og:title" content="Dorpelstudio | Allround fotograaf"/>
-    <meta property="og:description" content="Allround fotograaf uit Putte: events, nightlife, portret, koppels, auto's, vastgoed en meer."/>
+    <meta property="og:title" content="Dorpelstudio | Allround fotograaf uit Putte"/>
+    <meta property="og:description" content="Allround fotograaf uit Putte: events, nightlife, portret, koppels en meer."/>
     <meta property="og:url" content="https://dorpelstudio.be/"/>
     <link rel="icon" href="images/dorpel-nav-logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"/>
-    <noscript><style>[data-reveal],[data-reveal-group]>*{opacity:1;transform:none}</style></noscript>
+    <script src="main.js" defer></script>
   </head>
-  <body>
-    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <body class="home">
+    <a class="skip" href="#main">Naar de inhoud</a>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Dorpelstudio, naar de homepagina">
-          <span>Dorpelstudio</span>
-        </a>
-        <nav class="nav" aria-label="Hoofdnavigatie">
-          <a class="is-active" href="index.html" aria-current="page">Home</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="aboutme.html">Over mij</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-          <span></span><span></span><span></span>
-        </button>
+    <div class="split">
+      <!-- The stage: one photograph always in view. Replace the files in images/foto/ with your own
+           and remove from each figure once it shows your work. -->
+      <div class="stage" data-stage>
+        <div class="stage__frame">
+          <figure class="shot shot--fill is-on" data-shot="hero" data-shot-default>
+            <img src="images/foto/hero.jpg" width="1066" height="1600" alt="Uitzicht over de daken van een stad, door een opening in een stenen muur"/>
+          </figure>
+          <figure class="shot" data-shot="events">
+            <img src="images/foto/events.jpg" width="1066" height="1600" alt="Een dj met cowboyhoed achter de draaitafels, voor een verlicht reuzenrad op een festival"/>
+          </figure>
+          <figure class="shot" data-shot="nightlife">
+            <img src="images/foto/nightlife.jpg" width="1066" height="1600" alt="Een dj op een podium in blauw licht"/>
+          </figure>
+          <figure class="shot" data-shot="portret">
+            <img src="images/foto/portret.jpg" width="1066" height="1600" alt="Iemand in een witte hoodie tussen industriële buizen"/>
+          </figure>
+          <figure class="shot" data-shot="koppels">
+            <img src="images/foto/koppels.jpg" width="1066" height="1600" alt="Een vrouw in een groene blazer met zonnebril, leunend tegen een stenen zuil"/>
+          </figure>
+        </div>
       </div>
-      <nav class="container mobile-nav" id="mobile-nav" aria-label="Mobiele navigatie" hidden>
-        <a class="is-active" href="index.html" aria-current="page">Home</a>
+
+      <div class="flow">
+        <header class="site-header site-header--spread">
+          <nav class="site-nav" aria-label="Hoofdnavigatie">
+            <a href="index.html" aria-current="page" data-home><span class="roll" data-label="Home">Home</span></a>
+            <a href="reviews.html"><span class="roll" data-label="Reviews">Reviews</span></a>
+            <a href="aboutme.html"><span class="roll" data-label="Over mij">Over mij</span></a>
+            <a href="contact.html"><span class="roll" data-label="Contact">Contact</span></a>
+            <a class="btn btn--accent btn--small site-nav__ig" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>Instagram</a>
+          </nav>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen"><span class="burger" aria-hidden="true"><span></span><span></span><span></span></span></button>
+          <a class="btn btn--accent btn--small" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>Instagram</a>
+        </header>
+
+        <main id="main">
+          <section class="hero" data-shot="hero">
+            <div class="hero__body">
+              <p class="hero__lede hero__lede--statement">Allround fotograaf<br/> uit Putte, Vlaanderen.</p>
+              <p class="hero__text">Ik sta open voor elk project. Stuur me gerust een bericht en we bekijken het idee. Mijn volledige actuele werk zie je op Instagram.</p>
+              <div class="hero__actions">
+                <a class="btn btn--accent" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">
+                  Bekijk portfolio
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="link" href="#contact">Start een project</a>
+              </div>
+            </div>
+            <h1 class="wordmark" data-fit="hero"><span>dor<span class="wordmark__line">pelstudio</span></span></h1>
+          </section>
+
+          <section class="werk" id="werk" aria-labelledby="werk-title">
+            <div class="werk__head" data-reveal>
+              <h2 id="werk-title">Wat ik fotografeer</h2>
+              <p class="lead measure">Allround. Van feest tot portret, en alles daartussen. Een greep uit wat ik vaker vastleg.</p>
+            </div>
+
+            <ul class="index">
+              <li class="index-row" data-shot="events" data-reveal>
+                <figure class="index-row__shot"><img src="images/foto/events.jpg" width="1066" height="1600" loading="lazy" alt="Een dj met cowboyhoed achter de draaitafels, voor een verlicht reuzenrad op een festival"/></figure>
+                <h3>Events &amp; feesten</h3>
+                <p class="index-row__text">Van verjaardagen tot bedrijfsfeesten. Alle soorten evenementen.</p>
+                <a class="link index-row__ask" href="#contact" data-pick="Events &amp; feesten">Vraag een eventshoot aan</a>
+              </li>
+              <li class="index-row" data-shot="nightlife" data-reveal>
+                <figure class="index-row__shot"><img src="images/foto/nightlife.jpg" width="1066" height="1600" loading="lazy" alt="Een dj op een podium in blauw licht"/></figure>
+                <h3>Nightlife &amp; rave</h3>
+                <p class="index-row__text">Sfeer, energie en cultuur van feestjes, clubs en raves, vastgelegd in beeld.</p>
+                <a class="link index-row__ask" href="#contact" data-pick="Nightlife &amp; rave">Vraag een nightlifeshoot aan</a>
+              </li>
+              <li class="index-row" data-shot="portret" data-reveal>
+                <figure class="index-row__shot"><img src="images/foto/portret.jpg" width="1066" height="1600" loading="lazy" alt="Iemand in een witte hoodie tussen industriële buizen"/></figure>
+                <h3>Portret &amp; artiesten</h3>
+                <p class="index-row__text">Portretten voor artiesten en mensen die een sterk, persoonlijk beeld nodig hebben.</p>
+                <a class="link index-row__ask" href="#contact" data-pick="Portret &amp; artiesten">Vraag een portretshoot aan</a>
+              </li>
+              <li class="index-row" data-shot="koppels" data-reveal>
+                <figure class="index-row__shot"><img src="images/foto/koppels.jpg" width="1066" height="1600" loading="lazy" alt="Een vrouw in een groene blazer met zonnebril, leunend tegen een stenen zuil"/></figure>
+                <h3>Koppels &amp; mensen</h3>
+                <p class="index-row__text">Natuurlijke shoots voor koppels, vrienden of individueel, zo comfortabel mogelijk.</p>
+                <a class="link index-row__ask" href="#contact" data-pick="Koppels &amp; mensen">Vraag een koppelshoot aan</a>
+              </li>
+            </ul>
+
+            <p class="werk__more" data-reveal>En veel meer. Heb je iets anders in gedachten? <a class="link" href="#contact" data-pick="Iets anders">Vraag het gerust.</a></p>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <section class="werkwijze" id="werkwijze" aria-labelledby="werkwijze-title">
+      <div class="werkwijze__grid">
+        <div class="werkwijze__intro" data-reveal>
+          <h2 id="werkwijze-title">Zo werk ik</h2>
+          <p class="lead">Eerst helder kijken wat je nodig hebt, dan fotograferen. Bijsturen mag altijd.</p>
+          <p>We houden het praktisch en ik lever netjes en snel op. Ik ben pas tevreden als jij tevreden bent.</p>
+        </div>
+
+        <div class="slip" data-reveal>
+          <p class="slip__title"><span>Jouw shoot</span><span>Dorpelstudio</span></p>
+
+          <div class="slip__group">
+            <h3>Vooraf</h3>
+            <p class="slip__row"><span class="slip__what">Afstemmen: wat wil je vastleggen, voor wie is het en welke sfeer past erbij?</span></p>
+          </div>
+
+          <div class="slip__group">
+            <h3>Op de dag</h3>
+            <p class="slip__row"><span class="slip__what">Fotograferen, met alle ruimte om bij te sturen</span></p>
+          </div>
+
+          <div class="slip__group">
+            <h3>Achteraf</h3>
+            <p class="slip__row"><span class="slip__what">Nabewerking: selectie, kleur en afwerking</span></p>
+            <p class="slip__row"><span class="slip__what">Opleveren, klaar zoals jij ze wil</span></p>
+          </div>
+
+          <p class="slip__total"><span>Alle gemaakte en bewerkte foto's</span><span>geen prijs per foto</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter" aria-labelledby="letter-title">
+      <div class="letter__body">
+        <h2 id="letter-title" data-reveal>Kruiwagenkoers</h2>
+        <blockquote class="letter__text" data-reveal-group>
+          <p class="letter__open">De fotograaf liep sportief de volledige kruiwagenkoers mee en legde alle momenten uitstekend vast, zonder dat we hem opmerkten.</p>
+          <p>Als ploeg zijn we enorm blij met de prachtige foto's van ons, het event en de supporters.</p>
+          <footer class="letter__sign">
+            <strong>Simon Derdin</strong>
+            <span class="muted">Evenement fotografie, mei 2025</span>
+          </footer>
+        </blockquote>
+        <p class="letter__more" data-reveal><a class="link" href="reviews.html">Lees alle reviews</a></p>
+      </div>
+      <figure class="letter__photo" data-reveal>
+        <img src="images/foto/reviews.jpg" width="1066" height="1600" loading="lazy" alt="Twee deelnemers in kilt, onder de modder, tijdens een wedstrijd"/>
+      </figure>
+    </section>
+
+    <section class="contact" id="contact" aria-label="Contact">
+
+      <div class="rows" data-reveal-group>
+        <p><a href="mailto:dorpelstudio@gmail.com">dorpelstudio@gmail.com</a></p>
+        <p><a href="tel:+32492393799">+32 492 39 37 99</a></p>
+        <p><a href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">@dorpelstudio</a></p>
+        <p><span>Putte, Vlaanderen</span></p>
+      </div>
+
+      <div class="composer" data-composer>
+        <h2>Of laat de mail voor je schrijven</h2>
+        <form class="composer__form" action="mailto:dorpelstudio@gmail.com" method="get" enctype="text/plain">
+          <p class="composer__sentence">
+            <label for="c-what">Hallo, ik zoek een fotograaf voor</label>
+            <select id="c-what" name="what">
+              <option>Events &amp; feesten</option>
+              <option>Nightlife &amp; rave</option>
+              <option>Portret &amp; artiesten</option>
+              <option>Koppels &amp; mensen</option>
+              <option>Iets anders</option>
+            </select>
+            <label for="c-when">rond</label>
+            <input id="c-when" name="when" type="date"/>
+          </p>
+          <a class="composer__send" href="mailto:dorpelstudio@gmail.com?subject=Shootaanvraag" data-send>
+            <span>Schrijf de mail</span>
+            <span aria-hidden="true"><svg width="22" height="22" viewBox="0 0 16 16" fill="none"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </form>
+        <p class="composer__note" data-preview>Opent je mailapp met onderwerp en tekst al ingevuld.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <figure class="site-footer__photo">
+        <img src="images/foto/footer.jpg" width="2048" height="1152" loading="lazy" alt=""/>
+      </figure>
+      <div class="site-footer__top">
+        <nav class="site-footer__nav" aria-label="Voettekst">
+          <a href="index.html" aria-current="page" data-home><span class="roll" data-label="Home">Home</span></a>
+          <a href="reviews.html"><span class="roll" data-label="Reviews">Reviews</span></a>
+          <a href="aboutme.html"><span class="roll" data-label="Over mij">Over mij</span></a>
+          <a href="contact.html"><span class="roll" data-label="Contact">Contact</span></a>
+        </nav>
+        <a class="btn btn--accent" href="contact.html">
+          Neem contact op
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__mark" data-fit="footer" aria-hidden="true"><span>dorpelstudio</span></p>
+        <p class="site-footer__legal">
+          <span>© <span data-year>2026</span> Dorpelstudio, Putte, Vlaanderen, België</span>
+        </p>
+      </div>
+    </footer>
+
+    <div class="menu-sheet" id="menu" hidden>
+      <div class="menu-sheet__top"><button class="menu-btn" type="button" data-close aria-label="Menu sluiten"><span class="burger" aria-hidden="true"><span></span><span></span><span></span></span></button></div>
+      <nav class="menu-sheet__links" aria-label="Menu">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="reviews.html">Reviews</a>
         <a href="aboutme.html">Over mij</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </header>
-
-    <main>
-      <!-- Hero -->
-      <section class="section section--lead">
-        <div class="container split">
-          <div data-reveal>
-            <p class="eyebrow">Allround fotograaf · Putte, Vlaanderen</p>
-            <h1 class="serif display mt-sm">
-              Fotografie voor elk moment, elke <span class="underline-accent">sfeer</span>.
-            </h1>
-            <p class="lede mt-md">
-              Ik sta open voor elk project. Stuur me gerust een bericht en we bekijken het idee.
-              Mijn volledige actuele werk zie je op Instagram.
-            </p>
-            <div class="btn-row mt-lg">
-              <a class="btn btn--solid" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">
-                Portfolio op Instagram
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-              <a class="btn btn--ghost" href="contact.html">Start een project</a>
-            </div>
-          </div>
-
-          <aside class="panel panel--dark" data-reveal>
-            <p class="eyebrow">Portfolio</p>
-            <h2 class="serif h3 mt-sm">Mijn werk leeft op Instagram.</h2>
-            <p class="body-text mt-sm">
-              Daar post ik mijn meest recente shoots. Volg mee of stuur gerust een DM.
-            </p>
-            <a class="link-arrow mt-md" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">
-              @dorpelstudio
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </aside>
-        </div>
-      </section>
-
-      <!-- Disciplines index -->
-      <div class="container">
-        <nav class="index-strip" aria-label="Disciplines">
-          <a href="#disciplines">Events</a>
-          <a href="#disciplines">Nightlife</a>
-          <a href="#disciplines">Portret</a>
-          <a href="#disciplines">Koppels</a>
-          <a href="#disciplines">Auto's</a>
-          <a href="#disciplines">Vastgoed</a>
-        </nav>
-      </div>
-
-      <!-- Disciplines -->
-      <section class="section" id="disciplines">
-        <div class="container">
-          <div class="section-head" data-reveal>
-            <p class="eyebrow">Wat ik fotografeer</p>
-            <h2 class="serif h2">Allround. Van feest tot portret, en alles daartussen.</h2>
-            <p class="lede">Een greep uit wat ik vaker vastleg.</p>
-          </div>
-
-          <div class="grid-hair grid-hair--3" data-reveal data-reveal-group>
-            <article class="tile" style="--accent: var(--a-cyan)">
-              <span class="tile__index">01</span>
-              <h3 class="tile__title">Events &amp; feesten</h3>
-              <p class="tile__text">Van verjaardagen tot bedrijfsfeesten. Alle soorten evenementen.</p>
-            </article>
-            <article class="tile" style="--accent: var(--a-blue)">
-              <span class="tile__index">02</span>
-              <h3 class="tile__title">Nightlife &amp; rave</h3>
-              <p class="tile__text">Sfeer, energie en cultuur van feestjes, clubs en raves, vastgelegd in beeld.</p>
-            </article>
-            <article class="tile" style="--accent: var(--a-green)">
-              <span class="tile__index">03</span>
-              <h3 class="tile__title">Portret &amp; artiesten</h3>
-              <p class="tile__text">Portretten voor artiesten en mensen die een sterk, persoonlijk beeld nodig hebben.</p>
-            </article>
-            <article class="tile" style="--accent: var(--a-yellow)">
-              <span class="tile__index">04</span>
-              <h3 class="tile__title">Koppels &amp; mensen</h3>
-              <p class="tile__text">Natuurlijke shoots voor koppels, vrienden of individueel, zo comfortabel mogelijk.</p>
-            </article>
-            <article class="tile" style="--accent: var(--a-orange)">
-              <span class="tile__index">05</span>
-              <h3 class="tile__title">Auto's</h3>
-              <p class="tile__text">Automotive shoots, rolling shots of stills. Het karakter van de auto in beeld brengen.</p>
-            </article>
-            <article class="tile" style="--accent: var(--a-teal)">
-              <span class="tile__index">06</span>
-              <h3 class="tile__title">Vastgoed &amp; interieur</h3>
-              <p class="tile__text">Heldere beelden van woningen en ruimtes, klaar voor verkoop, verhuur of promotie.</p>
-            </article>
-          </div>
-
-          <p class="note mt-md" data-reveal>
-            En veel meer — heb je iets anders in gedachten?
-            <a class="link-inline" href="contact.html">Vraag het gerust.</a>
-          </p>
-        </div>
-      </section>
-
-      <!-- Werkwijze -->
-      <section class="section band--sand">
-        <div class="container split split--narrow-left">
-          <div data-reveal>
-            <p class="eyebrow">Werkwijze</p>
-            <h2 class="serif h2 mt-sm">Een duidelijke aanpak, van eerste contact tot oplevering.</h2>
-            <p class="body-text mt-md measure">
-              We houden het praktisch: eerst helder kijken wat je nodig hebt, dan fotograferen,
-              bijsturen mag altijd. Netjes en snel opleveren.
-            </p>
-          </div>
-
-          <div data-reveal-group>
-            <article class="step">
-              <span class="step__num">01</span>
-              <div>
-                <h3 class="step__title">Afstemmen</h3>
-                <p class="step__text">Wat wil je vastleggen, voor wie is het en welke sfeer past erbij? We bespreken het idee.</p>
-              </div>
-            </article>
-            <article class="step">
-              <span class="step__num">02</span>
-              <div>
-                <h3 class="step__title">Fotograferen</h3>
-                <p class="step__text">Ik ga aan de slag met alle ruimte om bij te sturen. De klant is koning.</p>
-              </div>
-            </article>
-            <article class="step">
-              <span class="step__num">03</span>
-              <div>
-                <h3 class="step__title">Nabewerking</h3>
-                <p class="step__text">Selectie, kleur en afwerking worden zorgvuldig uitgewerkt. Ik werk niet met een prijs per foto: alle gemaakte en bewerkte foto's worden doorgestuurd.</p>
-              </div>
-            </article>
-            <article class="step">
-              <span class="step__num">04</span>
-              <div>
-                <h3 class="step__title">Opleveren</h3>
-                <p class="step__text">Je ontvangt de beelden klaar zoals jij ze wil. Wij zijn pas tevreden als de klant tevreden is.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Closing call to action -->
-      <section class="section band--dark">
-        <div class="container center-block" data-reveal>
-          <p class="eyebrow">Zin om samen te werken?</p>
-          <h2 class="serif h2 mt-sm">Vertel wat je wil laten <span class="underline-accent">fotograferen</span>.</h2>
-          <p class="lede mt-md">Bekijk mijn werk op Instagram of stuur meteen je idee door. Ik denk graag met je mee.</p>
-          <div class="btn-row mt-lg">
-            <a class="btn btn--light" href="contact.html">Neem contact op</a>
-            <a class="btn btn--outline-light" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <span>Dorpelstudio</span>
-          </a>
-          <p class="footer-about">
-            Allround fotograaf uit Putte, Vlaanderen. Events, nightlife, portret,
-            koppels, auto's, vastgoed en meer.
-          </p>
-        </div>
-        <div>
-          <p class="footer-title">Navigatie</p>
-          <ul class="footer-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="aboutme.html">Over mij</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-title">Contact</p>
-          <ul class="footer-list">
-            <li><a href="mailto:dorpelstudio@gmail.com">dorpelstudio@gmail.com</a></li>
-            <li><a href="tel:+32492393799">+32 492 39 37 99</a></li>
-            <li><a href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">@dorpelstudio</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="container">
-        <div class="footer-bottom">
-          <span>© <span data-year>2026</span> Dorpelstudio</span>
-          <span>Putte, Vlaanderen, België</span>
-        </div>
-      </div>
-    </footer>
+      <p class="menu-sheet__foot"><a href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">@dorpelstudio</a> op Instagram</p>
+    </div>
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Dorpelstudio",
-        "description": "Allround fotograaf uit Putte: events, nightlife, portret, koppels, auto's, vastgoed en meer.",
+        "description": "Allround fotograaf uit Putte: events, nightlife, portret, koppels en meer.",
         "url": "https://dorpelstudio.be/",
         "email": "dorpelstudio@gmail.com",
         "telephone": "+32492393799",
@@ -259,6 +252,5 @@
         "sameAs": ["https://www.instagram.com/dorpelstudio/"]
       }
     </script>
-    <script src="main.js"></script>
   </body>
 </html>

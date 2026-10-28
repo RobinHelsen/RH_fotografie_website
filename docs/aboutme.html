@@ -6,7 +6,7 @@
     <title>Over mij | Dorpelstudio</title>
     <meta name="description" content="Over Dorpelstudio: fotografie, IT, muziek en natuur in een korte bio."/>
     <link rel="canonical" href="https://dorpelstudio.be/aboutme.html"/>
-    <meta name="theme-color" content="#fbfaf8"/>
+    <meta name="theme-color" content="#052247"/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="nl_BE"/>
     <meta property="og:site_name" content="Dorpelstudio"/>
@@ -16,142 +16,150 @@
     <link rel="icon" href="images/dorpel-nav-logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"/>
-    <noscript><style>[data-reveal],[data-reveal-group]>*{opacity:1;transform:none}</style></noscript>
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <a class="skip" href="#main">Naar de inhoud</a>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Dorpelstudio, naar de homepagina">
-          <span>Dorpelstudio</span>
-        </a>
-        <nav class="nav" aria-label="Hoofdnavigatie">
-          <a href="index.html">Home</a>
-          <a href="reviews.html">Reviews</a>
-          <a class="is-active" href="aboutme.html" aria-current="page">Over mij</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-          <span></span><span></span><span></span>
-        </button>
+    <div class="split">
+      <!-- The stage: replace the files in images/foto/ with your own and remove. -->
+      <div class="stage" data-stage>
+        <div class="stage__frame">
+          <figure class="shot is-on" data-shot="overmij" data-shot-default>
+            <img src="images/foto/overmij.jpg" width="1359" height="1600" alt="De fotograaf achter Dorpelstudio, lachend met zijn camera in de hand"/>
+          </figure>
+          <figure class="shot" data-shot="tech">
+            <img src="images/foto/tech.jpg" width="1066" height="1600" alt="De fotograaf achter Dorpelstudio, lachend met zijn cameratas op een wandelpad"/>
+          </figure>
+          <figure class="shot" data-shot="muziek">
+            <img src="images/foto/muziek.jpg" width="1061" height="1600" alt="Een driehoekige lichtconstructie boven een rave, in zwart-wit"/>
+          </figure>
+          <figure class="shot" data-shot="natuur">
+            <img src="images/foto/natuur.jpg" width="1066" height="1600" alt="Witte krijtrotsen boven de zee, met wilde bloemen op de voorgrond"/>
+          </figure>
+        </div>
       </div>
-      <nav class="container mobile-nav" id="mobile-nav" aria-label="Mobiele navigatie" hidden>
-        <a href="index.html">Home</a>
-        <a href="reviews.html">Reviews</a>
-        <a class="is-active" href="aboutme.html" aria-current="page">Over mij</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+      <div class="flow">
+        <header class="site-header site-header--spread">
+          <nav class="site-nav" aria-label="Hoofdnavigatie">
+            <a href="index.html" data-home><span class="roll" data-label="Home">Home</span></a>
+            <a href="reviews.html"><span class="roll" data-label="Reviews">Reviews</span></a>
+            <a href="aboutme.html" aria-current="page"><span class="roll" data-label="Over mij">Over mij</span></a>
+            <a href="contact.html"><span class="roll" data-label="Contact">Contact</span></a>
+            <a class="btn btn--accent btn--small site-nav__ig" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>Instagram</a>
+          </nav>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen"><span class="burger" aria-hidden="true"><span></span><span></span><span></span></span></button>
+          <a class="btn btn--accent btn--small" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>Instagram</a>
+        </header>
+        <main id="main">
+          <section class="hero hero--sub" data-shot="overmij">
+            <div class="hero__body">
+              <p class="hero__lede hero__lede--statement">De fotograaf<br/> achter Dorpelstudio.</p>
+              <p class="hero__text">Fotografie begon als een manier om leuke momenten vast te leggen en is uitgegroeid tot waar ik heel graag mijn tijd in steek.</p>
+              <div class="hero__actions">
+                <a class="btn btn--accent" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">
+                  Bekijk portfolio
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="link" href="contact.html">Neem contact op</a>
+              </div>
+            </div>
+            <h1 class="wordmark" data-fit="hero"><span>over mij</span></h1>
+          </section>
 
-    <main>
-      <section class="section section--lead">
-        <div class="container split split--top">
-          <div data-reveal>
-            <p class="eyebrow">Over mij</p>
-            <h1 class="serif display mt-sm">De <span class="underline-accent">fotograaf</span> achter Dorpel</h1>
-            <p class="lede mt-md">
-              Fotografie begon als een manier om leuke momenten vast te leggen en is uitgegroeid
-              tot waar ik heel graag mijn tijd in steek.
-            </p>
-            <p class="body-text mt-sm measure">
-              Ik werk graag natuurlijk en persoonlijk. Geen geforceerde ontmoetingen, wel beelden
-              die passen bij de persoon of het moment.
-            </p>
+          <div class="page">
+            <div class="block" data-reveal>
+              <h2>Oog voor beeld, sfeer en detail</h2>
+              <p class="lead">Ik werk graag natuurlijk en persoonlijk. Geen geforceerde ontmoetingen, wel beelden die passen bij de persoon of het moment.</p>
+              <p>Ik werk graag persoonlijk en rustgevend, om iedereen op hun gemak te stellen. Klein genoeg om persoonlijk te blijven, breed genoeg om in heel wat situaties mee te draaien.</p>
+            </div>
+            <div class="block">
+              <h2 data-reveal>Waar mijn blik vandaan komt</h2>
+              <div class="pairs">
+                <div data-shot="overmij" data-reveal>
+                  <h3>Fotografie</h3>
+                  <p>Ik leg graag echte momenten vast. Mijn favoriete beelden ontstaan vaak net tussen poses door, wanneer iemand weer zichzelf wordt.</p>
+                </div>
+                <div data-shot="tech" data-reveal>
+                  <h3>Technologie</h3>
+                  <p>Naast de camera ben ik gefascineerd door technologie: hardware, software. Daarom is het begrijpen van specs achter de camera extra interessant.</p>
+                </div>
+                <div data-shot="muziek" data-reveal>
+                  <h3>Muziek</h3>
+                  <p>Abstracte en zware EDM geeft mij energie. Die liefde voor abstractie zie je ook terug in hoe ik graag maak.</p>
+                </div>
+                <div data-shot="natuur" data-reveal>
+                  <h3>Natuur &amp; trektochten</h3>
+                  <p>Ik hou van trektochten, mezelf testen fysiek en onderweg composities zien en vastleggen. Die blik neem ik mee naar shoots en creatieve projecten.</p>
+                </div>
+              </div>
+            </div>
           </div>
+        </main>
+      </div>
+    </div>
 
-          <aside class="panel panel--dark" data-reveal>
-            <p class="eyebrow">Mijn aanpak</p>
-            <h2 class="serif h3 mt-sm">Oog voor beeld, sfeer en detail.</h2>
-            <p class="body-text mt-sm">
-              Ik werk graag persoonlijk en rustgevend, om iedereen op hun gemak te stellen.
-              Klein genoeg om persoonlijk te blijven, breed genoeg om in heel wat situaties
-              mee te draaien.
-            </p>
-          </aside>
-        </div>
-      </section>
+    <section class="contact" id="contact" aria-label="Contact">
 
-      <section class="section" id="achtergrond">
-        <div class="container">
-          <div class="section-head" data-reveal>
-            <p class="eyebrow">Achtergrond</p>
-            <h2 class="serif h2">Waar mijn blik vandaan komt.</h2>
-          </div>
-
-          <div class="grid-hair grid-hair--2" data-reveal data-reveal-group>
-            <article class="tile tile--lead" style="--accent: var(--a-yellow)">
-              <h3 class="tile__title">Fotografie</h3>
-              <p class="tile__text">Ik leg graag echte momenten vast. Mijn favoriete beelden ontstaan vaak net tussen poses door, wanneer iemand weer zichzelf wordt.</p>
-            </article>
-            <article class="tile tile--lead" style="--accent: var(--a-cyan)">
-              <h3 class="tile__title">Technologie</h3>
-              <p class="tile__text">Naast de camera ben ik gefascineerd door technologie: hardware, software. Daarom is het begrijpen van specs achter de camera extra interessant.</p>
-            </article>
-            <article class="tile tile--lead" style="--accent: var(--a-orange)">
-              <h3 class="tile__title">Muziek</h3>
-              <p class="tile__text">Abstracte en zware EDM geeft mij energie. Die liefde voor abstractie zie je ook terug in hoe ik graag maak.</p>
-            </article>
-            <article class="tile tile--lead" style="--accent: var(--a-green)">
-              <h3 class="tile__title">Natuur &amp; trektochten</h3>
-              <p class="tile__text">Ik hou van trektochten, mezelf testen fysiek en onderweg composities zien en vastleggen. Die blik neem ik mee naar shoots en creatieve projecten.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section band--dark">
-        <div class="container center-block" data-reveal>
-          <p class="eyebrow">Samenwerken</p>
-          <h2 class="serif h2 mt-sm">Iets voor de camera in <span class="underline-accent">gedachten</span>?</h2>
-          <p class="lede mt-md">Stuur het door. Ik denk graag mee over beeld, sfeer en aanpak.</p>
-          <div class="btn-row mt-lg">
-            <a class="btn btn--light" href="contact.html">Neem contact op</a>
-            <a class="btn btn--outline-light" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
-          </div>
-        </div>
-      </section>
-    </main>
+      <div class="composer" data-composer>
+        <h2>Laat de mail voor je schrijven</h2>
+        <form class="composer__form" action="mailto:dorpelstudio@gmail.com" method="get" enctype="text/plain">
+          <p class="composer__sentence">
+            <label for="c-what">Hallo, ik zoek een fotograaf voor</label>
+            <select id="c-what" name="what">
+              <option>Events &amp; feesten</option>
+              <option>Nightlife &amp; rave</option>
+              <option>Portret &amp; artiesten</option>
+              <option>Koppels &amp; mensen</option>
+              <option>Iets anders</option>
+            </select>
+            <label for="c-when">rond</label>
+            <input id="c-when" name="when" type="date"/>
+          </p>
+          <a class="composer__send" href="mailto:dorpelstudio@gmail.com?subject=Shootaanvraag" data-send>
+            <span>Schrijf de mail</span>
+            <span aria-hidden="true"><svg width="22" height="22" viewBox="0 0 16 16" fill="none"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </form>
+        <p class="composer__note">Opent je mailapp met onderwerp en tekst al ingevuld.</p>
+      </div>
+    </section>
 
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <span>Dorpelstudio</span>
-          </a>
-          <p class="footer-about">
-            Allround fotograaf uit Putte, Vlaanderen. Events, nightlife, portret,
-            koppels, auto's, vastgoed en meer.
-          </p>
-        </div>
-        <div>
-          <p class="footer-title">Navigatie</p>
-          <ul class="footer-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="aboutme.html">Over mij</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-title">Contact</p>
-          <ul class="footer-list">
-            <li><a href="mailto:dorpelstudio@gmail.com">dorpelstudio@gmail.com</a></li>
-            <li><a href="tel:+32492393799">+32 492 39 37 99</a></li>
-            <li><a href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">@dorpelstudio</a></li>
-          </ul>
-        </div>
+      <figure class="site-footer__photo">
+        <img src="images/foto/footer-overmij.jpg" width="2048" height="1365" loading="lazy" alt=""/>
+      </figure>
+      <div class="site-footer__top">
+        <nav class="site-footer__nav" aria-label="Voettekst">
+          <a href="index.html" data-home><span class="roll" data-label="Home">Home</span></a>
+          <a href="reviews.html"><span class="roll" data-label="Reviews">Reviews</span></a>
+          <a href="aboutme.html" aria-current="page"><span class="roll" data-label="Over mij">Over mij</span></a>
+          <a href="contact.html"><span class="roll" data-label="Contact">Contact</span></a>
+        </nav>
+        <a class="btn btn--accent" href="contact.html">
+          Neem contact op
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.5 8h12M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
-      <div class="container">
-        <div class="footer-bottom">
-          <span>© <span data-year>2026</span> Dorpelstudio</span>
-          <span>Putte, Vlaanderen, België</span>
-        </div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__mark" data-fit="footer" aria-hidden="true"><span>dorpelstudio</span></p>
+        <p class="site-footer__legal">
+          <span>© <span data-year>2026</span> Dorpelstudio, Putte, Vlaanderen, België</span>
+        </p>
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <div class="menu-sheet" id="menu" hidden>
+      <div class="menu-sheet__top"><button class="menu-btn" type="button" data-close aria-label="Menu sluiten"><span class="burger" aria-hidden="true"><span></span><span></span><span></span></span></button></div>
+      <nav class="menu-sheet__links" aria-label="Menu">
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="aboutme.html" aria-current="page">Over mij</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="menu-sheet__foot"><a href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">@dorpelstudio</a> op Instagram</p>
+    </div>
   </body>
 </html>

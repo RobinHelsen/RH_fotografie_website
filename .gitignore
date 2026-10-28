@@ -1,0 +1,8 @@
+# Inspector screenshots and reports from the design skill
+.taste-skill/
+
+# Full-size original photos; the site uses the web versions in docs/images/foto/
+originele-fotos/
+
+# Claude Code settings and skills
+.claude/

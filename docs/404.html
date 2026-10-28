@@ -6,61 +6,28 @@
     <title>Pagina niet gevonden | Dorpelstudio</title>
     <meta name="description" content="Deze pagina bestaat niet (meer). Ga terug naar de homepage van Dorpelstudio."/>
     <meta name="robots" content="noindex"/>
-    <meta name="theme-color" content="#fbfaf8"/>
+    <meta name="theme-color" content="#052247"/>
     <link rel="icon" href="/images/dorpel-nav-logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/styles.css"/>
-    <noscript><style>[data-reveal],[data-reveal-group]>*{opacity:1;transform:none}</style></noscript>
+    <script src="/main.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="/" aria-label="Dorpelstudio, naar de homepagina">
-          <span>Dorpelstudio</span>
-        </a>
-        <nav class="nav" aria-label="Hoofdnavigatie">
-          <a href="/">Home</a>
-          <a href="/reviews.html">Reviews</a>
-          <a href="/aboutme.html">Over mij</a>
-          <a href="/contact.html">Contact</a>
-        </nav>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-      <nav class="container mobile-nav" id="mobile-nav" aria-label="Mobiele navigatie" hidden>
-        <a href="/">Home</a>
-        <a href="/reviews.html">Reviews</a>
-        <a href="/aboutme.html">Over mij</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <main class="page-404">
-      <div class="container center-block">
-        <p class="eyebrow">Fout 404</p>
-        <h1 class="serif display mt-sm">Deze pagina bestaat niet (meer).</h1>
-        <p class="lede mt-md">
-          Misschien is de link verouderd. Ga terug naar de homepage of bekijk mijn werk op Instagram.
-        </p>
-        <div class="btn-row mt-lg">
-          <a class="btn btn--solid" href="/">Terug naar home</a>
-          <a class="btn btn--ghost" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
+    <main class="lost" id="main">
+      <div class="lost__body">
+        <p class="lost__mark" data-fit="footer" aria-hidden="true"><span>dorpelstudio</span></p>
+        <h1>Deze pagina bestaat niet (meer).</h1>
+        <p>Fout 404. Misschien is de link verouderd. Ga terug naar de homepage of bekijk mijn werk op Instagram.</p>
+        <div class="hero__actions">
+          <a class="btn btn--accent" href="/">Terug naar home</a>
+          <a class="link" href="https://www.instagram.com/dorpelstudio/" target="_blank" rel="noopener noreferrer">Bekijk Instagram</a>
         </div>
       </div>
+      <figure class="lost__photo">
+        <img src="/images/foto/404.jpg" width="1066" height="1600" alt="Een hand aan een glas op de toog, in blauw en oranje feestlicht"/>
+      </figure>
     </main>
-
-    <footer class="site-footer site-footer--slim">
-      <div class="container">
-        <div class="footer-bottom">
-          <span>© <span data-year>2026</span> Dorpelstudio</span>
-          <span>Putte, Vlaanderen, België</span>
-        </div>
-      </div>
-    </footer>
-
-    <script src="/main.js"></script>
   </body>
 </html>
